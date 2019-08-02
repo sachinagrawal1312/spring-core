@@ -1,0 +1,64 @@
+1
+00:00:02,340 --> 00:00:07,570
+In this last week on sping and we would be discussing about why is NBC so popular.
+
+2
+00:00:07,570 --> 00:00:13,500
+One of the most important things I like about being in the U.S. is the clear separation of concerns.
+
+3
+00:00:13,660 --> 00:00:17,620
+So you have a dispatcher servlet you have your controllers you have you have your duties all worse you
+
+4
+00:00:17,620 --> 00:00:23,860
+have your views modelled and views you have your controller side your moral attribute.
+
+5
+00:00:23,890 --> 00:00:31,020
+You have your station attribute all these are completely independent of each other.
+
+6
+00:00:31,120 --> 00:00:37,920
+So each of these concepts are handled one thing and they do that really really well.
+
+7
+00:00:38,020 --> 00:00:44,860
+It helps me to develop a web application very easily as well as it helps me to unit their stuff very
+
+8
+00:00:44,860 --> 00:00:46,410
+easily as well.
+
+9
+00:00:47,220 --> 00:00:53,870
+I think the clear separation of Canton's which is being MVC brings in is one of the most important reasons
+
+10
+00:00:54,000 --> 00:00:57,300
+why spring NBC is really popular.
+
+11
+00:00:57,450 --> 00:01:02,580
+The important thing to understand is springing busy is not only used to develop applications but it's
+
+12
+00:01:02,640 --> 00:01:05,360
+also used to daily press with Web services.
+
+13
+00:01:05,430 --> 00:01:09,590
+So the section on being NBC actually does not end here.
+
+14
+00:01:09,610 --> 00:01:12,480
+Bill talk a lot about its full web services later.
+
+15
+00:01:12,660 --> 00:01:20,550
+And during that section we will talk a lot more about putting NBC and also about RESTful services and
+
+16
+00:01:20,580 --> 00:01:21,760
+then the next we do.
+

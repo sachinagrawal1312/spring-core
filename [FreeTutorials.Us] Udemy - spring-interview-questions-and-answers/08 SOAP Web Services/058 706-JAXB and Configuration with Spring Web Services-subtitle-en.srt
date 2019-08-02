@@ -1,0 +1,224 @@
+1
+00:00:02,670 --> 00:00:10,690
+Come back in this Would you like to focus on something called Jacques's b a b for example binding.
+
+2
+00:00:11,130 --> 00:00:14,980
+What is a Jacques's B and how you can configure a Jacques's plugin.
+
+3
+00:00:16,260 --> 00:00:21,100
+In the earlier with you we talked about the fact that when you're developing of servies you define the
+
+4
+00:00:21,190 --> 00:00:25,940
+X as the first really find the ex-MIL schema definition for us.
+
+5
+00:00:25,960 --> 00:00:31,270
+I mean this is obviously when we a developing something with spinning Web services Springboro Services
+
+6
+00:00:31,300 --> 00:00:33,580
+uses a contract first approach.
+
+7
+00:00:33,580 --> 00:00:40,210
+So we defined X as degenerate as deal out of it and then implement the end point out to do application
+
+8
+00:00:40,750 --> 00:00:46,360
+will accept a SOAP XML request and we'll send Sobig similar response.
+
+9
+00:00:46,600 --> 00:00:54,760
+So the input is excisemen the output is as simple as well but true application is job application.
+
+10
+00:00:54,760 --> 00:00:55,060
+Right.
+
+11
+00:00:55,060 --> 00:01:03,640
+So the SML needs to be converted to Java and the Java object needs to be converted into a similar response
+
+12
+00:01:03,700 --> 00:01:04,830
+as well.
+
+13
+00:01:04,840 --> 00:01:07,020
+So how does this happen.
+
+14
+00:01:07,030 --> 00:01:08,900
+This is called binding.
+
+15
+00:01:08,950 --> 00:01:18,010
+So this SML request needs to be bound to a Java object and the Java object needs to be bound and any
+
+16
+00:01:18,090 --> 00:01:22,860
+XML response needs to be generated from this Java API.
+
+17
+00:01:22,870 --> 00:01:30,240
+For example binding defines a specification for how to do that kind of conversion.
+
+18
+00:01:30,290 --> 00:01:38,770
+So a Java API for example binding defines what you can actually do X Imelda Jawa and to X similar kind
+
+19
+00:01:38,770 --> 00:01:40,350
+of condition.
+
+20
+00:01:40,600 --> 00:01:42,460
+Let's consider another example.
+
+21
+00:01:42,460 --> 00:01:45,920
+So here is the code details that we defined earlier.
+
+22
+00:01:45,930 --> 00:01:52,420
+So we defined a complex type called cause details in our End Point what we would need to be able to
+
+23
+00:01:52,420 --> 00:02:01,770
+do is to take our Jawa object and generate an example of this structure with the name and description.
+
+24
+00:02:02,050 --> 00:02:08,110
+What we would need to do is we would need to be able to take out a jar jar object duelists from it and
+
+25
+00:02:08,110 --> 00:02:10,390
+set it into an example.
+
+26
+00:02:11,250 --> 00:02:20,970
+The job or EPA for example binding pro-white a simple plugin which would allow us to generate Java objects
+
+27
+00:02:21,720 --> 00:02:22,950
+of this definition.
+
+28
+00:02:22,950 --> 00:02:33,160
+So what we can do is from this access the we can generate Java objects matching exactly this structure.
+
+29
+00:02:33,180 --> 00:02:39,380
+So if you look at this example which is present in here we have a package called Come in 28 minutes
+
+30
+00:02:39,400 --> 00:02:42,260
+courses where we have all the detail.
+
+31
+00:02:42,500 --> 00:02:49,730
+Now in the courses there's a cause details but Jawa if you look at this code details that Jawa it contains
+
+32
+00:02:49,890 --> 00:02:57,510
+the exact structure that we have defined in X as the called the date Id name and description.
+
+33
+00:02:57,510 --> 00:03:03,220
+So what happens is if I create an instance of Corddry days and set the values into this new Jacques's
+
+34
+00:03:03,240 --> 00:03:07,110
+b we'll be able to generate X out of this.
+
+35
+00:03:07,110 --> 00:03:09,180
+Now how do I generate this Jowler file.
+
+36
+00:03:09,180 --> 00:03:11,980
+I don't want to write this kind of stuff by hand right.
+
+37
+00:03:12,240 --> 00:03:20,370
+If I want to actually have a structure of this and I have to write another out class which contains
+
+38
+00:03:20,370 --> 00:03:22,010
+the exact structure.
+
+39
+00:03:22,020 --> 00:03:24,390
+It's a lot of effort to maintain that.
+
+40
+00:03:24,410 --> 00:03:32,340
+Right so what we do is we use something called the X B plugin the Jaggs we Plug-In what it does is it
+
+41
+00:03:32,340 --> 00:03:34,950
+takes schemas as the input.
+
+42
+00:03:34,950 --> 00:03:42,340
+It can understand the as the schema and it can generate the jobs or objects for that.
+
+43
+00:03:42,480 --> 00:03:50,580
+What it does it takes record details that acts as the as the input and it generates all these files.
+
+44
+00:03:50,670 --> 00:03:56,470
+So you can see that there is a get or get all cause details request get cause details requests.
+
+45
+00:03:56,470 --> 00:04:01,650
+So the get calls didn't request here has a corresponding get called Details request.
+
+46
+00:04:01,800 --> 00:04:08,920
+And you if you look at the structure it would exactly match whatever structure we have defined in all
+
+47
+00:04:08,960 --> 00:04:15,610
+the Jawa objects are actually generated by the tanks be plugged in for the jacks be plug in.
+
+48
+00:04:15,660 --> 00:04:17,590
+What we are using is something called Jacks.
+
+49
+00:04:17,660 --> 00:04:23,370
+To me when plugging this is configured in your project Maimon bombardment.
+
+50
+00:04:23,700 --> 00:04:30,500
+And if you look at it we are using 1.6 worship and the input for that is the access.
+
+51
+00:04:30,540 --> 00:04:35,000
+So wherever we are operating the access the output makes his deep into its main resources.
+
+52
+00:04:35,100 --> 00:04:38,830
+So we have that as the input output is the Java code.
+
+53
+00:04:38,830 --> 00:04:41,430
+So where do we put our show.
+
+54
+00:04:41,770 --> 00:04:49,300
+So in this we do believe that what is Jacques's be and how we can configure a Jacques's people plugin
+
+55
+00:04:49,680 --> 00:04:57,270
+to be able to convert our access into Java objects in the next with you will look at how to make use
+
+56
+00:04:57,270 --> 00:05:04,140
+of the objects which are generated by DXP and set values into them and point and in the next release.
+

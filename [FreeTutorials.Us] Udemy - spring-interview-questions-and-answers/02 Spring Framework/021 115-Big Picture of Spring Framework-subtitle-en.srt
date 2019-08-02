@@ -1,0 +1,204 @@
+1
+00:00:02,080 --> 00:00:08,800
+Before we end this section on spring we would want to discuss a high level question about putting framework
+
+2
+00:00:08,830 --> 00:00:09,610
+in this tweet.
+
+3
+00:00:11,130 --> 00:00:16,950
+Typically ask questions like What do you think about putting Priem book why it's being popular or can
+
+4
+00:00:16,950 --> 00:00:19,780
+you give a big picture overview of the spring frame.
+
+5
+00:00:19,800 --> 00:00:21,720
+How do you go about answering that.
+
+6
+00:00:21,750 --> 00:00:24,270
+That's basically what we will discuss in this medium.
+
+7
+00:00:24,680 --> 00:00:29,610
+When we talk about spring in Book I would really look at it from three different perspectives right
+
+8
+00:00:29,880 --> 00:00:33,690
+architecture design and your programming or coding.
+
+9
+00:00:34,020 --> 00:00:39,300
+And other than that we can also talk about the different features ofspring framework different sping
+
+10
+00:00:39,360 --> 00:00:44,000
+models which are present and also about the different spring projects which are present.
+
+11
+00:00:44,340 --> 00:00:50,040
+These are all important things that we would need to cower when we are asking any questions related
+
+12
+00:00:50,040 --> 00:00:55,230
+to any of this stuff you are seeing on the screen right now you can choose any of those things which
+
+13
+00:00:55,280 --> 00:00:57,020
+you are really comfortable with.
+
+14
+00:00:57,030 --> 00:01:03,000
+For example when I talk about architecture one of the important things that beings have put is very
+
+15
+00:01:03,000 --> 00:01:05,730
+very flexible architectures.
+
+16
+00:01:05,730 --> 00:01:08,700
+Earlier we looked at multiple layers in a web application.
+
+17
+00:01:08,700 --> 00:01:09,030
+Right.
+
+18
+00:01:09,030 --> 00:01:13,440
+So the lab layer that earlier as well as your business lead.
+
+19
+00:01:13,590 --> 00:01:15,870
+Let's dig deep web layer for example.
+
+20
+00:01:16,020 --> 00:01:23,280
+Spring has good support for scraps as well as spring has its own NBC frameup the fact that I'm using
+
+21
+00:01:23,280 --> 00:01:30,240
+spring does not restrict the choice I have with the Web at NBC so I can still use traps or I can use
+
+22
+00:01:30,480 --> 00:01:33,360
+sping NBC or I can use any other thing.
+
+23
+00:01:33,510 --> 00:01:38,300
+For example if I want to use JCP for views sping has good support for it if they want.
+
+24
+00:01:38,310 --> 00:01:42,480
+Because free market for use even then Bing has good support for it.
+
+25
+00:01:42,480 --> 00:01:48,480
+For example if I want to use Aspect Oriented Programming then springs supports basic aspirator into
+
+26
+00:01:48,480 --> 00:01:49,780
+programming by itself.
+
+27
+00:01:49,830 --> 00:01:56,870
+But it also has good integration with Aspect Oriented Programming framework like aspected.
+
+28
+00:01:57,270 --> 00:02:02,860
+So that's very important when we're talking about something from an architectural perspective.
+
+29
+00:02:02,910 --> 00:02:08,640
+I want to have the flexibility using the Spring Framework should not reduce the amount of choices I
+
+30
+00:02:08,640 --> 00:02:11,720
+have to develop my application.
+
+31
+00:02:11,760 --> 00:02:15,410
+That's one of the most important features of Spring Framework.
+
+32
+00:02:15,420 --> 00:02:21,210
+It does not really restrict any of your choices when I am making use of the spinning framework next
+
+33
+00:02:21,450 --> 00:02:22,890
+from the perspective design.
+
+34
+00:02:22,890 --> 00:02:26,830
+We already talked about by coupling loose coupling house being promoted.
+
+35
+00:02:27,150 --> 00:02:31,020
+Applications do have good loosely coupled design.
+
+36
+00:02:31,240 --> 00:02:37,840
+So because of the loosley couple design you would see that code would be very easy to use.
+
+37
+00:02:37,860 --> 00:02:43,620
+So whenever I would want to write a unit test because we have designed the application in a loosely
+
+38
+00:02:43,620 --> 00:02:49,320
+coupled with with all the dependencies demarcated really well you'd see that when I develop an application
+
+39
+00:02:49,340 --> 00:02:52,730
+mid-spring it's very easy to unit test it.
+
+40
+00:02:52,740 --> 00:02:55,480
+What are we talking about popularity of spring Primack.
+
+41
+00:02:55,500 --> 00:02:58,130
+I think these are the most important reasons.
+
+42
+00:02:58,320 --> 00:03:03,960
+I mean very very flexible in terms of the architecture helps in designing loosley couple applications
+
+43
+00:03:03,960 --> 00:03:09,500
+which can be easily unit tested different features offspring which enable these features are dependency
+
+44
+00:03:09,510 --> 00:03:14,710
+injection I use the containers we all already dogbone out our wiring and components.
+
+45
+00:03:14,740 --> 00:03:18,950
+And the other thing you can talk about when such questions are asked.
+
+46
+00:03:19,260 --> 00:03:20,650
+Talk about being modeled.
+
+47
+00:03:20,670 --> 00:03:25,710
+What are the different models you have with things like that and also talk about the different spring
+
+48
+00:03:25,710 --> 00:03:28,800
+projects that you have with in this video.
+
+49
+00:03:28,800 --> 00:03:34,780
+We took a quick look at how to answer questions related to Big picture with respect to spring frame
+
+50
+00:03:34,800 --> 00:03:38,880
+but things like what do you think about it or why is it popular.
+
+51
+00:03:39,030 --> 00:03:43,680
+Can you give a big picture of this playing framework and things like that until the next video.
+

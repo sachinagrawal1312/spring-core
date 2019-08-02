@@ -1,0 +1,568 @@
+1
+00:00:03,390 --> 00:00:04,950
+You take them back in the studio.
+
+2
+00:00:04,970 --> 00:00:10,730
+Let's shift our attention to exception handling exceptionality is one of the most important things you'd
+
+3
+00:00:10,790 --> 00:00:13,280
+want to really do well in your work.
+
+4
+00:00:13,550 --> 00:00:14,240
+He.
+
+5
+00:00:14,350 --> 00:00:17,770
+So we we'll discuss questions like How do you implement exception handling for us.
+
+6
+00:00:17,810 --> 00:00:20,710
+So he says What are the different areas that you would return.
+
+7
+00:00:20,720 --> 00:00:22,870
+How do you prevent them using subring boot.
+
+8
+00:00:23,090 --> 00:00:25,950
+And also we talk about validation.
+
+9
+00:00:26,030 --> 00:00:30,570
+How do you prevent relationships with restfully that services for us.
+
+10
+00:00:30,800 --> 00:00:35,990
+Let's look at the response to this is that you would want to read back when any of these request is
+
+11
+00:00:35,990 --> 00:00:36,790
+successful.
+
+12
+00:00:36,810 --> 00:00:42,910
+Let's get to Questar you you'd want to return to it as opposed to create resources.
+
+13
+00:00:43,090 --> 00:00:50,150
+Successful you'd want it done well and created that normally does this strike all the remaining things
+
+14
+00:00:50,730 --> 00:00:57,670
+a response it says when you don't know what went wrong then you can do it in 500.
+
+15
+00:00:57,680 --> 00:00:59,560
+So what if that something went wrong on.
+
+16
+00:00:59,600 --> 00:01:05,300
+So how would you know that the resource is not fun so somebody is searching for a user ID and it's not
+
+17
+00:01:05,300 --> 00:01:10,580
+phone in those kind of situations you should not do it on a server but you would want written up.
+
+18
+00:01:10,730 --> 00:01:15,680
+So smart phone somebody sends in a bad request with a validation error.
+
+19
+00:01:15,770 --> 00:01:22,040
+You'd want to send a bad request at somebody sent a wrong ID and password.
+
+20
+00:01:22,040 --> 00:01:25,010
+You have to send a portal one unauthorized.
+
+21
+00:01:25,190 --> 00:01:31,170
+So you should send the right response status for the situation that you're in.
+
+22
+00:01:31,430 --> 00:01:39,010
+In this video we look at to respond straight as we look at 3:56 research not found and 400 by request.
+
+23
+00:01:39,050 --> 00:01:44,240
+So it's just not found is when a research is not found when I'm trying to search for an I.D. and the
+
+24
+00:01:44,240 --> 00:01:48,590
+I.D. does not exist and cursed is when there is isn't.
+
+25
+00:01:48,710 --> 00:01:51,360
+Let's see how we handle them in this specific area.
+
+26
+00:01:51,530 --> 00:01:54,750
+So it started with the foot of foot it was not fun.
+
+27
+00:01:54,890 --> 00:01:57,130
+I'm searching and Finian get this.
+
+28
+00:01:57,130 --> 00:02:03,800
+If you look at the code that we have here it to retrieve user actually throws a user not found exception.
+
+29
+00:02:03,860 --> 00:02:10,890
+So what is happening here is the default spring boot exception handling is kicking in.
+
+30
+00:02:10,880 --> 00:02:14,490
+So spring boot on Figaro's error handling by the fall.
+
+31
+00:02:14,480 --> 00:02:22,370
+So what happens is when you throw any exception when we throw or use a not fun exception with ID ID
+
+32
+00:02:22,760 --> 00:02:27,540
+what is happening is an error response of this kind is being seen back.
+
+33
+00:02:27,590 --> 00:02:32,860
+One of the important things to note is status is 500 to the response status.
+
+34
+00:02:32,930 --> 00:02:38,110
+We're just coming back is upstaters 500 the thing not found Id find it.
+
+35
+00:02:38,210 --> 00:02:44,060
+Users find it this is good but I don't like the fact that it is returning and sponsored us 500.
+
+36
+00:02:44,150 --> 00:02:45,810
+What should we it done.
+
+37
+00:02:45,930 --> 00:02:49,460
+So it is not that we would want to return a status of resource not fun.
+
+38
+00:02:49,460 --> 00:02:50,360
+How do we do that.
+
+39
+00:02:51,500 --> 00:02:55,490
+We can do that is by adding an invitation on top of yours or not fund accepted.
+
+40
+00:02:55,800 --> 00:02:58,390
+You can say HGTV say it is not fun.
+
+41
+00:02:58,470 --> 00:03:00,180
+Or sponsored a Saturday to start.
+
+42
+00:03:00,180 --> 00:03:00,660
+Not fun.
+
+43
+00:03:00,720 --> 00:03:01,770
+What would happen.
+
+44
+00:03:02,050 --> 00:03:04,130
+You'd get a 4 or 4.
+
+45
+00:03:04,380 --> 00:03:11,780
+So this is pretty cool right now we're getting or status and that's responsible that perfect because
+
+46
+00:03:11,790 --> 00:03:13,200
+this is not fun.
+
+47
+00:03:13,200 --> 00:03:17,940
+Now one of the other things we would want to also do is to customize the response structure what our
+
+48
+00:03:18,750 --> 00:03:23,990
+response structure is coming back is the default response structure for spelling would help.
+
+49
+00:03:24,120 --> 00:03:31,620
+You might have an organizational specific standard error message structure you might want to customize
+
+50
+00:03:31,620 --> 00:03:34,180
+this to us for sure.
+
+51
+00:03:34,260 --> 00:03:36,050
+So how do you customize that.
+
+52
+00:03:36,360 --> 00:03:42,630
+Let's say this is a structure that I would want to customize it to have a time stamp message and the
+
+53
+00:03:42,720 --> 00:03:43,650
+kids.
+
+54
+00:03:43,680 --> 00:03:51,000
+So if I want to get error messages in this structure how can I do that how can I get my error messages
+
+55
+00:03:51,030 --> 00:03:56,160
+in my organizational organization defined standard format.
+
+56
+00:03:56,160 --> 00:03:57,530
+How do we do that.
+
+57
+00:03:57,600 --> 00:04:02,940
+The first thing which we would need to do is to define exception response so here we are defining a
+
+58
+00:04:02,940 --> 00:04:10,060
+simple bean exactly matching the structure that we would want to did with a time stamp delimited message
+
+59
+00:04:10,130 --> 00:04:11,080
+details.
+
+60
+00:04:11,110 --> 00:04:14,440
+Am I missing the detail here as well.
+
+61
+00:04:14,490 --> 00:04:19,470
+The second thing we would want to do is to implement our custom exception handling.
+
+62
+00:04:19,470 --> 00:04:25,350
+How do we implement our custom exception handling one of the things putting NBC pro-white is something
+
+63
+00:04:25,350 --> 00:04:28,100
+called the sponte indeed the exception handler.
+
+64
+00:04:28,290 --> 00:04:32,430
+It has the default exception handling implemented in there.
+
+65
+00:04:32,610 --> 00:04:35,790
+What we can do is we extend that.
+
+66
+00:04:35,790 --> 00:04:42,570
+So we'll extend the response into the exception handler to provide a customized response entity exception
+
+67
+00:04:42,570 --> 00:04:50,070
+handler and B does the rest controller because this would handle all of situations we would want to
+
+68
+00:04:50,070 --> 00:04:55,360
+do all this stuff which you typically do in a controller here but maudling in terms the other situations
+
+69
+00:04:55,710 --> 00:05:01,130
+and we are adding an annotation that can pre-load ways because this applies to all the controllers.
+
+70
+00:05:01,260 --> 00:05:05,600
+Now inside the customized response entity exception handler.
+
+71
+00:05:05,640 --> 00:05:07,110
+What do you want to do.
+
+72
+00:05:07,200 --> 00:05:11,270
+We want to create an instance of the exception response.
+
+73
+00:05:11,310 --> 00:05:17,940
+So what we're doing is you are creating an instance of the exception response and returning that back
+
+74
+00:05:18,360 --> 00:05:24,090
+with the status of internal so and that's basically what we are doing we are saying we know there's
+
+75
+00:05:24,090 --> 00:05:31,310
+an exception to an exception handler exception to any exception have print handle it and return an error
+
+76
+00:05:31,310 --> 00:05:35,100
+structure with this response back.
+
+77
+00:05:35,100 --> 00:05:36,480
+That's cool too.
+
+78
+00:05:36,540 --> 00:05:37,460
+Any exception of.
+
+79
+00:05:37,530 --> 00:05:43,910
+We are now threatening our own exception response object back which we have defined earlier.
+
+80
+00:05:43,950 --> 00:05:47,630
+So this is the exception response object which we are reading back here.
+
+81
+00:05:47,640 --> 00:05:51,500
+You can get a lot of other details from the request and the exception.
+
+82
+00:05:51,510 --> 00:05:56,890
+So if your organisation needs more details then you can customize it using what the word values represent
+
+83
+00:05:56,900 --> 00:06:00,510
+an exception as a verb request which is pleasant here.
+
+84
+00:06:00,900 --> 00:06:04,200
+The other thing is you don't really want to read them in the OR WHATEVER.
+
+85
+00:06:04,220 --> 00:06:10,590
+Always say time for specific exceptions you'd want written status is based on that particular ever for
+
+86
+00:06:10,590 --> 00:06:13,130
+example for the user not found exception.
+
+87
+00:06:13,220 --> 00:06:15,340
+I would want to read them not phone.
+
+88
+00:06:15,340 --> 00:06:17,430
+How should it be status not phone.
+
+89
+00:06:17,430 --> 00:06:21,760
+So here I am defending an exception handler for the use of not found exception to.
+
+90
+00:06:21,780 --> 00:06:28,330
+In addition to this method to handle handle exceptions I'm adding that call handle use or not found
+
+91
+00:06:28,350 --> 00:06:29,490
+the exception.
+
+92
+00:06:29,490 --> 00:06:37,110
+Now what would happen when you use an exception occurs within a hash GTP status of do not found and
+
+93
+00:06:37,150 --> 00:06:39,010
+exception response of this.
+
+94
+00:06:39,200 --> 00:06:42,390
+However for any other exception we will be turned back.
+
+95
+00:06:42,390 --> 00:06:48,930
+We will return in two minutes or whatever with this exception response back until we look at how to
+
+96
+00:06:48,930 --> 00:06:51,550
+handle food or food or smartphone.
+
+97
+00:06:51,570 --> 00:06:57,780
+We found a way where we actually put on an addition on top of the exception and as we can create a customized
+
+98
+00:06:57,780 --> 00:07:01,830
+structure by defining our own exception handler.
+
+99
+00:07:01,860 --> 00:07:04,260
+We looked at both those options.
+
+100
+00:07:04,260 --> 00:07:11,250
+The next one is 400 bad because two and there is about lation what we want to do is here somebody is
+
+101
+00:07:11,250 --> 00:07:17,090
+trying to create a user by posting this object structure to flash you through it.
+
+102
+00:07:17,160 --> 00:07:23,520
+I don't want to love names with less than two characters and similarly I don't want to have a birth
+
+103
+00:07:23,580 --> 00:07:25,730
+date which is in the future.
+
+104
+00:07:25,740 --> 00:07:29,020
+So I would want to add those two validations in.
+
+105
+00:07:29,280 --> 00:07:30,640
+How do I do that.
+
+106
+00:07:30,640 --> 00:07:36,870
+The way I can do that is by using our validation EPA EPA has a lot of annotations which you can use
+
+107
+00:07:36,870 --> 00:07:44,530
+to specify validations on your beans here under use I mean I'm saying there's a violation called excise
+
+108
+00:07:44,720 --> 00:07:51,570
+mean is equal to two I'm saying names should at least have two characters similarly but I'm saying at
+
+109
+00:07:51,690 --> 00:07:52,500
+last.
+
+110
+00:07:52,560 --> 00:07:55,000
+So I'm saying but they should always be in the path.
+
+111
+00:07:55,000 --> 00:07:58,910
+This is how you add validation to do you begin.
+
+112
+00:07:59,040 --> 00:08:06,050
+Once you add validations onto your being you can add the invocation of the validations onto you or the
+
+113
+00:08:06,050 --> 00:08:06,850
+source.
+
+114
+00:08:06,870 --> 00:08:12,120
+So in your research when somebody is calling a post request you want to do the binding and you want
+
+115
+00:08:12,530 --> 00:08:13,850
+this validation.
+
+116
+00:08:14,090 --> 00:08:20,860
+What we would do is we would add a valid annotation to be created with a post mapping for Slash users.
+
+117
+00:08:21,190 --> 00:08:25,320
+We are adding in rallied to the request board.
+
+118
+00:08:25,590 --> 00:08:32,210
+So now when somebody first request this what happens is first the validation on the user get fired.
+
+119
+00:08:32,220 --> 00:08:35,410
+These validations which are defined in here get fired.
+
+120
+00:08:35,610 --> 00:08:38,740
+And this would throw exception.
+
+121
+00:08:38,760 --> 00:08:46,230
+What kind of exception does it throw throws something called a method argument not really the exception.
+
+122
+00:08:46,230 --> 00:08:54,210
+So what this does is when the binding happens and the binding does not match what is needed when some
+
+123
+00:08:54,210 --> 00:08:55,610
+of the violations fail.
+
+124
+00:08:55,710 --> 00:08:59,730
+What it does is it throws method argument not valid exception.
+
+125
+00:08:59,730 --> 00:09:07,560
+So we are actually now extending custom exception handler to handle these validation errors as well.
+
+126
+00:09:08,040 --> 00:09:13,800
+When there's a validation error we would want to return the status off bad request.
+
+127
+00:09:13,800 --> 00:09:17,150
+So what we're doing now is it should it be said as a bad request.
+
+128
+00:09:17,160 --> 00:09:20,430
+And we are retaining the binding result back.
+
+129
+00:09:20,430 --> 00:09:26,460
+So we are actually looking at the binding result binding result is the result of this validation to
+
+130
+00:09:26,490 --> 00:09:32,230
+when the validation is invoked whatever errors are coming up.
+
+131
+00:09:32,270 --> 00:09:35,800
+Are stored into an object called binding.
+
+132
+00:09:35,880 --> 00:09:41,210
+Said we get the details on the binding result and send them back to the user.
+
+133
+00:09:41,250 --> 00:09:43,800
+How did they respond to look like in this kind of situation.
+
+134
+00:09:43,800 --> 00:09:51,510
+So when I'm sending a request with validation errors I would get back a 400 status bad request saying
+
+135
+00:09:51,570 --> 00:09:52,740
+validation failed.
+
+136
+00:09:52,800 --> 00:09:57,180
+The details are so and so it's saying name should at least have two characters.
+
+137
+00:09:57,180 --> 00:10:00,680
+You cannot have a name with just one character.
+
+138
+00:10:00,750 --> 00:10:08,530
+And this is perfect because the customer declined in Woking So it has a clear idea about what went wrong.
+
+139
+00:10:08,670 --> 00:10:14,650
+So he wouldn't also can take the message from here and handle that properly.
+
+140
+00:10:14,970 --> 00:10:19,180
+And this we do we looked at implementing exception handling for Phillips series's.
+
+141
+00:10:19,290 --> 00:10:24,780
+We did the different Arab citizens that we can retain as well as how we can implement validation errors
+
+142
+00:10:24,900 --> 00:10:27,800
+in RESTful services and in an extremely low birth.
+

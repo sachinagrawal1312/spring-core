@@ -1,0 +1,148 @@
+1
+00:00:03,500 --> 00:00:08,750
+In this video will focus on something called spring in what being laser What can you use it for.
+
+2
+00:00:08,750 --> 00:00:11,680
+What kind of projects you can create using spring initialiser.
+
+3
+00:00:11,840 --> 00:00:16,230
+What is the fastest way to create projects with spring and spring.
+
+4
+00:00:16,430 --> 00:00:20,030
+Those are the things that map to just one answer.
+
+5
+00:00:20,060 --> 00:00:27,780
+Sping initialiser espying initialiser is basically a tool to create a spring projects spring into place
+
+6
+00:00:27,780 --> 00:00:30,220
+that is that dot dot dot dot you.
+
+7
+00:00:30,560 --> 00:00:36,930
+Once you go here you'll get to choose what is the dependency management tool you would need to use.
+
+8
+00:00:36,970 --> 00:00:39,460
+So what is the dependency management tool you would want to use.
+
+9
+00:00:39,460 --> 00:00:40,530
+I'm using Maiman.
+
+10
+00:00:40,690 --> 00:00:45,670
+You can say I want to create a job project the other languages which are supported are clean and groovy.
+
+11
+00:00:45,690 --> 00:00:47,270
+So I would want to create a job project.
+
+12
+00:00:47,290 --> 00:00:50,380
+And you can choose which version of springboard to use.
+
+13
+00:00:50,380 --> 00:00:55,960
+So you can choose any of the questions which are available in here and you'd be able to define what
+
+14
+00:00:56,210 --> 00:00:59,260
+the group idea and idea packed already up to your project.
+
+15
+00:00:59,260 --> 00:01:02,290
+The most important thing is you get to choose this style.
+
+16
+00:01:02,320 --> 00:01:08,890
+So we talked about a lot of different starters earlier or later verb or I would want to use JP I'd want
+
+17
+00:01:08,890 --> 00:01:10,330
+to connect to JMS.
+
+18
+00:01:10,420 --> 00:01:12,460
+I would want to add in sping security.
+
+19
+00:01:12,670 --> 00:01:15,610
+You can add a lot of dependencies like this.
+
+20
+00:01:15,610 --> 00:01:20,080
+If you don't know what dependencies are available in here you can actually switch to a full version
+
+21
+00:01:20,200 --> 00:01:26,230
+and just go further down and you would be able to see support for a lot of different things you can
+
+22
+00:01:26,230 --> 00:01:30,740
+add aspect oriented programming support you have web application support.
+
+23
+00:01:30,760 --> 00:01:36,220
+You have Jesse Jackson today will be a restful Web services with Jack's address.
+
+24
+00:01:36,280 --> 00:01:37,740
+You have support for yours.
+
+25
+00:01:37,870 --> 00:01:40,050
+You have a lot of different things related to sequel.
+
+26
+00:01:40,060 --> 00:01:46,900
+I mean which do in memory database JTB CJP and all that kind of stuff so you can add in all the dependencies
+
+27
+00:01:46,900 --> 00:01:50,120
+that you would need to want there is support for school as well.
+
+28
+00:01:50,380 --> 00:01:54,940
+And we also talked about streaming cloud so all the stuff related to spring cloud.
+
+29
+00:01:54,940 --> 00:02:00,040
+Also you can add in from here and last but not least is actuators.
+
+30
+00:02:00,040 --> 00:02:05,030
+You can also add actuator and the documentation for actuator as well.
+
+31
+00:02:05,400 --> 00:02:11,050
+So you can add in what are all the dependencies that you would need and you can click Genndy project.
+
+32
+00:02:11,080 --> 00:02:17,290
+This would generate a project for you with all these dependencies present in and you can just import
+
+33
+00:02:17,320 --> 00:02:20,100
+that project into eclipse and start working with it.
+
+34
+00:02:20,150 --> 00:02:26,860
+Bring initialiser is a place where you can create your spring projects very easily.
+
+35
+00:02:26,860 --> 00:02:29,780
+It would create a project based on your choice.
+
+36
+00:02:29,980 --> 00:02:36,600
+And you can import that project into your idea and very easily use it until the next video.
+
+37
+00:02:36,600 --> 00:02:37,040
+All right.
+

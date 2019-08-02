@@ -1,0 +1,200 @@
+1
+00:00:01,720 --> 00:00:02,260
+This would you.
+
+2
+00:00:02,360 --> 00:00:06,650
+Let's look at the best practices in this full web services design.
+
+3
+00:00:06,650 --> 00:00:12,490
+When we talk about Chris for Web services or any web services for that matter the most important best
+
+4
+00:00:12,490 --> 00:00:18,890
+practice is think about consumer first understand what your consumer needs what he understands before
+
+5
+00:00:18,890 --> 00:00:21,430
+you design your s for Web services.
+
+6
+00:00:21,440 --> 00:00:24,180
+Think about what kind of consumers you might have.
+
+7
+00:00:24,250 --> 00:00:29,900
+Well it's a web application whether it's a mobile application what kind of consumers do you have and
+
+8
+00:00:29,900 --> 00:00:32,540
+what is the language that they would understand.
+
+9
+00:00:32,540 --> 00:00:38,550
+So when you are designing the suitors you send them in a way that your consumers would be able to easily
+
+10
+00:00:38,650 --> 00:00:40,900
+lead to your resources.
+
+11
+00:00:40,910 --> 00:00:46,400
+Think about how your consumers would think about it if you're thinking about implementing things like
+
+12
+00:00:46,430 --> 00:00:47,200
+radios.
+
+13
+00:00:47,360 --> 00:00:53,300
+Think about how your consumer will consume it before you design ideas for your abs.
+
+14
+00:00:53,320 --> 00:00:55,550
+The first aspect is always consumer first.
+
+15
+00:00:55,550 --> 00:00:57,290
+Think about your consumer.
+
+16
+00:00:57,290 --> 00:01:01,350
+Make the best use of HTP right feeling when he coined the term race.
+
+17
+00:01:01,460 --> 00:01:09,200
+He said we will build it on top of his GDP and all the rest architectures make the best use of GDP they
+
+18
+00:01:09,200 --> 00:01:14,550
+make best use of all the history repeat request method like get balls put delete.
+
+19
+00:01:14,750 --> 00:01:19,010
+You design your resources and make sure that you use the appropriate actually pretty close methods to
+
+20
+00:01:19,010 --> 00:01:21,420
+perform the actions on these resources.
+
+21
+00:01:21,560 --> 00:01:27,340
+And also you make sure that you send the right response status back from your sources.
+
+22
+00:01:27,350 --> 00:01:35,660
+So when I let's say get an exception I'm trying to search for a user and user was not found then I don't
+
+23
+00:01:35,730 --> 00:01:37,620
+throw us over the exception.
+
+24
+00:01:37,660 --> 00:01:40,320
+What I would throw is actually is torture not fun.
+
+25
+00:01:40,330 --> 00:01:48,050
+So didn't did this so out and the response to it as of four or four when there is a validation error
+
+26
+00:01:48,050 --> 00:01:52,440
+in the request for example I would send a bad request.
+
+27
+00:01:52,520 --> 00:01:55,370
+It's not a server when there's a validation error.
+
+28
+00:01:55,370 --> 00:02:02,500
+It's a bad request so you'd send 400 back when there's a post request to create a resort and it's both
+
+29
+00:02:02,500 --> 00:02:03,930
+successfully completed.
+
+30
+00:02:04,070 --> 00:02:09,760
+You'd actually send a response to it as of two hundred in one which is created.
+
+31
+00:02:09,830 --> 00:02:13,590
+So make the best use of what were hasty people are white.
+
+32
+00:02:13,610 --> 00:02:20,390
+That's the second best practice make use of the appropriate request method send the appropriate response
+
+33
+00:02:20,390 --> 00:02:22,190
+status back.
+
+34
+00:02:22,190 --> 00:02:28,220
+The third important best practice is no security information in your race raise in your you I raise
+
+35
+00:02:28,380 --> 00:02:34,880
+what you're saying is not as securely encrypted as what you send in the body or that request or less
+
+36
+00:02:34,880 --> 00:02:36,030
+understand that.
+
+37
+00:02:36,200 --> 00:02:43,330
+So things like SSN do not send it as part of you or you are right even though you might have a SSN as
+
+38
+00:02:43,330 --> 00:02:49,820
+a key to some person but don't send it as a part of you or you otherwise.
+
+39
+00:02:49,850 --> 00:02:53,780
+I prefer using plurals to using a single word.
+
+40
+00:02:53,930 --> 00:02:59,720
+So I prefer you are rules like Slash users so that I can post to slash users to create and you lose
+
+41
+00:02:59,720 --> 00:03:00,350
+it.
+
+42
+00:03:00,350 --> 00:03:04,360
+I can send a request to slash users to get the list of all users.
+
+43
+00:03:04,550 --> 00:03:09,480
+I can send a request to slash users slash 1 to get the details of a specific user.
+
+44
+00:03:09,680 --> 00:03:15,860
+I kind of like this last user slash user slash one approach compared to this slash user slash user slash
+
+45
+00:03:15,860 --> 00:03:16,080
+one.
+
+46
+00:03:16,080 --> 00:03:21,130
+So I like using plurals to represent my resources in this quick review.
+
+47
+00:03:21,170 --> 00:03:27,500
+We looked at the best practices in restfully design Kazuma first make best use of HTP make use of the
+
+48
+00:03:27,500 --> 00:03:32,630
+appropriate request method make use of the appropriate response status have no secure information you
+
+49
+00:03:32,640 --> 00:03:36,960
+need a huge array and try and use plurals as much as possible.
+
+50
+00:03:37,280 --> 00:03:38,380
+And intellectually over.
+

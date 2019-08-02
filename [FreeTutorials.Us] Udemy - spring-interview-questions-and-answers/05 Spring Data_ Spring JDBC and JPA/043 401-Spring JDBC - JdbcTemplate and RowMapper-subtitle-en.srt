@@ -1,0 +1,348 @@
+1
+00:00:02,830 --> 00:00:09,250
+Welcome to the database can it do D.S. of this course in this section we would be talking about different
+
+2
+00:00:09,250 --> 00:00:14,290
+things related to JTB see splinted A B C and G B as well.
+
+3
+00:00:14,440 --> 00:00:17,930
+We'll start with he and up TVC and slowly we would move on.
+
+4
+00:00:17,930 --> 00:00:23,740
+JP Let's start with the questions on JTB see what is being JTB How is it different from JTB see what
+
+5
+00:00:23,740 --> 00:00:26,100
+is JTB template and what is a road map.
+
+6
+00:00:26,260 --> 00:00:31,850
+So these are kind of at a high level the most important concepts related to Singhji.
+
+7
+00:00:32,230 --> 00:00:37,510
+So let's start with something that divisi This is basic JTB see that you are looking at the screen right
+
+8
+00:00:37,510 --> 00:00:37,720
+now.
+
+9
+00:00:37,720 --> 00:00:43,510
+So what I want to do a simple update I'm creating a query that's number one to write a query create
+
+10
+00:00:43,510 --> 00:00:49,630
+a prepared statement and then set all the arguments so I'm sitting I would want to said the user has
+
+11
+00:00:49,630 --> 00:00:53,200
+this description as this or that is being done in here.
+
+12
+00:00:53,350 --> 00:00:58,960
+And I want to set the time stamp I would want to set the boolean to do is done and then at the end we
+
+13
+00:00:58,960 --> 00:01:04,230
+have IDs called The question mark so I'm setting 5 to do it or get Dady and statement or you insert
+
+14
+00:01:04,290 --> 00:01:06,530
+it or close connection or close.
+
+15
+00:01:06,850 --> 00:01:12,670
+So what we are doing here in typical DBC is we're getting a connection creating a prepared statement
+
+16
+00:01:13,140 --> 00:01:19,030
+executing the query populating the parameters closing the statement closing the connection.
+
+17
+00:01:19,150 --> 00:01:25,390
+And what I'm not showing in here is the try catch around this because the Execute method would throw
+
+18
+00:01:25,690 --> 00:01:26,890
+exception to it.
+
+19
+00:01:26,920 --> 00:01:28,150
+So check the exception.
+
+20
+00:01:28,150 --> 00:01:33,120
+So what would happen here is a few methods in here actually through a checked exception.
+
+21
+00:01:33,120 --> 00:01:35,020
+So you have to handle them.
+
+22
+00:01:35,080 --> 00:01:40,000
+So around this method you would have a try catch block and make sure that the statement and the connection
+
+23
+00:01:40,000 --> 00:01:46,890
+are closed so that all the logic you would need to do to execute a slim pull update in JTB.
+
+24
+00:01:47,080 --> 00:01:54,310
+And that's what a lot of code just to do a simple update what he does is it makes it very easy to do
+
+25
+00:01:54,310 --> 00:01:55,540
+that kind of stuff.
+
+26
+00:01:55,630 --> 00:01:56,670
+It creates some.
+
+27
+00:01:56,680 --> 00:02:05,340
+It offers something called a database template which has a lot of simple method one among them is updated.
+
+28
+00:02:05,350 --> 00:02:10,680
+So if you want to do an update if you want to exude an update then all that you need to do is database
+
+29
+00:02:10,680 --> 00:02:14,980
+it simply don't update and use the update query so the query is in here.
+
+30
+00:02:14,980 --> 00:02:17,420
+That doesn't change so you have to still write the query.
+
+31
+00:02:17,590 --> 00:02:21,130
+So you write the query but setting the parameters becomes very easy.
+
+32
+00:02:21,190 --> 00:02:26,330
+So all that you need to do is end the list of parameters in the order in which the question marks.
+
+33
+00:02:26,570 --> 00:02:28,770
+Is the question mark this becomes the first one.
+
+34
+00:02:28,870 --> 00:02:31,220
+First question one second one second question mark.
+
+35
+00:02:31,510 --> 00:02:35,470
+And so on and so forth you can look at doing a delete in here.
+
+36
+00:02:35,470 --> 00:02:39,230
+So JTB said that did delete from two Dugard is equal to.
+
+37
+00:02:39,550 --> 00:02:41,240
+And this idea gets Mablean here.
+
+38
+00:02:41,240 --> 00:02:42,450
+So it is a template.
+
+39
+00:02:42,460 --> 00:02:47,700
+All the complex logic gets eliminated the logic becomes really really simple.
+
+40
+00:02:47,950 --> 00:02:54,430
+The other important advantage of DBC is it makes all the check exceptions which are pleasant in here
+
+41
+00:02:54,610 --> 00:02:57,840
+into runtime exception that is unchecked exceptions.
+
+42
+00:02:57,940 --> 00:03:02,430
+So you don't need to do any exception handling so you.
+
+43
+00:03:02,530 --> 00:03:09,250
+Number one it reduces the number of lines of code it reduces the complexity in doing it b c it removes
+
+44
+00:03:09,250 --> 00:03:13,710
+the need for you to do all the exception handling as well.
+
+45
+00:03:13,720 --> 00:03:18,250
+One more important concept that you need to understand when talking about being jaded is the concept
+
+46
+00:03:18,250 --> 00:03:18,910
+of road map.
+
+47
+00:03:18,910 --> 00:03:24,570
+But what we are doing in JTB is mapping your beans to the table.
+
+48
+00:03:24,640 --> 00:03:30,470
+So you want to dig the data which is in your bins and store it to your table or the opposite.
+
+49
+00:03:30,470 --> 00:03:32,380
+So you want to retrieve the data from that.
+
+50
+00:03:32,470 --> 00:03:33,040
+Right.
+
+51
+00:03:33,310 --> 00:03:36,310
+So the roadmap would help you in doing that.
+
+52
+00:03:36,490 --> 00:03:40,020
+So if you had been named so let's say there's a being called to do.
+
+53
+00:03:40,120 --> 00:03:44,350
+And your bean names exactly match with the database column names.
+
+54
+00:03:44,350 --> 00:03:47,460
+Then you can directly use a bean propertied or a map.
+
+55
+00:03:47,710 --> 00:03:54,910
+So you don't really need to do individual definition of what property maps do to what field in the database
+
+56
+00:03:54,910 --> 00:04:01,510
+so he had ID maps to id feel so use that maps to use it description maps description.
+
+57
+00:04:01,630 --> 00:04:06,080
+So Target date maps target date is then maps done.
+
+58
+00:04:06,220 --> 00:04:10,400
+So there is a discrepancy in the terms of ease done mapping to done.
+
+59
+00:04:10,420 --> 00:04:17,260
+So that's the reason why I had to create a specific road map but this is creating a map but the great
+
+60
+00:04:17,260 --> 00:04:23,690
+thing about creating a road map is once I create a road map like this I can be use in multiple things.
+
+61
+00:04:23,710 --> 00:04:28,260
+So here I'm getting the truth for a specific user I'm using to map it.
+
+62
+00:04:28,420 --> 00:04:34,060
+And here I'm getting it to do for specific ideas so specific to do and I'm using dabru map but so the
+
+63
+00:04:34,060 --> 00:04:38,800
+logic which we defined in here in the road map can be used.
+
+64
+00:04:38,850 --> 00:04:40,940
+So there are two basic things right.
+
+65
+00:04:40,980 --> 00:04:47,040
+So if the column names and the bean property names matches you don't need to do a definition like this
+
+66
+00:04:47,040 --> 00:04:53,310
+or that you need to do is to create a bean property or map but defining the name and you can skip creating
+
+67
+00:04:53,310 --> 00:04:54,170
+the entire thing.
+
+68
+00:04:54,300 --> 00:04:58,860
+But if they don't then you have to create a bean like this to do the mapping.
+
+69
+00:04:59,050 --> 00:05:07,790
+But either way you can use whatever logic you have created in the mappers in executing the queries this
+
+70
+00:05:07,790 --> 00:05:14,120
+is one of the other method which is present in JTB see dimply query and query for object.
+
+71
+00:05:14,120 --> 00:05:16,770
+So here we are waiting for multiple objects.
+
+72
+00:05:16,970 --> 00:05:19,820
+So here we are actually creating a single object.
+
+73
+00:05:19,910 --> 00:05:23,900
+So we are trying to get specific to do in this step.
+
+74
+00:05:23,930 --> 00:05:29,590
+We looked at ping JTB and we understood how it is different from B C We also talked about JEDEC template
+
+75
+00:05:29,960 --> 00:05:32,510
+and also we talked about road map as well.
+
+76
+00:05:32,510 --> 00:05:38,300
+The most important difference between JTB and us being database is the fact that springiness is much
+
+77
+00:05:38,300 --> 00:05:39,410
+more concise.
+
+78
+00:05:39,470 --> 00:05:45,620
+So you'll have you don't need to do all the exception handling that is typically needed with TVC and
+
+79
+00:05:45,860 --> 00:05:52,520
+the other important thing is also the fact that you don't really need to manage your restored connections
+
+80
+00:05:52,860 --> 00:05:59,930
+JTB automatically take the gate off them so there is no need to do things like statement or close connection
+
+81
+00:05:59,930 --> 00:06:01,250
+that rules and things like that.
+
+82
+00:06:01,250 --> 00:06:08,180
+So with JEDEC them there's a chance that there is a resource leakage if you don't implement this code
+
+83
+00:06:08,180 --> 00:06:12,770
+properly but it's been very busy there is no chance that you will make a mistake because we don't really
+
+84
+00:06:12,770 --> 00:06:14,290
+handle that at all.
+
+85
+00:06:14,300 --> 00:06:19,900
+All that is taken care of by the GBC template itself.
+
+86
+00:06:20,060 --> 00:06:22,130
+Those are the important things that you would want to know.
+
+87
+00:06:22,130 --> 00:06:22,910
+And then next up.
+

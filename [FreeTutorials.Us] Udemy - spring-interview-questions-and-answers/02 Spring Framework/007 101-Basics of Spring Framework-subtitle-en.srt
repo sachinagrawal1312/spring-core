@@ -1,0 +1,548 @@
+1
+00:00:01,280 --> 00:00:07,450
+Welcome back in this we do really address the most important basic questions which are related to spring.
+
+2
+00:00:07,460 --> 00:00:11,690
+We'll look at the big picture of spring a little later we'll talk about touring model spring projects
+
+3
+00:00:11,720 --> 00:00:15,910
+and things like that and also understanding why spring is popular.
+
+4
+00:00:15,950 --> 00:00:20,940
+We'll handle all those kind of questions a little later when we have a good understanding of spring.
+
+5
+00:00:21,200 --> 00:00:26,840
+Let's start with the most basic things about spring like when we talk about spring we talk about loose
+
+6
+00:00:26,870 --> 00:00:32,870
+coupling we say spring enables us to develop loosely coupled applications without dipping into injection.
+
+7
+00:00:32,870 --> 00:00:38,480
+We talk about being in motion of control and also we talk about the wedding.
+
+8
+00:00:38,510 --> 00:00:43,540
+This is the set of concepts that we'll try and get into in this space.
+
+9
+00:00:43,640 --> 00:00:47,960
+So the question is which we are going to talk about are things like what is loose coupling How do you
+
+10
+00:00:47,960 --> 00:00:53,900
+make an application usually coupled and also talk about something like what is dependency what is dependency
+
+11
+00:00:53,900 --> 00:00:56,320
+injection and what is or you'll see.
+
+12
+00:00:56,450 --> 00:00:58,520
+And that question of control.
+
+13
+00:00:58,670 --> 00:01:02,500
+And also we look at a few examples or dependency injection and auto wiring.
+
+14
+00:01:02,660 --> 00:01:03,650
+Let's get started now.
+
+15
+00:01:03,650 --> 00:01:06,180
+Let's start with loose coupling.
+
+16
+00:01:06,230 --> 00:01:08,880
+Let's look at the example for tight coupling.
+
+17
+00:01:08,900 --> 00:01:14,560
+So this do business so is here is dependent on something called to do that well.
+
+18
+00:01:14,630 --> 00:01:20,470
+So when you look at any application you have a business layer which needs the data.
+
+19
+00:01:20,570 --> 00:01:23,670
+So here to do business so is the business leader.
+
+20
+00:01:23,840 --> 00:01:27,670
+And to date this is part of the data earlier.
+
+21
+00:01:27,860 --> 00:01:35,390
+So this business with component needs data from this data service company and what it doing here is
+
+22
+00:01:35,390 --> 00:01:42,440
+it's directly creating an instance of this to do business service is directly creating an instance of
+
+23
+00:01:42,440 --> 00:01:44,240
+d to do data services.
+
+24
+00:01:44,480 --> 00:01:46,390
+Let's consider another example.
+
+25
+00:01:46,580 --> 00:01:48,980
+These are complex and we got it on my MP.
+
+26
+00:01:49,060 --> 00:01:55,550
+Let's say there is a very complex algorithm that you are implementing and as part of it it needs some
+
+27
+00:01:55,550 --> 00:02:00,640
+sorting what it does here is directly create an instance of the bubble top.
+
+28
+00:02:00,670 --> 00:02:07,340
+God damn this is tight coupling because this complex algorithm I am bill is now tightly coupled to bubble
+
+29
+00:02:07,350 --> 00:02:08,670
+sart algorithm.
+
+30
+00:02:08,720 --> 00:02:14,120
+So let's say tomorrow you would want to switch from bubble start to peak start for this complex algorithm.
+
+31
+00:02:14,120 --> 00:02:17,820
+It would be difficult because you need to actually make the change in here.
+
+32
+00:02:17,960 --> 00:02:22,280
+You have to change the implementation you have to change the code and everything in here.
+
+33
+00:02:22,280 --> 00:02:28,580
+This is called tight coupling tight coupling is basically where your competition is tightly coupled
+
+34
+00:02:28,580 --> 00:02:30,580
+to the dependency.
+
+35
+00:02:30,740 --> 00:02:32,230
+So this bubble sort of got written.
+
+36
+00:02:32,290 --> 00:02:36,970
+So the complex algorithm needs the bubble sort and got them to be able to do its work.
+
+37
+00:02:36,990 --> 00:02:44,540
+However if you want to change discard them to something then it will be difficult.
+
+38
+00:02:44,540 --> 00:02:47,970
+This is what is called type coupling.
+
+39
+00:02:47,970 --> 00:02:53,190
+So how do you break this coupling that with loose coupling come into picture.
+
+40
+00:02:53,420 --> 00:02:59,930
+So what we would do is ensure of tightly coupling the business service to the data as it is in what
+
+41
+00:02:59,930 --> 00:03:03,920
+we do is we create an interface to clearly an interface called to do that.
+
+42
+00:03:04,060 --> 00:03:11,120
+So is it just having a metal calorically to do this and instead of doing an instance with the will of
+
+43
+00:03:11,450 --> 00:03:15,860
+the we we're creating an instance of the interface.
+
+44
+00:03:15,980 --> 00:03:19,610
+And also we don't create an instance of it here.
+
+45
+00:03:19,640 --> 00:03:22,940
+What we do is we provide a hand track.
+
+46
+00:03:23,150 --> 00:03:30,050
+So what we are saying is OK what is using the to do business is can provide an implementation of that
+
+47
+00:03:30,050 --> 00:03:31,580
+to do that as always.
+
+48
+00:03:31,640 --> 00:03:35,890
+Who wants to make use of the to do business so is we're saying OK you can create an instance of the
+
+49
+00:03:35,900 --> 00:03:42,660
+do do business service but make sure that you decide what implementation of the do data is to use.
+
+50
+00:03:42,740 --> 00:03:44,790
+This is much more flexible.
+
+51
+00:03:44,840 --> 00:03:46,590
+Let's consider another example.
+
+52
+00:03:46,850 --> 00:03:52,950
+Oh here we have B-complex and brought it to my MP which is using Sawtell got written out.
+
+53
+00:03:52,970 --> 00:03:58,010
+So what we have done is instead of hard coding the bubble sort of them we said okay we don't want to
+
+54
+00:03:58,310 --> 00:04:00,830
+hard code we don't want it tightly coupled with bubbletop.
+
+55
+00:04:00,880 --> 00:04:01,530
+Got it.
+
+56
+00:04:01,730 --> 00:04:05,540
+What we did is we created an interface called sart you got it them.
+
+57
+00:04:05,810 --> 00:04:11,980
+So they thought got it has one Materne site and we have two implementations of this are garden.
+
+58
+00:04:12,030 --> 00:04:15,090
+We've started our bubble certainly got them.
+
+59
+00:04:15,120 --> 00:04:16,280
+Now what happens here.
+
+60
+00:04:16,280 --> 00:04:21,680
+The complex algorithm I am building makes use of the interface sort algorithm.
+
+61
+00:04:21,680 --> 00:04:25,210
+In addition here we can provide a constructor.
+
+62
+00:04:25,220 --> 00:04:30,800
+So who wants to use the complex algorithm and people can either create an instance of the quixotry don't
+
+63
+00:04:30,820 --> 00:04:36,580
+read them or create an instance of the bubble sort algorithm and pass it to the complex and read them
+
+64
+00:04:36,620 --> 00:04:38,680
+constructor to create it.
+
+65
+00:04:38,870 --> 00:04:42,440
+That what is called loose coupling loose coupling is where you are.
+
+66
+00:04:42,460 --> 00:04:48,800
+Code is not tightly coupled it's not directly dependent on its dependencies.
+
+67
+00:04:48,920 --> 00:04:50,910
+Let's now move onto the next question.
+
+68
+00:04:50,930 --> 00:04:54,190
+What is a dependency in the loose coupling example.
+
+69
+00:04:54,200 --> 00:04:58,280
+We look at the true business so we need to do that as Tobys.
+
+70
+00:04:58,400 --> 00:05:04,450
+So the business service is dependent this dataset is complex you I my MP in need.
+
+71
+00:05:04,630 --> 00:05:10,860
+This article got written so complex I'll go to my MP is dependent on this sort all the time.
+
+72
+00:05:10,870 --> 00:05:16,750
+When we look at typical job application architectures you have multiple layers of Webley business leader
+
+73
+00:05:16,780 --> 00:05:22,960
+and Tellier the business leader component are typically dependent on the data layer and the web layer
+
+74
+00:05:22,980 --> 00:05:26,350
+components are typically dependent on the base business.
+
+75
+00:05:26,560 --> 00:05:34,330
+So typically when we call a dependency it is something which another class is dependent on to provide
+
+76
+00:05:34,330 --> 00:05:34,600
+it.
+
+77
+00:05:34,600 --> 00:05:41,470
+So these complex algorithms to pro-white the service of its algorithm.
+
+78
+00:05:41,620 --> 00:05:44,740
+It needs a dependency called sart you got it.
+
+79
+00:05:44,740 --> 00:05:45,830
+I'm so sorry I got it.
+
+80
+00:05:45,890 --> 00:05:53,830
+You said dependency of the complex al-Qadi atom the data layer might need a connection to the database
+
+81
+00:05:53,920 --> 00:06:01,810
+or it might need something like a DBC template to execute the query so the detail here is dependent
+
+82
+00:06:01,810 --> 00:06:10,420
+on JEDEC template to JTB template is a dependency for most of the components which are present in the
+
+83
+00:06:10,420 --> 00:06:11,590
+detail.
+
+84
+00:06:11,830 --> 00:06:13,740
+Now what is dependency injection.
+
+85
+00:06:13,960 --> 00:06:19,030
+What we would need to do typically is when I want to create an instance of the complex algorithm I am
+
+86
+00:06:19,030 --> 00:06:26,080
+Bill I need to use the constrictors Altaic new complex algorithm I am people of yours quicksort algorithm.
+
+87
+00:06:26,350 --> 00:06:32,830
+So here I am creating an instance of the quicksort algorithm and taking it and by adding it and creating
+
+88
+00:06:32,830 --> 00:06:40,720
+another instance of the complex algorithm I am also here and creating different beans by myself how
+
+89
+00:06:40,720 --> 00:06:46,900
+I work with spring when we say component Edwar are wired and things like that.
+
+90
+00:06:47,140 --> 00:06:53,950
+These things are done automatically by spring what does spring do spring sees that there is an add or
+
+91
+00:06:53,960 --> 00:06:55,480
+the word annotation in here.
+
+92
+00:06:55,480 --> 00:07:02,260
+So as soon as it finds the quick search algorithm what it does is it would auto wire it in here.
+
+93
+00:07:02,410 --> 00:07:06,600
+So when it's creating the brain for complex algorithm I am Bill it.
+
+94
+00:07:06,630 --> 00:07:10,780
+Or to wire the bean off sorry you them.
+
+95
+00:07:10,840 --> 00:07:13,330
+This is what is called dependency injection.
+
+96
+00:07:13,330 --> 00:07:21,880
+So what does it it's just for the beams and then finds the appropriate bin and or wire it in here.
+
+97
+00:07:21,880 --> 00:07:27,850
+This is called dependency injection dependency injection is basically the process where spring framework
+
+98
+00:07:28,180 --> 00:07:35,350
+looks for the beans it starts searching for the beans identifies the dependencies and creates the instances
+
+99
+00:07:35,350 --> 00:07:38,200
+of beans and auto Weyers them in.
+
+100
+00:07:38,230 --> 00:07:44,200
+So when you use Spring Framework we don't write code like this all this kind of stuff is done by the
+
+101
+00:07:44,470 --> 00:07:50,230
+printing frame but this is what is called dependency injection concept or the term which is frequently
+
+102
+00:07:50,230 --> 00:07:52,040
+used is in question of control.
+
+103
+00:07:52,060 --> 00:07:54,220
+Rate what is in question of control.
+
+104
+00:07:54,490 --> 00:08:00,490
+So in the complex algorithm I impalement the first implementation of it which was having data coupling
+
+105
+00:08:00,700 --> 00:08:03,720
+had new bubble start algorithm.
+
+106
+00:08:03,760 --> 00:08:11,220
+So this is tightly coupled also who is taking the responsibility of creating the instance of bubbletop
+
+107
+00:08:11,240 --> 00:08:12,210
+terrorism.
+
+108
+00:08:12,350 --> 00:08:18,460
+It's the complex I'll go into my NPL class itself so that the complex algorithm I imperial class is
+
+109
+00:08:18,460 --> 00:08:20,920
+creating an instance of the bubble sort.
+
+110
+00:08:20,930 --> 00:08:21,600
+Got it.
+
+111
+00:08:21,610 --> 00:08:23,160
+So who has the control.
+
+112
+00:08:23,200 --> 00:08:25,850
+The control is with complex algorithm.
+
+113
+00:08:25,850 --> 00:08:30,400
+I am however in the local version of it.
+
+114
+00:08:30,400 --> 00:08:35,960
+What we do is say complexity of my Ambien you would put a thought algorithm as a of Wired.
+
+115
+00:08:36,070 --> 00:08:39,150
+And we don't really create an instance of it here.
+
+116
+00:08:39,250 --> 00:08:45,370
+Who digs the control of creating the instance the control of creating the instance of complex algorithm
+
+117
+00:08:45,370 --> 00:08:53,600
+I am Bill goes to the class which is using it or it goes to the framework it goes to the spring framework.
+
+118
+00:08:53,620 --> 00:08:59,970
+The spring framework would now be taking control and it would inject the dependency of Tardelli got
+
+119
+00:09:00,020 --> 00:09:06,460
+them in the spring they would search for the beans and it would inject the dependencies in.
+
+120
+00:09:06,460 --> 00:09:12,930
+So this is why it is called inversion of control so the control which was with the class because it
+
+121
+00:09:12,970 --> 00:09:19,000
+was taking the control early the complex regarding my impaled was in control earlier but now we are
+
+122
+00:09:19,000 --> 00:09:23,020
+shifting the current control to the users of the complex.
+
+123
+00:09:23,030 --> 00:09:29,090
+One of them I am Bill or we are shifting the control to the dependency injection framework.
+
+124
+00:09:29,110 --> 00:09:32,320
+This is what is called inversion of control.
+
+125
+00:09:32,320 --> 00:09:38,020
+Actually if you look at all this concept the notion of control deepend injection loose coupling coupling
+
+126
+00:09:38,560 --> 00:09:41,060
+all of them are really related to each other.
+
+127
+00:09:41,200 --> 00:09:47,190
+That's why we thought it is best to have one example and look at it in the tank in relation with all
+
+128
+00:09:47,200 --> 00:09:49,440
+these important concepts.
+
+129
+00:09:49,450 --> 00:09:54,480
+Now the last thing that we want to discuss is again what these are wiring when I put an end station
+
+130
+00:09:54,480 --> 00:10:00,000
+call at Oughterard in here Spring Framework needs to find this dependences art them.
+
+131
+00:10:00,040 --> 00:10:06,300
+I mean needs to find a bean which would match this dependency in here and it would need to populate
+
+132
+00:10:06,300 --> 00:10:10,670
+the dependency in this process is called auto wiring.
+
+133
+00:10:10,740 --> 00:10:14,250
+We discuss a lot about our the wiring in the subsequent readers here.
+
+134
+00:10:14,310 --> 00:10:17,810
+We just want to introduce you to the concept of art or wiring in the street.
+
+135
+00:10:17,810 --> 00:10:18,400
+We do.
+
+136
+00:10:18,420 --> 00:10:22,830
+We looked at the different concepts that are really important related to spring.
+
+137
+00:10:22,830 --> 00:10:30,220
+We took one example and we use this same example to illustrate all these things and build the next video.
+

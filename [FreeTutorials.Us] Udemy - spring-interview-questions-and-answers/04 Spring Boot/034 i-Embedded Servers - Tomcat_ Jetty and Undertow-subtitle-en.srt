@@ -1,0 +1,200 @@
+1
+00:00:02,110 --> 00:00:05,710
+Welcome back in this video we would talk about it.
+
+2
+00:00:05,950 --> 00:00:07,770
+Why is that so important.
+
+3
+00:00:07,780 --> 00:00:08,430
+What is it.
+
+4
+00:00:08,580 --> 00:00:10,050
+But it's well it's good.
+
+5
+00:00:10,390 --> 00:00:11,640
+And what the other.
+
+6
+00:00:11,710 --> 00:00:13,950
+And what it said was that I supported race being.
+
+7
+00:00:14,110 --> 00:00:17,700
+So why does the concept of that so were very important.
+
+8
+00:00:17,700 --> 00:00:19,010
+Think about this.
+
+9
+00:00:19,020 --> 00:00:24,870
+Now we are moving towards the world of Mike services and we are developing a lot of small applications.
+
+10
+00:00:24,870 --> 00:00:32,830
+So to deploy this more applications on the server we would want to have as less prerequisite as possible.
+
+11
+00:00:32,830 --> 00:00:37,150
+So if I have a server let's say a unique set of which was already installed.
+
+12
+00:00:37,570 --> 00:00:43,390
+If I have a web application which needs Tom-Kat then first thing I need to do is to install tomcat on
+
+13
+00:00:43,390 --> 00:00:45,590
+the so I'd I would need to install Java.
+
+14
+00:00:45,610 --> 00:00:51,420
+Then I need to install tomcat and then I would then be able to install IMAP location.
+
+15
+00:00:51,430 --> 00:00:56,260
+But even before installing the application I need to reconfigure the server with all the stuff that
+
+16
+00:00:56,290 --> 00:00:57,760
+I would need to do.
+
+17
+00:00:57,880 --> 00:01:05,620
+So is a lot of steps that is involved in doing all this stuff in stuff that we can use embedded in the
+
+18
+00:01:05,620 --> 00:01:12,200
+concept of limited so what is basically that US so what is embedded as part of our application.
+
+19
+00:01:12,220 --> 00:01:15,780
+So the server is directly part of your job.
+
+20
+00:01:16,030 --> 00:01:21,080
+So the Tomcat for example is directly embedded into your job.
+
+21
+00:01:21,100 --> 00:01:26,810
+So if I want to run this application which is present in Java I don't need or Tomcat so because it gets
+
+22
+00:01:26,810 --> 00:01:29,340
+a what is inside our job.
+
+23
+00:01:29,530 --> 00:01:34,460
+All that I need to do is have Jalla on that machine too if I want to double up.
+
+24
+00:01:34,630 --> 00:01:40,360
+So if I want to deploy this application onto a deployment and we run into let's say I'm going to deploy
+
+25
+00:01:40,360 --> 00:01:45,790
+this application into Kubik and we are creating a cube box fresh all that they need to do is install
+
+26
+00:01:45,790 --> 00:01:46,760
+Jalla there.
+
+27
+00:01:46,930 --> 00:01:52,280
+That's the only thing I would need then I can go ahead and start running this job data down there because
+
+28
+00:01:52,290 --> 00:01:55,670
+they can't get what is already part of our job.
+
+29
+00:01:55,820 --> 00:02:03,650
+The concept of embedded server makes it easy to deploy our applications into the deployment in one big
+
+30
+00:02:03,850 --> 00:02:04,470
+cloud.
+
+31
+00:02:04,480 --> 00:02:10,780
+We would want to be able to easily create a new environment and remove Abbaye environment as in when
+
+32
+00:02:10,780 --> 00:02:11,800
+we need them.
+
+33
+00:02:11,830 --> 00:02:12,640
+Concept of embedded.
+
+34
+00:02:12,640 --> 00:02:18,560
+So what helps us do that pretty easily because we can take any system which has just job on it and deploy
+
+35
+00:02:18,580 --> 00:02:24,250
+that application and start running at the end of that so it removes the need to have so pre-installed
+
+36
+00:02:24,400 --> 00:02:30,710
+on the deployment and we don't mind the default embedded server for spinning boot IIS.
+
+37
+00:02:31,000 --> 00:02:32,440
+Don't get hurt.
+
+38
+00:02:32,440 --> 00:02:36,670
+It's been good also has support for D and underdo as the embedded.
+
+39
+00:02:36,700 --> 00:02:44,600
+So the thing is Spingold start up web is the startup which we would use typically to develop applications.
+
+40
+00:02:44,860 --> 00:02:53,070
+And this doctor has a data dependency on springboards started to get that Tomcat is the default dependency.
+
+41
+00:02:53,560 --> 00:02:59,920
+So if I want to switch trajectory or under to what I would need to do is first I would need to exclude
+
+42
+00:02:59,920 --> 00:03:01,910
+the static Tomcat.
+
+43
+00:03:01,960 --> 00:03:04,520
+So independence is a good start of web.
+
+44
+00:03:04,530 --> 00:03:07,870
+I'm excluding springboard Dr. Tom.
+
+45
+00:03:07,930 --> 00:03:14,140
+And then I'm adding in the dependency on JT so I'm adding in the JT style.
+
+46
+00:03:14,380 --> 00:03:19,400
+Similarly if I want to switch to underdo or that I need to do is instead of Jaydee I need to use and
+
+47
+00:03:19,510 --> 00:03:23,220
+go in here in this step we talked about embedded server.
+
+48
+00:03:23,230 --> 00:03:24,430
+Why is it important.
+
+49
+00:03:24,610 --> 00:03:28,460
+What is the default embedded server and what are the other ones which are supported by spring.
+
+50
+00:03:29,080 --> 00:03:30,550
+And then the next video we.
+

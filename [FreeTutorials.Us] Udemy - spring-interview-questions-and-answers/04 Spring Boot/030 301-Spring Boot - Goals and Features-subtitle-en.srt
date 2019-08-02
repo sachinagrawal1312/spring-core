@@ -1,0 +1,304 @@
+1
+00:00:02,210 --> 00:00:09,100
+Welcome back in this section we would start discussing about the questions related to spring but.
+
+2
+00:00:09,410 --> 00:00:11,900
+We'll start with these questions in this review.
+
+3
+00:00:11,900 --> 00:00:12,570
+What is being.
+
+4
+00:00:12,620 --> 00:00:17,010
+What are the important goals of really good and what are the important features of spring.
+
+5
+00:00:17,390 --> 00:00:24,140
+Typically when we look at Spring applications as being MBC applications they have a lot of configuration
+
+6
+00:00:24,140 --> 00:00:25,310
+that is needed right.
+
+7
+00:00:25,310 --> 00:00:28,030
+For example let's talk about being in VC.
+
+8
+00:00:28,340 --> 00:00:34,760
+You need to configure a dispatcher servlet you need to configure a component Can you need to configure
+
+9
+00:00:34,790 --> 00:00:42,190
+Buras all were if we would want to use static libraries like bootstrap then we would need to configure
+
+10
+00:00:42,220 --> 00:00:45,500
+Bebb job so that we can deal with the static content.
+
+11
+00:00:45,770 --> 00:00:50,900
+And also when we configure security there are a lot of things that we would need to configure.
+
+12
+00:00:51,170 --> 00:00:57,170
+So typically this kind of configuration it might be done in Java code using configuration or this can
+
+13
+00:00:57,170 --> 00:00:59,920
+be done in an application context example.
+
+14
+00:00:59,930 --> 00:01:04,520
+So either way there's a lot of conflagration that you would need to do before you can get started with
+
+15
+00:01:04,610 --> 00:01:06,030
+your application.
+
+16
+00:01:06,110 --> 00:01:11,960
+In addition to this probably you would want to configure error controller to handle exceptions that
+
+17
+00:01:11,970 --> 00:01:13,790
+happens and things like that.
+
+18
+00:01:13,970 --> 00:01:16,800
+So there are a lot of configuration that you would need.
+
+19
+00:01:16,820 --> 00:01:20,720
+The other factor is also the fact that we are moving a Microsoft.
+
+20
+00:01:20,720 --> 00:01:24,980
+Is this all the architectures are moving to make those services and we do not have a lot of time to
+
+21
+00:01:24,980 --> 00:01:27,340
+set up a lot of micro services right.
+
+22
+00:01:27,670 --> 00:01:34,280
+If instead of one big application I have 20 smaller micro services then I don't have a lot of time to
+
+23
+00:01:34,280 --> 00:01:35,480
+set up each one of them.
+
+24
+00:01:35,480 --> 00:01:39,350
+I would want to be able to quickly get up and running with the application.
+
+25
+00:01:39,350 --> 00:01:45,680
+I would want to start running the application and focusing on the business logic I shouldn't need to
+
+26
+00:01:45,800 --> 00:01:50,700
+focus on all the technical stuff of how to configure things and things like that.
+
+27
+00:01:50,870 --> 00:01:56,030
+What are the goals of Spingold the goals of the most important goal of scoring goals is to provide a
+
+28
+00:01:56,330 --> 00:01:59,290
+QuickStart to spring projects.
+
+29
+00:01:59,450 --> 00:02:04,430
+If I want to create a new spinning music project I should be able to start doing start developing it
+
+30
+00:02:04,550 --> 00:02:05,770
+within half an hour.
+
+31
+00:02:05,970 --> 00:02:12,140
+Or if I want to set up J-P to connect to a database I should be able to set it up in another half hour.
+
+32
+00:02:12,260 --> 00:02:14,640
+The most important goal of spring.
+
+33
+00:02:15,280 --> 00:02:22,640
+How does being good achieves that is by being opiniated so it makes a lot of exemptions about how things
+
+34
+00:02:22,640 --> 00:02:23,540
+have to be done.
+
+35
+00:02:23,540 --> 00:02:26,670
+It takes an opinion and price to implement it.
+
+36
+00:02:26,720 --> 00:02:32,920
+But the most important thing is you can actually override the opinion so springboard provides options
+
+37
+00:02:32,940 --> 00:02:37,400
+where you can actually change what is configured by default.
+
+38
+00:02:37,490 --> 00:02:42,560
+The other goals of springboard are related to non functional features so it aims to provide a lot of
+
+39
+00:02:42,690 --> 00:02:47,620
+functional features like monitoring error handling and things like that.
+
+40
+00:02:47,660 --> 00:02:50,750
+The last goal of spring boot is no.
+
+41
+00:02:50,910 --> 00:02:53,290
+Generation Zero code generation as I call it.
+
+42
+00:02:53,470 --> 00:02:55,570
+So there is no coordination at all.
+
+43
+00:02:55,790 --> 00:03:00,160
+As far as being Booby's concern what are the important features of being.
+
+44
+00:03:00,330 --> 00:03:05,310
+Or have the most important features of springboard is something called auto configuration.
+
+45
+00:03:05,350 --> 00:03:06,950
+We look at auto configuration.
+
+46
+00:03:06,980 --> 00:03:09,410
+Indeed did in a later we do.
+
+47
+00:03:09,650 --> 00:03:14,880
+In a nutshell it's basically when you add a specific jar into the class.
+
+48
+00:03:14,900 --> 00:03:19,310
+But let's say I'm adding a stinging message into the classpath.
+
+49
+00:03:19,370 --> 00:03:26,000
+Springboard can look at it and recognize the fact that spring is in the class but it would automatically
+
+50
+00:03:26,000 --> 00:03:30,740
+configure all the things that are needed to do that application.
+
+51
+00:03:30,920 --> 00:03:34,240
+So you could configure a dispatcher servlet resolver.
+
+52
+00:03:34,280 --> 00:03:40,220
+It would also can configure a message converter and all the things that are needed to doubtable web
+
+53
+00:03:40,220 --> 00:03:43,230
+application are configured automatically.
+
+54
+00:03:43,250 --> 00:03:46,040
+And this feature is called auto configuration.
+
+55
+00:03:46,040 --> 00:03:53,110
+If you add in a web application that spring Bebb jar then you get the configuration related to web application.
+
+56
+00:03:53,150 --> 00:03:56,840
+If you add in a J-P let's say a hibernate just in.
+
+57
+00:03:56,840 --> 00:04:01,610
+Then you'll get the configuration that is related to connecting to the database so it would create a
+
+58
+00:04:01,610 --> 00:04:02,780
+data source.
+
+59
+00:04:02,840 --> 00:04:08,240
+It would create an entity manager or factory and all the other stuff that you would need to be able
+
+60
+00:04:08,240 --> 00:04:09,800
+to connect to a database with ease.
+
+61
+00:04:09,850 --> 00:04:16,050
+You see the other important feature of spring boot is something called Spring boot start a project to
+
+62
+00:04:16,070 --> 00:04:19,050
+look at data projects in detail a little later.
+
+63
+00:04:19,060 --> 00:04:24,350
+Or start a project provide a QuickStart to different types of applications whether you would want to
+
+64
+00:04:24,750 --> 00:04:30,750
+open up a web application AJP application of episodes application or whatever other applications you'd
+
+65
+00:04:30,770 --> 00:04:31,790
+want to dial up.
+
+66
+00:04:31,790 --> 00:04:35,510
+Spring would start a project provide you a quick start to it.
+
+67
+00:04:35,760 --> 00:04:40,190
+Springboro actuator helps you in monitoring your application.
+
+68
+00:04:40,190 --> 00:04:46,970
+It exposes a lot of details about the application so that monitoring it becomes really easy.
+
+69
+00:04:46,970 --> 00:04:50,880
+The last feature about building boot is embedded Sellwood.
+
+70
+00:04:51,130 --> 00:04:59,070
+So with Springle applications you can embed the server inside the appliable job.
+
+71
+00:04:59,240 --> 00:05:05,710
+So things like Tomcat JT they can be included in your jar file.
+
+72
+00:05:05,950 --> 00:05:12,460
+And when you actually run the application on the server you don't need Tom-Kat installed separately
+
+73
+00:05:13,000 --> 00:05:20,500
+because despite of your application will discuss about this concept of embedded in detail a little later
+
+74
+00:05:20,610 --> 00:05:26,230
+respin in this video we took a quick look at what is being Goodwater its important goals and what are
+
+75
+00:05:26,230 --> 00:05:32,630
+the important features really cause about all these features in detail in the next few years.
+
+76
+00:05:32,920 --> 00:05:33,310
+Until then.
+

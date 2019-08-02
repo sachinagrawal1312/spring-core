@@ -1,0 +1,216 @@
+1
+00:00:02,530 --> 00:00:04,080
+Well come back in this way.
+
+2
+00:00:04,150 --> 00:00:09,320
+Let's look at some of the important things related to application or probe by piece.
+
+3
+00:00:09,370 --> 00:00:13,810
+What is that position or properties What are some of the important things that can be customized in
+
+4
+00:00:13,810 --> 00:00:15,850
+application or properties.
+
+5
+00:00:15,850 --> 00:00:17,010
+Let's get started now.
+
+6
+00:00:17,020 --> 00:00:22,730
+So what is application that properties application properties is just something like a property file.
+
+7
+00:00:22,780 --> 00:00:23,420
+Right.
+
+8
+00:00:23,780 --> 00:00:30,150
+In spring if I open a application that properties I'd be able to configure a lot of different things
+
+9
+00:00:30,160 --> 00:00:36,250
+I can configure the lobby level up the application and I can configure either use which I would want
+
+10
+00:00:36,250 --> 00:00:40,490
+to make use of in the application as well.
+
+11
+00:00:40,540 --> 00:00:46,780
+Another example of the application that properties from one of our web services applications.
+
+12
+00:00:46,840 --> 00:00:50,380
+So if you look at it we are setting the be able to debug.
+
+13
+00:00:50,480 --> 00:00:52,750
+We are setting how to do this realization.
+
+14
+00:00:52,750 --> 00:01:01,060
+So you're saying don't see the latest date time stamps read Day Test Data not us not names stamps and
+
+15
+00:01:01,060 --> 00:01:03,460
+we are also disabling management security.
+
+16
+00:01:03,460 --> 00:01:10,630
+So if you look at actuator actuator we look at it in one of the subsequent steps by default.
+
+17
+00:01:10,630 --> 00:01:13,870
+When you add in actuator the securities enable.
+
+18
+00:01:13,870 --> 00:01:20,280
+So here we are just turning it off temporarily and other things that we can configure in is what should
+
+19
+00:01:20,280 --> 00:01:22,720
+be the username and password for security.
+
+20
+00:01:22,720 --> 00:01:30,010
+So if I'm turning basic security on here it's false but if you turn it on and you add it's being security
+
+21
+00:01:30,100 --> 00:01:33,030
+then you can set what should be the user id and password.
+
+22
+00:01:33,070 --> 00:01:36,010
+We are here we are setting it to use that name and password.
+
+23
+00:01:36,010 --> 00:01:41,070
+The other thing which we are configuring in here is we are setting choice to true.
+
+24
+00:01:41,170 --> 00:01:47,100
+So when any query is fired through GAAP then that Asgill will be printed to the log.
+
+25
+00:01:47,260 --> 00:01:53,680
+And also when we are using Jaypee and we are do as in memory database we can enable the hishe to control
+
+26
+00:01:54,340 --> 00:01:58,900
+what we are showing in here is some of the important things that can be configured through application
+
+27
+00:01:59,100 --> 00:01:59,670
+properties.
+
+28
+00:01:59,670 --> 00:02:05,280
+There are a huge range of things that you can configure to application properties.
+
+29
+00:02:05,410 --> 00:02:11,940
+A few other things which can be configured through application that properties include logging file.
+
+30
+00:02:11,980 --> 00:02:14,410
+So where should your logging file be present.
+
+31
+00:02:14,410 --> 00:02:16,970
+What should be the name and what should be part of it.
+
+32
+00:02:17,110 --> 00:02:22,740
+And also logging level we Lubet earlier so it can be debugged in four trees whichever level you would
+
+33
+00:02:22,750 --> 00:02:24,070
+want to set it to.
+
+34
+00:02:24,070 --> 00:02:29,970
+And also if you want to exclude certain auto configurations then you can configure that to application
+
+35
+00:02:30,090 --> 00:02:31,200
+properties.
+
+36
+00:02:31,300 --> 00:02:36,000
+You can configure the profiles that should be active through application not properties as well we'll
+
+37
+00:02:36,010 --> 00:02:38,250
+look at profiles a little later.
+
+38
+00:02:38,250 --> 00:02:42,550
+You can configure the error but by default they are about a slash error.
+
+39
+00:02:42,610 --> 00:02:47,600
+So if you want to change that you can configure that too by default as being good application launches
+
+40
+00:02:47,620 --> 00:02:48,980
+up on ADHD.
+
+41
+00:02:48,990 --> 00:02:54,880
+You can change that by configuring so weatherboard by default the HDP converter which is used for Jaison
+
+42
+00:02:55,020 --> 00:02:56,100
+is Jackson.
+
+43
+00:02:56,110 --> 00:03:00,740
+So if you want to use Jewson you can map that in here as well.
+
+44
+00:03:00,760 --> 00:03:07,000
+The thing is application that properties is the central place where you can configure a lot of things
+
+45
+00:03:07,000 --> 00:03:08,800
+related to springboard.
+
+46
+00:03:09,010 --> 00:03:15,260
+If you do a google search for springboard application properties you'd land up on an appendix.
+
+47
+00:03:15,510 --> 00:03:22,990
+This appendix contains all the common application properties that are present in spring boot you would
+
+48
+00:03:22,990 --> 00:03:25,570
+see that this is a huge file.
+
+49
+00:03:25,720 --> 00:03:30,100
+So if you were really interested to spend some time looking at all the properties which are present
+
+50
+00:03:30,100 --> 00:03:36,360
+in this file it will take a long time pleasing properties is basically used to configure your springboard
+
+51
+00:03:36,670 --> 00:03:43,610
+application so that you make use of all the configuration for all these doctors had to ramp application
+
+52
+00:03:43,720 --> 00:03:44,580
+properties.
+
+53
+00:03:44,740 --> 00:03:49,780
+And we looked at some of the important things which can be customized through application that properties
+
+54
+00:03:50,020 --> 00:03:51,120
+and in the next video play.
+

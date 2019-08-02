@@ -1,0 +1,348 @@
+1
+00:00:01,870 --> 00:00:07,610
+Will come back in this we do a let's shift our attention to it to be able to understand what is GPA.
+
+2
+00:00:07,610 --> 00:00:08,420
+Why do we need it.
+
+3
+00:00:08,420 --> 00:00:09,620
+What is hibernate.
+
+4
+00:00:09,620 --> 00:00:12,200
+How is how does hibernate compared with GP.
+
+5
+00:00:12,470 --> 00:00:18,190
+And also we would move into things like defining an entity and what does an entity manage it and the
+
+6
+00:00:18,190 --> 00:00:19,940
+persistence context.
+
+7
+00:00:20,000 --> 00:00:22,150
+Let's get started with JP.
+
+8
+00:00:22,220 --> 00:00:25,630
+JP stands for Java persistent EPA.
+
+9
+00:00:25,790 --> 00:00:28,030
+So why do you really need JPA.
+
+10
+00:00:28,370 --> 00:00:35,250
+In the previous examples we would have seen simple queries that we were writing right into being JEDEC
+
+11
+00:00:35,270 --> 00:00:44,510
+and VC we were writing a lot of Kuwaiti's why these queries look very simple in big applications with
+
+12
+00:00:44,510 --> 00:00:45,560
+hundreds of tables.
+
+13
+00:00:45,560 --> 00:00:51,920
+These queries were really complex to write applications where there are hundred lines hundred and fifty
+
+14
+00:00:51,920 --> 00:00:54,060
+two hundred lines of queries.
+
+15
+00:00:54,380 --> 00:00:57,590
+These queries become very very difficult to manage.
+
+16
+00:00:57,590 --> 00:01:02,240
+The other thing we need to understand is the guys who are writing these queries and John Howard devlopment
+
+17
+00:01:02,330 --> 00:01:08,510
+because these queries are part of your Java code and these Jawa they will oppose might not be experts
+
+18
+00:01:08,510 --> 00:01:09,640
+on the database.
+
+19
+00:01:09,860 --> 00:01:15,650
+So how do we expect our older players who are expert more on object oriented programming to be able
+
+20
+00:01:15,650 --> 00:01:18,360
+to write queries for the database.
+
+21
+00:01:18,530 --> 00:01:27,930
+That way the concept of GP comes in GP defines the mapping from a Java object to what they build.
+
+22
+00:01:28,070 --> 00:01:33,000
+So how does a job object map to a row in your b.
+
+23
+00:01:33,020 --> 00:01:36,130
+But that what you would define in GP.
+
+24
+00:01:36,140 --> 00:01:41,300
+So Gibeah provide a lot of useful annotations where you can define the relationship between your classes
+
+25
+00:01:41,810 --> 00:01:43,850
+and the birds.
+
+26
+00:01:43,850 --> 00:01:49,820
+How does an object of a specific class map to a row in a specific table.
+
+27
+00:01:50,090 --> 00:01:58,450
+Once you define the mapping hibernated that's basically AJP the implementation will be able to create
+
+28
+00:01:58,450 --> 00:02:02,090
+the queries so that you'd be able to talk to the database.
+
+29
+00:02:02,140 --> 00:02:09,370
+So instead of you creating the Kuwaitis what we would do is we will do the mappings and the J-P implementation
+
+30
+00:02:09,700 --> 00:02:12,440
+would create queries for us.
+
+31
+00:02:12,450 --> 00:02:16,770
+Now what does hibernate Hibernate is a JPA implementation.
+
+32
+00:02:16,780 --> 00:02:21,190
+Think of it like an interface and an implementation JPA is the interface.
+
+33
+00:02:21,200 --> 00:02:23,540
+JPA defines what is the annotations.
+
+34
+00:02:23,740 --> 00:02:30,250
+And once you make use of those annotations we can use Hibernate to make sure that all our additions
+
+35
+00:02:30,370 --> 00:02:32,970
+are properly implemented.
+
+36
+00:02:33,120 --> 00:02:36,580
+Let's now look at how to define an entity in Jaypee.
+
+37
+00:02:36,580 --> 00:02:42,360
+How do you define an entity in JPA just by putting an ad entity on the table so there isn't an additional
+
+38
+00:02:42,380 --> 00:02:43,260
+entity.
+
+39
+00:02:43,420 --> 00:02:50,440
+Just put it on your bean and then your bean becomes an entity then it would be managed by GP.
+
+40
+00:02:50,440 --> 00:02:56,710
+The important thing is along with identity you can add in a table in addition here the class name and
+
+41
+00:02:56,710 --> 00:02:57,880
+the table name of the same.
+
+42
+00:02:57,880 --> 00:03:04,150
+So this was not really needed but if the name of the class is different from the name of the table then
+
+43
+00:03:04,150 --> 00:03:07,050
+you would need an add table and addition as well.
+
+44
+00:03:07,240 --> 00:03:13,090
+And here we are actually saying this field is an ID and we are asking hibernate to generate a value
+
+45
+00:03:13,090 --> 00:03:21,330
+for this specific field to hibernate or to generate value for the ID field and for all the other columns
+
+46
+00:03:21,340 --> 00:03:27,700
+we are not adding any mappings because the name of the column here in the table will match the name
+
+47
+00:03:27,700 --> 00:03:28,620
+of the field here.
+
+48
+00:03:28,620 --> 00:03:32,070
+So the name of the column is the same as the name of the field.
+
+49
+00:03:32,110 --> 00:03:39,360
+Then you would not need to do any mapping Otherwise you can provide add column mappings as well.
+
+50
+00:03:39,550 --> 00:03:47,170
+What we are doing here is basically mapping your class you're being class to a table in your database.
+
+51
+00:03:47,200 --> 00:03:54,700
+Once you map the columns it becomes very easy to do the update using DB You are late you need to do
+
+52
+00:03:54,760 --> 00:03:58,280
+is to use something Gollin in the manager and do a mode.
+
+53
+00:03:58,280 --> 00:04:03,640
+So here we are doing an update to do so to do the update to do all that we need to do.
+
+54
+00:04:03,670 --> 00:04:08,140
+And did the manager merge to who created the query for us.
+
+55
+00:04:08,140 --> 00:04:12,300
+The implementation of GP so the implementation of GP would just hibernate here.
+
+56
+00:04:12,340 --> 00:04:14,610
+Look said the entity and it knows that.
+
+57
+00:04:14,650 --> 00:04:20,530
+OK to merge this bean into the database or to save this value to the database it needs to write the
+
+58
+00:04:20,530 --> 00:04:26,650
+query needs it understands what kind of query it needs to write and critique it and write it and for
+
+59
+00:04:26,800 --> 00:04:28,390
+the query to the database.
+
+60
+00:04:28,540 --> 00:04:34,290
+So the main advantage of GP is that as a developer you don't really need to worry about writing the
+
+61
+00:04:34,300 --> 00:04:40,690
+queries or let you need to do is define the mappings properly and be able to take off generating the
+
+62
+00:04:40,690 --> 00:04:42,250
+queries for you.
+
+63
+00:04:42,250 --> 00:04:45,950
+The J-P implementation will take care of generating the queries for you.
+
+64
+00:04:47,030 --> 00:04:53,220
+Once we have defined all the entities using the identity and things persistence contex is the one which
+
+65
+00:04:53,220 --> 00:05:00,060
+is used to manage all these entities so whatever changes which we are making to the Ds have to go through
+
+66
+00:05:00,060 --> 00:05:07,590
+something called up persistence contex actually the baby can access the information in the persistence
+
+67
+00:05:07,590 --> 00:05:11,810
+context is by using something called entity manager.
+
+68
+00:05:11,970 --> 00:05:17,970
+So if we look at the entity manager interface which is present in here it says interface used to interact
+
+69
+00:05:17,970 --> 00:05:20,880
+with the persistence context there are a lot of methods.
+
+70
+00:05:20,880 --> 00:05:22,970
+Inside you are indeed the manager.
+
+71
+00:05:22,980 --> 00:05:27,060
+So if I open up the different methods which are present in here.
+
+72
+00:05:27,150 --> 00:05:31,420
+There are a lot of various methods which are present in the entity manager.
+
+73
+00:05:31,500 --> 00:05:32,960
+There is a method called merge.
+
+74
+00:05:32,970 --> 00:05:35,200
+That's the way in which you made use of earlier.
+
+75
+00:05:35,430 --> 00:05:41,540
+And also there are very kind of bind methods to be able to help us find entities.
+
+76
+00:05:41,550 --> 00:05:44,600
+So if you are searching for a role then you can use find.
+
+77
+00:05:44,610 --> 00:05:47,580
+So you have both this method merge method remove method.
+
+78
+00:05:47,580 --> 00:05:53,830
+You have Find method as well and a very fine at that which I present inside the manager.
+
+79
+00:05:53,870 --> 00:05:59,340
+You can use all these methods which are present in the entity manager so that you can actually obviate
+
+80
+00:05:59,490 --> 00:06:05,370
+to do so if I want to update or instead to do then I can use entity manager mode if I want to delete
+
+81
+00:06:05,370 --> 00:06:10,320
+it to do then I can say entity manager to remove if I want to search for that to do I can use entity
+
+82
+00:06:10,320 --> 00:06:14,510
+manager dot find and search for a specific to do in this way.
+
+83
+00:06:14,650 --> 00:06:17,190
+We looked at the basics of GP but neat.
+
+84
+00:06:17,220 --> 00:06:21,900
+How do you defining D What are the different method to present in the entity manager and what is the
+
+85
+00:06:21,900 --> 00:06:23,880
+persistence context.
+
+86
+00:06:24,180 --> 00:06:27,870
+In the next what do we look at more advanced concepts related to JPA.
+
+87
+00:06:27,910 --> 00:06:28,830
+Until then we.
+

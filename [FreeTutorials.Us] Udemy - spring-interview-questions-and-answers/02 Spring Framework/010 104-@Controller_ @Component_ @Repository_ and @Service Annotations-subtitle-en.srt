@@ -1,0 +1,208 @@
+1
+00:00:01,760 --> 00:00:07,550
+WELCOME BACK IN THIS WOULD YOU would want to focus on what's the difference between controller and component
+
+2
+00:00:07,640 --> 00:00:09,440
+at repository at ease.
+
+3
+00:00:09,500 --> 00:00:15,940
+And these kind of annotations in the spring we already used that company in Ottawa and editions right.
+
+4
+00:00:16,150 --> 00:00:17,870
+What does that component signify.
+
+5
+00:00:17,870 --> 00:00:22,670
+It signifies the fact that something is a bean that needs to be managed by spring.
+
+6
+00:00:22,670 --> 00:00:25,410
+If I put that component on something then I'm telling.
+
+7
+00:00:25,430 --> 00:00:25,820
+OK.
+
+8
+00:00:25,870 --> 00:00:30,480
+When you are in control of this bin you create this being you would fire the dependencies in you take
+
+9
+00:00:30,480 --> 00:00:33,510
+care of destroying the been at a later point in time as well.
+
+10
+00:00:33,770 --> 00:00:36,080
+So that's what that company Insigne face right.
+
+11
+00:00:36,190 --> 00:00:41,910
+And the word is all about finding the matching being on a dependency over that water wired.
+
+12
+00:00:42,050 --> 00:00:43,630
+And what do you expect sprint to do.
+
+13
+00:00:43,630 --> 00:00:47,860
+You would expect to find a matching dependency and or to wire it in.
+
+14
+00:00:47,900 --> 00:00:52,230
+These are things which we have been discussing a lot in the business with us as well.
+
+15
+00:00:52,320 --> 00:00:55,440
+Now let's come into the most important part of this do.
+
+16
+00:00:55,520 --> 00:01:01,580
+That's the difference between a component repository at servies and controller at the high level when
+
+17
+00:01:01,580 --> 00:01:05,960
+we look at component components the most in reconstruction.
+
+18
+00:01:06,050 --> 00:01:08,650
+What direct deposit rate is in that controller.
+
+19
+00:01:08,750 --> 00:01:10,290
+Let's look at it in detail.
+
+20
+00:01:10,490 --> 00:01:14,190
+When we talk about web applications we talk about multiple layers right.
+
+21
+00:01:14,210 --> 00:01:18,490
+You have a badly or you have a business layer and a detail.
+
+22
+00:01:18,770 --> 00:01:23,140
+You can use that component on any of the components in any of these.
+
+23
+00:01:23,150 --> 00:01:24,870
+So it's really generic.
+
+24
+00:01:24,910 --> 00:01:32,890
+However when it comes to the other ones at controller for example it's typically used in the babbly
+
+25
+00:01:32,900 --> 00:01:38,280
+or at comptroller's signifies something which is using the MVC pattern model.
+
+26
+00:01:38,300 --> 00:01:39,250
+You can pull apart.
+
+27
+00:01:39,280 --> 00:01:46,700
+And that in the bably or at repository on the other hand specify something on the data that you would
+
+28
+00:01:46,700 --> 00:01:52,070
+use at repository typically on things like a DA or Data Access object.
+
+29
+00:01:52,070 --> 00:01:57,260
+So these are the things which are really related to getting the data from your database whether it's
+
+30
+00:01:57,920 --> 00:02:00,900
+relational database or whether it's a big data data stored.
+
+31
+00:02:00,920 --> 00:02:01,910
+It doesn't really matter.
+
+32
+00:02:01,910 --> 00:02:07,930
+So whatever data stored you're talking to you would use that repository on top of it.
+
+33
+00:02:07,970 --> 00:02:14,240
+The last one we use is typically used in the business layered in your business logic.
+
+34
+00:02:14,240 --> 00:02:19,400
+The most important functional that you would want to provide is transaction management or you are farside
+
+35
+00:02:19,400 --> 00:02:26,120
+objects which are present in the business layer you would use at servies There is also a little bit
+
+36
+00:02:26,210 --> 00:02:31,730
+of meaning which is attached to these annotations by spring and work as well.
+
+37
+00:02:31,820 --> 00:02:39,320
+So when you tag any component with any repository spring would automatically add the exception translation
+
+38
+00:02:39,320 --> 00:02:41,600
+for J.D. B.C exceptions.
+
+39
+00:02:41,750 --> 00:02:48,680
+So whenever a JBC exception happens then it needs to be translated into the specifics pring exception.
+
+40
+00:02:48,680 --> 00:02:55,490
+So if you put a repository on top of any component then that happens automatically.
+
+41
+00:02:55,490 --> 00:02:57,800
+And we look at controller a lot more.
+
+42
+00:02:57,830 --> 00:03:02,990
+When we talk about the MVC What does it signify what is the output What's the input and controller and
+
+43
+00:03:02,990 --> 00:03:04,150
+things like that.
+
+44
+00:03:04,160 --> 00:03:08,540
+In summary at component is the most generic one and a repository.
+
+45
+00:03:08,570 --> 00:03:13,240
+So we as a controller are supposed to be used in it specifically.
+
+46
+00:03:13,250 --> 00:03:20,690
+It kind of provides an additional way you can classify your components and identified them if you want
+
+47
+00:03:20,690 --> 00:03:24,280
+to add any specific functionality for that specifically.
+
+48
+00:03:24,380 --> 00:03:31,310
+So if you want to let's say log all the input and output that are going from your data access method
+
+49
+00:03:31,700 --> 00:03:38,940
+then you can look at any repository as a way to identify your beans and weave your EPA around them in
+
+50
+00:03:38,940 --> 00:03:39,380
+3D.
+
+51
+00:03:39,460 --> 00:03:44,660
+We looked at at component at Waterworld and we also looked at the differences between controller at
+
+52
+00:03:44,660 --> 00:03:49,100
+component and repository and at civies and additions and then the next video.
+

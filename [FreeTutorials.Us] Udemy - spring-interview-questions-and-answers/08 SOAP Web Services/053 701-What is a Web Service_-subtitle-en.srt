@@ -1,0 +1,224 @@
+1
+00:00:01,550 --> 00:00:08,890
+Welcome to the series of videos on top of Web services in this video we'll start with the basic question
+
+2
+00:00:08,950 --> 00:00:12,480
+what ease of that Selby's think about it.
+
+3
+00:00:12,490 --> 00:00:19,930
+What is up that service an application A is sending a request and the web service is responding back
+
+4
+00:00:19,930 --> 00:00:21,780
+with a response.
+
+5
+00:00:21,940 --> 00:00:23,430
+Let's consider an example.
+
+6
+00:00:23,440 --> 00:00:23,740
+OK.
+
+7
+00:00:23,830 --> 00:00:30,470
+So let's take a Facebook Web site or tweet to say you launch it in the browser.
+
+8
+00:00:30,700 --> 00:00:37,260
+The browser S.A.G. quest to the twitter is over all the Facebook server and you get to Hajim a response
+
+9
+00:00:37,270 --> 00:00:39,900
+back and browser around it.
+
+10
+00:00:40,000 --> 00:00:45,310
+Does that make the Facebook application and the Twitter application of web service or is there more
+
+11
+00:00:45,310 --> 00:00:46,120
+to it.
+
+12
+00:00:46,120 --> 00:00:51,430
+The most important thing to understand is the fact that when we talk about Web services there are three
+
+13
+00:00:51,940 --> 00:01:00,510
+keys three very important things that each were up to we should sell for the web so is this designed
+
+14
+00:01:00,510 --> 00:01:03,760
+for machine to machine interaction.
+
+15
+00:01:03,960 --> 00:01:09,540
+When I am visiting Facebook page what I am actually doing is not a machine to machine interaction it's
+
+16
+00:01:09,540 --> 00:01:12,300
+actually a person visiting a website.
+
+17
+00:01:12,390 --> 00:01:19,410
+When I go to my shopping portal I'm actually it's basically me a person going and visiting the shopping
+
+18
+00:01:19,500 --> 00:01:25,800
+website that's the that in those kind of scenarios the server is not really offering of web service
+
+19
+00:01:26,090 --> 00:01:33,600
+what it's offering is something called a web application for something to be called a web service.
+
+20
+00:01:33,700 --> 00:01:37,740
+It should support machine to machine interaction.
+
+21
+00:01:37,740 --> 00:01:41,790
+That's basically application to application interaction.
+
+22
+00:01:41,790 --> 00:01:50,280
+So for me to be able to call something a web service it should be able to interact with their applications.
+
+23
+00:01:50,460 --> 00:01:57,510
+So for example this is a new application let's say to do so is then that application should be able
+
+24
+00:01:57,510 --> 00:02:00,610
+to send a request saying OK get me stuff to do.
+
+25
+00:02:00,810 --> 00:02:08,220
+And this service should be able to respond back with the respond with a list do.
+
+26
+00:02:08,910 --> 00:02:10,340
+That's basically.
+
+27
+00:02:10,400 --> 00:02:15,180
+So it should be able to support application to application interaction.
+
+28
+00:02:15,180 --> 00:02:18,690
+The second important thing is it should be interoperable.
+
+29
+00:02:18,690 --> 00:02:23,470
+That is basically it should not be platform dependent.
+
+30
+00:02:23,610 --> 00:02:29,640
+If I'm offering a web service it should not matter whether the application is built on dot net or built
+
+31
+00:02:29,640 --> 00:02:39,350
+on Java or built on beach or wherever it is build platform of the client should not matter.
+
+32
+00:02:39,500 --> 00:02:49,170
+So does any other kind of system should be able to invoke and get the data from the web so is that basically
+
+33
+00:02:49,170 --> 00:02:50,580
+interoperable.
+
+34
+00:02:50,580 --> 00:02:56,010
+The only important thing it should love communication all over the network.
+
+35
+00:02:56,010 --> 00:03:03,140
+The other application might be residing within our network outside the network or on the Internet.
+
+36
+00:03:03,150 --> 00:03:04,750
+It should not really matter.
+
+37
+00:03:04,980 --> 00:03:12,750
+So one of the most important things is web services should allow communication with things outside the
+
+38
+00:03:12,750 --> 00:03:15,670
+boundary of our own system.
+
+39
+00:03:15,690 --> 00:03:19,610
+These are the three keys for designing you over.
+
+40
+00:03:19,620 --> 00:03:23,420
+So he says they should be designed for machine to machine interaction.
+
+41
+00:03:23,490 --> 00:03:26,970
+They should be incorruptible and they should love communication.
+
+42
+00:03:26,970 --> 00:03:28,780
+Or will it work.
+
+43
+00:03:28,780 --> 00:03:33,840
+The important question is how can you make your web services drop.
+
+44
+00:03:34,320 --> 00:03:41,020
+The way we make our web services interoperable that is platform independent is by making our requests
+
+45
+00:03:41,220 --> 00:03:45,240
+and responses platform independent.
+
+46
+00:03:45,240 --> 00:03:50,640
+So if you make your request and your response platform independent that's it.
+
+47
+00:03:50,670 --> 00:03:57,920
+Your website is then will be platform independent because anybody can call you at the request and get
+
+48
+00:03:57,920 --> 00:03:59,460
+a response back.
+
+49
+00:03:59,460 --> 00:04:07,380
+So the most popular pop platform independent format for requests and sponsors are examine and be days
+
+50
+00:04:07,450 --> 00:04:15,420
+on X MLS typically used in case of soap and so on is kind of the most popular format when it comes to
+
+51
+00:04:15,420 --> 00:04:17,340
+various field services.
+
+52
+00:04:17,340 --> 00:04:24,360
+So that's basically a quick introduction to what is a web service and how does web service become more
+
+53
+00:04:24,360 --> 00:04:25,890
+platform independent.
+
+54
+00:04:25,890 --> 00:04:29,850
+We'll talk more about other services in the next week.
+
+55
+00:04:30,240 --> 00:04:30,880
+Until then.
+
+56
+00:04:30,930 --> 00:04:31,120
+Barry.
+

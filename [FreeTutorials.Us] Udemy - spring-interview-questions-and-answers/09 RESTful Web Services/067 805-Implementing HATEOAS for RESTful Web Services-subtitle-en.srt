@@ -1,0 +1,244 @@
+1
+00:00:02,080 --> 00:00:02,740
+This this way.
+
+2
+00:00:02,810 --> 00:00:04,530
+Let's shift our attention to it.
+
+3
+00:00:04,550 --> 00:00:07,310
+Hideous what is hideous.
+
+4
+00:00:07,340 --> 00:00:09,390
+Can you give an example as opposed to hideous.
+
+5
+00:00:09,410 --> 00:00:11,180
+How do you implement using spinning.
+
+6
+00:00:11,180 --> 00:00:14,080
+Let's look at all these questions in this specific medium.
+
+7
+00:00:14,180 --> 00:00:21,720
+What is said to use videos is of Lijah expansion hypomania as the engine of applications.
+
+8
+00:00:21,730 --> 00:00:24,370
+It is indeed a huge definition.
+
+9
+00:00:24,470 --> 00:00:26,280
+Let's look at a simple example.
+
+10
+00:00:26,300 --> 00:00:30,980
+So I'm going to my GET HELP page I'm looking at the list of repositories right now.
+
+11
+00:00:31,080 --> 00:00:33,330
+So there's a Web page right in the web page.
+
+12
+00:00:33,410 --> 00:00:36,510
+What we're doing is I'm asking for my repositories.
+
+13
+00:00:36,510 --> 00:00:42,760
+So what is the page doing it reading me the details of all the repositories which are present in here
+
+14
+00:00:42,770 --> 00:00:49,050
+as being web services tips that are based templates and a lot of repositories about 34 of them.
+
+15
+00:00:49,110 --> 00:00:50,670
+Is just reading the data.
+
+16
+00:00:50,720 --> 00:00:54,190
+It's also retaining the actions that I can perform same thing.
+
+17
+00:00:54,290 --> 00:00:58,910
+OK if you want to see more details about this being web services repository you can go here if you want
+
+18
+00:00:58,910 --> 00:00:59,920
+to start this.
+
+19
+00:00:59,930 --> 00:01:01,970
+You can do it here if you want to for this.
+
+20
+00:01:01,970 --> 00:01:03,020
+You can do it here.
+
+21
+00:01:03,290 --> 00:01:09,130
+So it's not just showing the data but also showing the actions you can pull from that data.
+
+22
+00:01:09,140 --> 00:01:16,830
+So you can start a repository and data repository or or repository or see the detail of a specific repository.
+
+23
+00:01:16,880 --> 00:01:22,300
+So it's not just retaining the data but also actions that you can perform on the data.
+
+24
+00:01:22,390 --> 00:01:29,960
+Hideous tries to bring that concept in restful prep so says when you ask for a source don't just return
+
+25
+00:01:29,960 --> 00:01:32,720
+the details of it so don't just do it then the data.
+
+26
+00:01:32,740 --> 00:01:33,950
+But also it is done.
+
+27
+00:01:34,040 --> 00:01:36,820
+What are the actions that can be performed.
+
+28
+00:01:37,010 --> 00:01:43,490
+What are the other things that can do more of this resource might be interested in.
+
+29
+00:01:43,550 --> 00:01:50,940
+For example let's take a Facebook for so let's say you are exposing service for fetching the details
+
+30
+00:01:50,960 --> 00:01:56,880
+of a Facebook post with Heti us what you would also consider returning.
+
+31
+00:01:56,990 --> 00:02:02,240
+Is it links to things like like how do you like the post.
+
+32
+00:02:02,270 --> 00:02:03,880
+How do you like the post.
+
+33
+00:02:03,920 --> 00:02:07,330
+How do you comment on the post and things like that.
+
+34
+00:02:07,340 --> 00:02:08,410
+Here is an example.
+
+35
+00:02:08,410 --> 00:02:17,590
+So when we are requesting for a specific user what we are also sending in is the link to get all users.
+
+36
+00:02:17,590 --> 00:02:19,780
+This is a request to a specific user.
+
+37
+00:02:19,790 --> 00:02:26,900
+What we are sending is a link to all the users as well we are saying OK this is how you get the details
+
+38
+00:02:26,900 --> 00:02:28,880
+of our users.
+
+39
+00:02:28,880 --> 00:02:31,430
+How do we implement this kind of stuff in spring.
+
+40
+00:02:31,430 --> 00:02:37,370
+Theres a startup which is provided by spring board called Spring boot start ahead the.
+
+41
+00:02:37,460 --> 00:02:48,150
+So we need to do is we can include this data in and after that we can use a concept called source resource.
+
+42
+00:02:48,360 --> 00:02:53,890
+You get to return not just the data so you will get to that and not just the user data.
+
+43
+00:02:53,900 --> 00:02:57,150
+So I can actually read the end user then the data goes out.
+
+44
+00:02:57,320 --> 00:03:03,410
+But what the source helps us to do is to build on top of that so I'm creating the results using the
+
+45
+00:03:03,410 --> 00:03:04,970
+user using the data.
+
+46
+00:03:04,970 --> 00:03:07,610
+So now the data is populated into the resource.
+
+47
+00:03:07,880 --> 00:03:10,970
+Once the data is populated you can add links.
+
+48
+00:03:11,210 --> 00:03:13,200
+So here I am trying to add a link.
+
+49
+00:03:13,220 --> 00:03:14,840
+What do I want to add.
+
+50
+00:03:14,870 --> 00:03:17,630
+I want to add links to all users.
+
+51
+00:03:17,690 --> 00:03:20,730
+So if you look at this this is how it would come out.
+
+52
+00:03:20,780 --> 00:03:28,220
+I would want to have a link with the reference as all users and I would want to have the link to which
+
+53
+00:03:28,460 --> 00:03:32,430
+the source I'd want to have the link to the tree.
+
+54
+00:03:32,450 --> 00:03:41,300
+All Users resort to the source which is pointed by the method retrieve all users easily hardcoded the
+
+55
+00:03:41,300 --> 00:03:45,580
+link in here I get say slash users and hide quoted in here.
+
+56
+00:03:45,830 --> 00:03:51,110
+But that would mean that any time I need to change the details you Aure or slash users I would need
+
+57
+00:03:51,110 --> 00:03:55,150
+to also change it in here rather than hard coding slash users directly here.
+
+58
+00:03:55,190 --> 00:04:02,420
+What we are saying is OK we would want to link to the resource which is exposed by this method by the
+
+59
+00:04:02,420 --> 00:04:09,290
+method and retrieve all users and we are returning the resource back when we implement it in this way.
+
+60
+00:04:09,340 --> 00:04:15,940
+You would get a response back as we look at it in this video we took a quick look at hate yours.
+
+61
+00:04:15,960 --> 00:04:22,520
+We will get an example response for videos and how we can implement it using something until next video.
+

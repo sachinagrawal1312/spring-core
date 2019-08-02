@@ -1,0 +1,364 @@
+1
+00:00:03,090 --> 00:00:08,460
+Welcome back in this way you look at some of the important concepts you would need to use when writing
+
+2
+00:00:08,460 --> 00:00:10,740
+unit tests for the Babli.
+
+3
+00:00:10,980 --> 00:00:18,320
+So in the way of spelling we make use of spring NBC or whatever is called the spring rest frame work.
+
+4
+00:00:18,330 --> 00:00:26,220
+So in this space we video will take one of the controllers that is present and look at how to write
+
+5
+00:00:26,310 --> 00:00:30,660
+unit tests for it using the mock NBC framework.
+
+6
+00:00:30,930 --> 00:00:38,630
+We look at annotations like an NBC test at Moblin and we will also look at how to use on assert to so
+
+7
+00:00:38,720 --> 00:00:39,870
+that is.
+
+8
+00:00:39,990 --> 00:00:44,350
+This looks like a very very simple method that we would want at this rate.
+
+9
+00:00:44,370 --> 00:00:49,380
+There is a pathway you will call it that way the pathway will call question id and we are calling a
+
+10
+00:00:49,400 --> 00:00:54,130
+service is to retrieve the details of the survey and we are returning it back.
+
+11
+00:00:54,330 --> 00:00:58,390
+So this is a typical press release method right.
+
+12
+00:00:58,390 --> 00:01:00,310
+So it gets the details.
+
+13
+00:01:00,790 --> 00:01:02,520
+What happens is it is done.
+
+14
+00:01:02,530 --> 00:01:03,650
+The liftoff.
+
+15
+00:01:03,910 --> 00:01:12,500
+So question back the framework then convert it into J-Zone and returning back to what we get as the
+
+16
+00:01:12,500 --> 00:01:13,460
+output for this.
+
+17
+00:01:13,470 --> 00:01:16,010
+So this is just on.
+
+18
+00:01:16,040 --> 00:01:21,150
+So how do we drive a unit test for this writing unit.
+
+19
+00:01:21,150 --> 00:01:23,880
+This probably is a really complex thing.
+
+20
+00:01:23,880 --> 00:01:30,130
+So just for a couple of lines of code in here actually we would write a much much bigger unit test.
+
+21
+00:01:30,230 --> 00:01:32,120
+How do we do that.
+
+22
+00:01:32,210 --> 00:01:33,960
+We'll start with the set up.
+
+23
+00:01:33,980 --> 00:01:38,410
+So the first thing we would want to talk about is the at NBC.
+
+24
+00:01:38,440 --> 00:01:45,410
+So we would want to write a test for which controller this basic method is in a controller called so
+
+25
+00:01:45,410 --> 00:01:46,300
+we can roll.
+
+26
+00:01:46,430 --> 00:01:52,530
+So I'm saying I wouldn't write a verb NBC test for weight control not us.
+
+27
+00:01:52,850 --> 00:01:56,960
+And I'm saying they should run them.
+
+28
+00:01:57,140 --> 00:02:03,340
+We will want to create a spring application context and that's the reason why we say we will use Spring
+
+29
+00:02:03,340 --> 00:02:08,200
+Run metal door glass and we are all the wiring the mock NBC.
+
+30
+00:02:08,210 --> 00:02:16,220
+So once we Ryden web MBC test we can artwork we'll have something called a mock MVC which is available
+
+31
+00:02:16,670 --> 00:02:19,910
+we can fire our requests against it.
+
+32
+00:02:19,910 --> 00:02:26,700
+So what we would want to replicate doing is just like we type you are raised in the browser.
+
+33
+00:02:26,720 --> 00:02:29,630
+So on the browser I would have to invoke.
+
+34
+00:02:29,670 --> 00:02:36,250
+So is the way I would need to call it a local host call an ADHD slash survey slash survey ID.
+
+35
+00:02:36,310 --> 00:02:37,200
+Last question.
+
+36
+00:02:37,310 --> 00:02:38,330
+Last question.
+
+37
+00:02:38,570 --> 00:02:42,520
+So I would want to be able to execute the same you aren't in the unit test.
+
+38
+00:02:42,620 --> 00:02:49,630
+I can use mawk NBC to exit qued that and also I don't really want to tie up with the deals with the.
+
+39
+00:02:49,640 --> 00:02:56,890
+I would want to mark this out the Moblin annotation allows me to mark these thing.
+
+40
+00:02:57,350 --> 00:03:03,130
+So I would want to mark the was out and return data that I would want.
+
+41
+00:03:03,290 --> 00:03:08,800
+Here we are trying to retrieve just one question so we are saying it is start to retrieve specific question
+
+42
+00:03:08,800 --> 00:03:10,880
+2 will only get one question back.
+
+43
+00:03:11,120 --> 00:03:17,870
+So I would want to mark this so it is not a trick question to written one question back and then I would
+
+44
+00:03:17,870 --> 00:03:26,240
+want to fire the request on mock NBC and check that the result contained Jaison as expected.
+
+45
+00:03:26,240 --> 00:03:28,150
+Let's see the details of the test.
+
+46
+00:03:28,160 --> 00:03:29,450
+So we are creating a mock.
+
+47
+00:03:29,450 --> 00:03:30,050
+Question.
+
+48
+00:03:30,080 --> 00:03:37,250
+So with a few details and we are saying when so we are resorting to the question is called then return
+
+49
+00:03:37,250 --> 00:03:43,820
+this more question back to what we are saying is whenever this servicer is right to question method
+
+50
+00:03:43,820 --> 00:03:50,720
+is going to turn the question and then what we are doing is we are actually building the content of
+
+51
+00:03:50,780 --> 00:03:53,000
+the request that we would want to send.
+
+52
+00:03:53,050 --> 00:03:59,430
+We would want to send a request to this hourly rates were slashed so one last question one and we are
+
+53
+00:03:59,420 --> 00:04:01,350
+also setting an accept type.
+
+54
+00:04:01,350 --> 00:04:03,560
+So what kind of response do we want.
+
+55
+00:04:03,560 --> 00:04:08,120
+We would want a J-Zone response so I am setting that as well in here.
+
+56
+00:04:08,300 --> 00:04:10,420
+So I'm building the request builder in here.
+
+57
+00:04:10,640 --> 00:04:15,950
+And after that I'm executing the requests I'm saying Mark and we see that performed request builder
+
+58
+00:04:16,040 --> 00:04:19,250
+and return and this will return the result.
+
+59
+00:04:19,280 --> 00:04:24,610
+So what I'm doing is I'm setting up the mark and then calling the request.
+
+60
+00:04:24,620 --> 00:04:31,730
+So I'm making the request using mark and B C and then I'm checking whether the expected response is.
+
+61
+00:04:31,740 --> 00:04:39,200
+So I would expect a response which contains ideas question description is largest country in the world.
+
+62
+00:04:39,410 --> 00:04:44,960
+And correct answer is Russia that's based on the object which is pleasant in here.
+
+63
+00:04:45,020 --> 00:04:52,910
+So I'm expecting the same question in Dasen format as the output for this specific result.
+
+64
+00:04:52,910 --> 00:04:58,430
+What I'm doing is from the result I'm getting the response and converting it into worse treeing and
+
+65
+00:04:58,430 --> 00:05:01,480
+checking that these two match.
+
+66
+00:05:01,530 --> 00:05:07,610
+Whether this expected matches with the content as being in here one of the important things is we are
+
+67
+00:05:07,610 --> 00:05:14,170
+making use of the J-Zone as a framework to say that these are equal when we compare these two adjacent.
+
+68
+00:05:14,210 --> 00:05:19,520
+They might be small space differences and also there might be some fields which might be missing.
+
+69
+00:05:19,520 --> 00:05:25,380
+So just an asset will be easily able to as sold irrespective of those differences.
+
+70
+00:05:25,550 --> 00:05:32,710
+So if I say just an asset and just pass in the field then it will just check for the ID field and so
+
+71
+00:05:32,730 --> 00:05:33,170
+on.
+
+72
+00:05:33,260 --> 00:05:39,170
+If I send ID and description then it takes both for the ID and the description and if I send the country
+
+73
+00:05:39,740 --> 00:05:42,290
+the correct answer it will check for all these three.
+
+74
+00:05:42,380 --> 00:05:49,700
+So it will check whether these three values have the these three fields have the correct values inside
+
+75
+00:05:49,850 --> 00:05:51,700
+the dates on the spot.
+
+76
+00:05:51,740 --> 00:05:58,380
+We are getting back just an answer it is a very useful framework to assert its own values.
+
+77
+00:05:58,640 --> 00:06:05,570
+So even if there is an extra space right here or if theres an extra space after description and those
+
+78
+00:06:05,570 --> 00:06:10,650
+are not really important things synergies and you would want to ignore them all those kind of things.
+
+79
+00:06:10,650 --> 00:06:17,300
+Gibson is they will be able to easily know and it will only set for things which I specify in here.
+
+80
+00:06:17,300 --> 00:06:22,790
+So if I'm only specifying a couple of closely checked the values of those attributes inside that is
+
+81
+00:06:22,880 --> 00:06:29,510
+not just an asset it makes searching just aren't very easy in this small video.
+
+82
+00:06:29,520 --> 00:06:38,370
+We looked at how to use Mark MVC test to unit test MVC meant that we Lubet What is the use of at MVC
+
+83
+00:06:38,370 --> 00:06:39,550
+test and addition.
+
+84
+00:06:39,660 --> 00:06:46,140
+We saw that its foot in here and we specified which we wanted to unit test.
+
+85
+00:06:46,170 --> 00:06:53,160
+We also looked at what is a mob been used more been in addition to create a mock of the subway service
+
+86
+00:06:53,460 --> 00:06:59,100
+we looked at all the steps in writing a unit test with mock NBC News just on assert to assert that the
+
+87
+00:06:59,100 --> 00:07:01,170
+sun is as expected.
+
+88
+00:07:01,170 --> 00:07:06,990
+This might be a little complex if you have not done a unit test with Mark and C before these are the
+
+89
+00:07:06,990 --> 00:07:12,570
+important things that you would need to know about writing unit tests using Marcom easy until the next
+
+90
+00:07:12,570 --> 00:07:12,960
+video.
+
+91
+00:07:13,010 --> 00:07:13,460
+OK.
+

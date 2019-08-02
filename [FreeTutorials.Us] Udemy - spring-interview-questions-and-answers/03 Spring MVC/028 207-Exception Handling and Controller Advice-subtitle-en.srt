@@ -1,0 +1,240 @@
+1
+00:00:03,210 --> 00:00:09,090
+Come back and this we do let's look at how you can implement common logic for all the controllers and
+
+2
+00:00:09,130 --> 00:00:10,280
+paying him you see.
+
+3
+00:00:10,310 --> 00:00:14,360
+We'll talk about something called controlled Airways and exception handling is something you would want
+
+4
+00:00:14,360 --> 00:00:16,960
+to commonly implement across all the controllers.
+
+5
+00:00:17,060 --> 00:00:19,160
+So we'll talk about it a little bit.
+
+6
+00:00:19,190 --> 00:00:25,220
+We'll also look at questions like how to handle exceptions for web applications and how do you implement
+
+7
+00:00:25,250 --> 00:00:29,690
+exceptionality What are the important things to think about as well as how do you implement to speak
+
+8
+00:00:29,690 --> 00:00:34,430
+error handling for a specific control that meant that what you're looking at in the screen right now
+
+9
+00:00:34,520 --> 00:00:37,090
+is an example exception controller.
+
+10
+00:00:37,140 --> 00:00:43,280
+Important advice which is present in here is something call at controller Ed wise.
+
+11
+00:00:43,280 --> 00:00:49,240
+So this is the annotation that control read is the annotation when you want to implement logic which
+
+12
+00:00:49,250 --> 00:00:52,200
+is common to many people controllers.
+
+13
+00:00:52,290 --> 00:00:59,930
+So this is a place to all the controllers which are present in your application and the ways to which
+
+14
+00:00:59,930 --> 00:01:05,160
+we are specifically implementing in here is at exception handler.
+
+15
+00:01:05,330 --> 00:01:12,800
+What we're saying is we are defining exception handling for anything of exception class any exception
+
+16
+00:01:12,800 --> 00:01:20,470
+that happens in the application of exception or any of subtypes would be handled by this method.
+
+17
+00:01:20,480 --> 00:01:27,150
+So what we were doing in here is when an exception happens in the application in any of the controllers.
+
+18
+00:01:27,230 --> 00:01:30,620
+It would be handled by this method because we are saying it can tolerate.
+
+19
+00:01:30,620 --> 00:01:35,520
+Why is it applicable to all the controllers inside the application.
+
+20
+00:01:35,570 --> 00:01:36,790
+And here we are saying.
+
+21
+00:01:37,130 --> 00:01:40,080
+Handle exception dark is actually here.
+
+22
+00:01:40,100 --> 00:01:43,250
+You can also ask with very specific exceptions.
+
+23
+00:01:43,250 --> 00:01:47,960
+So if you want to say to do not found exception and you would want to handle that separately you can
+
+24
+00:01:47,960 --> 00:01:51,770
+actually have a separate implementation for that as well.
+
+25
+00:01:52,160 --> 00:01:59,820
+Or here what we are doing here is actually logging it into the request and returning the error.
+
+26
+00:01:59,840 --> 00:02:02,300
+So we are saying show the error.
+
+27
+00:02:02,390 --> 00:02:04,940
+So this will lead to error charges.
+
+28
+00:02:05,210 --> 00:02:10,130
+So it will go to the error not just be and display the error dogies speak to the user.
+
+29
+00:02:10,130 --> 00:02:11,660
+This is a web application right.
+
+30
+00:02:11,690 --> 00:02:13,140
+Whenever an error happened.
+
+31
+00:02:13,140 --> 00:02:16,610
+What we want to do we want to show an error page to the user.
+
+32
+00:02:16,610 --> 00:02:22,520
+So this would handle the exception and it would show an error page to the user.
+
+33
+00:02:22,520 --> 00:02:27,440
+How do you implement common logic for controllers thing and we see that's implemented by using control
+
+34
+00:02:27,440 --> 00:02:32,810
+of headways control headways is used to implement common logic.
+
+35
+00:02:32,900 --> 00:02:36,810
+Exception handling in the last VBA will indeed bind.
+
+36
+00:02:36,860 --> 00:02:40,840
+So we can also use control of advice to implement it bind.
+
+37
+00:02:41,120 --> 00:02:44,530
+And we look at exception handler with the exception handler.
+
+38
+00:02:44,530 --> 00:02:48,490
+In addition we'll be able to define how to handle a specific exception.
+
+39
+00:02:48,590 --> 00:02:55,250
+So if we can limit that is throwing any exception then that's an exception handler helps us to handle
+
+40
+00:02:55,250 --> 00:02:55,810
+that.
+
+41
+00:02:55,850 --> 00:02:59,310
+You don't want to have a common exception handling all the method.
+
+42
+00:02:59,330 --> 00:03:04,540
+And if you want to have specific exception handling then you can actually have the same method as an
+
+43
+00:03:04,630 --> 00:03:05,990
+in your normally control.
+
+44
+00:03:05,990 --> 00:03:13,010
+So if I take my two controller and put this method in then this exception handling is applicable only
+
+45
+00:03:13,010 --> 00:03:15,230
+for this specific controller.
+
+46
+00:03:15,470 --> 00:03:18,560
+Why don't we talk about exception handling with respect to web applications.
+
+47
+00:03:18,560 --> 00:03:24,020
+The important thing to make sure is know what happens if you don't show a photo for or something of
+
+48
+00:03:24,020 --> 00:03:30,830
+that kind to the end user or you do want to show a proper error page and one of the important best practices
+
+49
+00:03:30,830 --> 00:03:34,200
+is also give him a handle to ID.
+
+50
+00:03:34,430 --> 00:03:39,640
+So kind of generate a random number in here or a sequence of numbers is fine as well.
+
+51
+00:03:39,650 --> 00:03:42,770
+So kind of have a sequence of numbers and give him an ID.
+
+52
+00:03:42,990 --> 00:03:48,790
+And what you can do is use the ID and log all the information you have about that exception in here.
+
+53
+00:03:48,950 --> 00:03:53,420
+So make sure that the the user gets all the details.
+
+54
+00:03:53,420 --> 00:04:00,230
+That's number one make sure that the developer has enough details in the log present to handle that
+
+55
+00:04:00,230 --> 00:04:01,190
+exception.
+
+56
+00:04:01,190 --> 00:04:06,860
+So those are the two important things you need to think about when you are implementing exception handling
+
+57
+00:04:07,280 --> 00:04:08,830
+in your applications.
+
+58
+00:04:08,950 --> 00:04:12,420
+In this video we looked at how to implement common logic for controllers.
+
+59
+00:04:12,440 --> 00:04:15,940
+We looked at exception handling as a specific example of that.
+
+60
+00:04:16,130 --> 00:04:17,330
+And next would you say.
+

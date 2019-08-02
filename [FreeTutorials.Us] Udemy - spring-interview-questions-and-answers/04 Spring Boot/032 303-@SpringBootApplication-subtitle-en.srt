@@ -1,0 +1,144 @@
+1
+00:00:01,740 --> 00:00:05,970
+This would you we would talk about something called at springboard application.
+
+2
+00:00:06,100 --> 00:00:11,530
+So if you look at any springboard application this is the annotation which will be present everywhere
+
+3
+00:00:11,620 --> 00:00:14,990
+right on top of any good application class.
+
+4
+00:00:14,990 --> 00:00:22,480
+At the root is this thing called springboard application and we use this application to launch up the
+
+5
+00:00:22,910 --> 00:00:24,450
+entire application.
+
+6
+00:00:24,480 --> 00:00:30,340
+Here we are seeing spring application that ran this class and we are able to do that because this is
+
+7
+00:00:30,340 --> 00:00:33,500
+a spring board Application class.
+
+8
+00:00:33,580 --> 00:00:37,240
+So what are the features that Pingu application brings in.
+
+9
+00:00:37,240 --> 00:00:39,020
+That's basically what we would look at.
+
+10
+00:00:39,320 --> 00:00:44,080
+So if we look at being good application there are three important things that it does.
+
+11
+00:00:44,080 --> 00:00:48,730
+Number one it has springboard configuration.
+
+12
+00:00:48,730 --> 00:00:52,300
+Second it is enabling auto configuration.
+
+13
+00:00:52,300 --> 00:01:00,080
+Third it does a component can Springboro configuration tells that this is a configuration for springboard
+
+14
+00:01:00,100 --> 00:01:01,170
+application.
+
+15
+00:01:01,180 --> 00:01:07,840
+This is very similar to the ED configuration annotation that we use in us putting context right in spring
+
+16
+00:01:07,840 --> 00:01:10,370
+applications we use at configuration.
+
+17
+00:01:10,540 --> 00:01:14,260
+So Spingold configuration is just an enhancement of that.
+
+18
+00:01:14,260 --> 00:01:19,720
+So this tells this good application is going to create a spring context.
+
+19
+00:01:19,750 --> 00:01:21,750
+That's basically what it tells us.
+
+20
+00:01:21,760 --> 00:01:26,410
+The second thing which it does is they enable auto configuration.
+
+21
+00:01:26,410 --> 00:01:32,950
+So what happens with Springboard is you would want to configure based on whatever frameworks at present
+
+22
+00:01:32,950 --> 00:01:33,660
+in the class.
+
+23
+00:01:33,670 --> 00:01:38,830
+But this feature called auto configuration needs to be turned on.
+
+24
+00:01:38,830 --> 00:01:39,940
+So who is doing that.
+
+25
+00:01:39,940 --> 00:01:41,920
+That's done by the spring board application.
+
+26
+00:01:41,920 --> 00:01:47,170
+In addition it says that enable our configuration to auto configuration is turned on.
+
+27
+00:01:47,170 --> 00:01:53,210
+The last thing it does is also component can this being what the application is in this bag.
+
+28
+00:01:53,230 --> 00:02:00,120
+Cage so it automatically turns on a component scan on this basically bad case.
+
+29
+00:02:00,130 --> 00:02:00,570
+So what.
+
+30
+00:02:00,630 --> 00:02:08,350
+There were things that you have in this package directly into all the files which are under this package
+
+31
+00:02:08,350 --> 00:02:13,730
+so this rest for web applications in the package that's full of services that they package it in.
+
+32
+00:02:13,740 --> 00:02:20,400
+So everything in this package will be scanned for components and all this stuff would be big deal.
+
+33
+00:02:20,420 --> 00:02:23,890
+So I don't need to explicitly define a component.
+
+34
+00:02:24,010 --> 00:02:29,430
+I'm basically a Springwood application creates the best framework for spring Buddh.
+
+35
+00:02:29,620 --> 00:02:35,080
+So it says there's a spin configuration it enables auto configuration and it enables a component.
+
+36
+00:02:35,130 --> 00:02:36,850
+And until the next week you were way.
+

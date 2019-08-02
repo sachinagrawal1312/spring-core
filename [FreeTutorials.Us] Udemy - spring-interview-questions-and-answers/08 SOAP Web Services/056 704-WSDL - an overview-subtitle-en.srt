@@ -1,0 +1,300 @@
+1
+00:00:02,290 --> 00:00:05,700
+Back in this review we'll talk about WCM.
+
+2
+00:00:05,850 --> 00:00:10,440
+What is his definition language and what are the different parts of the GST.
+
+3
+00:00:10,440 --> 00:00:18,540
+This is D-W is the definition of words so we use this if you provide this W-S D-IL to any of the lines
+
+4
+00:00:18,540 --> 00:00:23,100
+of Web services they'd be able to know every detail of have to call you over.
+
+5
+00:00:23,160 --> 00:00:24,010
+So these.
+
+6
+00:00:24,180 --> 00:00:30,460
+So let's not dig in and see what are the different details that are present in the causes.
+
+7
+00:00:30,490 --> 00:00:31,270
+BSD.
+
+8
+00:00:31,340 --> 00:00:35,390
+So at the high level the important things that Apple isn't that types.
+
+9
+00:00:35,460 --> 00:00:37,500
+You have a variety of messages.
+
+10
+00:00:37,680 --> 00:00:46,170
+Then you have a type of binding and a Silvius and this is how most of the doublings deals would look
+
+11
+00:00:46,310 --> 00:00:46,680
+like.
+
+12
+00:00:46,710 --> 00:00:54,300
+This is kind of a common structure among all of these deals the DL types defines this stuff which is
+
+13
+00:00:54,300 --> 00:00:56,340
+present in this key.
+
+14
+00:00:56,700 --> 00:01:02,640
+So if I look at the as DL types you you'd see the schema that we have created completely being present
+
+15
+00:01:02,640 --> 00:01:03,430
+in here.
+
+16
+00:01:03,790 --> 00:01:08,610
+We are defined the exact details in the request response request and respond.
+
+17
+00:01:08,850 --> 00:01:12,000
+So this is exactly what is present in W-S deal date.
+
+18
+00:01:12,030 --> 00:01:18,900
+This is exactly what we defined in our access to the index of the access is actually inside as the date
+
+19
+00:01:19,020 --> 00:01:25,450
+basically defines what the different structures to similar structures that we are going to use.
+
+20
+00:01:25,500 --> 00:01:33,300
+The next thing I would define the messages the messages are basically defining the requests and responses.
+
+21
+00:01:33,340 --> 00:01:39,540
+So what are the different requests and responses that will be that will be changed by the different
+
+22
+00:01:39,540 --> 00:01:41,010
+operations.
+
+23
+00:01:41,010 --> 00:01:42,960
+So we might have multiple operations.
+
+24
+00:01:42,960 --> 00:01:46,120
+And what would be the request and what we did at this point.
+
+25
+00:01:46,260 --> 00:01:53,430
+So here we are saying okay this is the request and this is actually picking up from the element if I
+
+26
+00:01:53,500 --> 00:01:58,890
+get all calls details request which is defined in the types in the types we are defining the element
+
+27
+00:01:59,280 --> 00:02:05,850
+and here we are saying this is something which can be a request or response for one of the operation.
+
+28
+00:02:05,850 --> 00:02:10,880
+So both the requests and responses we will have messages defined.
+
+29
+00:02:11,070 --> 00:02:14,560
+So the important thing is here there's a complex staple called detail.
+
+30
+00:02:14,610 --> 00:02:19,500
+This cannot be used as a request or response element.
+
+31
+00:02:19,500 --> 00:02:26,480
+The only things which can be used as requests or response elements are what they are mapped as messages.
+
+32
+00:02:26,520 --> 00:02:33,320
+Once you have that request and response to messages defined you can actually map them to operations.
+
+33
+00:02:33,330 --> 00:02:34,440
+How do we do that.
+
+34
+00:02:34,440 --> 00:02:41,640
+We do that by using bolt type support type matches defines all the different operations.
+
+35
+00:02:41,640 --> 00:02:46,290
+So this particular of them so is pro-white these operations.
+
+36
+00:02:46,290 --> 00:02:47,150
+What are the options.
+
+37
+00:02:47,160 --> 00:02:53,880
+Get all Corddry to dance and get court details and in the operation map what does that request and what
+
+38
+00:02:53,880 --> 00:02:56,890
+is the response you're saying Forget all the details.
+
+39
+00:02:57,000 --> 00:03:03,070
+The request is get of course the deal's request and the responses get all the details of this bond.
+
+40
+00:03:03,150 --> 00:03:10,230
+And similarly for the other one for the other one which is good because we did the request is get court
+
+41
+00:03:10,290 --> 00:03:14,640
+details request and the response is get good details as Bond.
+
+42
+00:03:14,850 --> 00:03:23,430
+What type is like an interface so you are defining OK this web server is all for these services if you
+
+43
+00:03:23,430 --> 00:03:26,180
+want to call this web service you would need to pass this input.
+
+44
+00:03:26,220 --> 00:03:27,690
+And this is the output.
+
+45
+00:03:27,690 --> 00:03:29,640
+So this is like the interface is different.
+
+46
+00:03:29,760 --> 00:03:32,070
+How do you call a specific method of right.
+
+47
+00:03:32,110 --> 00:03:39,470
+So that's exactly what is specified in the pool table type is the interface and the binding defines
+
+48
+00:03:39,600 --> 00:03:40,620
+the implementation.
+
+49
+00:03:40,620 --> 00:03:42,050
+How do you really call it.
+
+50
+00:03:42,270 --> 00:03:49,040
+So here the important thing is that we define our style and the transport the transport defines we're
+
+51
+00:03:49,040 --> 00:03:52,500
+using hash DTP hash UDP is Internet Web.
+
+52
+00:03:52,680 --> 00:03:58,680
+So the call to use call or happened or should he be so we are defining soap or what.
+
+53
+00:03:58,770 --> 00:03:59,490
+GTP.
+
+54
+00:03:59,490 --> 00:04:03,320
+So what we will be using is the other option obviously is soap or M.
+
+55
+00:04:03,320 --> 00:04:12,120
+Q When we are going to use q to transfer the requests and response style we are using here is document
+
+56
+00:04:12,390 --> 00:04:18,810
+to indicate the fact that we are actually exchanging complete Exham requests and similar response.
+
+57
+00:04:18,840 --> 00:04:26,560
+The alternate deal for document is actually something called RPE C which is the more procedure calls.
+
+58
+00:04:26,670 --> 00:04:30,020
+Its like calling a procedure which is defined somebody else.
+
+59
+00:04:30,060 --> 00:04:36,090
+It's like calling a a third which is present somewhere else when all the RTC we would need to define
+
+60
+00:04:36,090 --> 00:04:44,520
+the input parameters and we need to define the return type just like a third document is the most frequently
+
+61
+00:04:44,520 --> 00:04:47,760
+used style of so binding.
+
+62
+00:04:47,760 --> 00:04:54,320
+So here we are using a binding style of document and we are saying we are going to send the request
+
+63
+00:04:54,330 --> 00:05:01,130
+over which DP We are indicating that these two operations are using this as binding.
+
+64
+00:05:01,340 --> 00:05:08,580
+So ending defines how are we going to expose our operations guessing we are going to expose them over
+
+65
+00:05:08,750 --> 00:05:15,280
+which deep deep the last one which is present in here is this is what is the location.
+
+66
+00:05:15,290 --> 00:05:17,460
+How are the clients going to use this.
+
+67
+00:05:17,500 --> 00:05:17,960
+So.
+
+68
+00:05:17,990 --> 00:05:24,230
+So you're saying super dress this is the address at which this is a high level that defines all different
+
+69
+00:05:24,230 --> 00:05:28,100
+elements may say just define what are the requests and the responses.
+
+70
+00:05:28,230 --> 00:05:30,190
+They defined the interface.
+
+71
+00:05:30,200 --> 00:05:36,320
+Basically what are the operations that are available binding maps the operations to how you are exposing
+
+72
+00:05:36,320 --> 00:05:43,540
+them whether using soap or HTP or soap or MQ and servies maps it to end point.
+
+73
+00:05:43,540 --> 00:05:49,150
+What is it you are a real bitch symbolist can use to call this web service.
+
+74
+00:05:49,220 --> 00:05:55,700
+These are the different details that are typically present in all the Dahlia's DNS and then the next
+
+75
+00:05:55,700 --> 00:05:56,260
+step bullae.
+

@@ -1,0 +1,324 @@
+1
+00:00:03,290 --> 00:00:07,550
+In the studio let's look at spring board actuate what is being called actuator.
+
+2
+00:00:07,550 --> 00:00:10,600
+How do you monitor Web services using something good actors.
+
+3
+00:00:10,970 --> 00:00:16,670
+And how do you find more information about your application environment using springboard.
+
+4
+00:00:16,670 --> 00:00:19,320
+So there are a lot of things that you can do with springboard.
+
+5
+00:00:19,460 --> 00:00:24,640
+And in this we do let's look at some of the important things that you can do with springboard.
+
+6
+00:00:24,650 --> 00:00:31,400
+Actuator is basically an application which you can use to monitor your application with a spring board
+
+7
+00:00:31,890 --> 00:00:35,370
+or lead you need to do is to add a simple dependency.
+
+8
+00:00:35,370 --> 00:00:41,030
+So as soon as you added dependencies would start the actuator that's it you'll get all the features
+
+9
+00:00:41,490 --> 00:00:43,620
+around your services for free.
+
+10
+00:00:43,700 --> 00:00:45,890
+So it exposes a lot of our race.
+
+11
+00:00:45,890 --> 00:00:47,930
+It exposes a lot of services.
+
+12
+00:00:48,170 --> 00:00:52,070
+Slash slash Metrix slash trees dump beans.
+
+13
+00:00:52,310 --> 00:00:58,910
+Auto configuration can fake props and mappings lets one of the important things with actually it is
+
+14
+00:00:58,910 --> 00:01:04,060
+the fact that before springboard 2.0 the L was slash actuator.
+
+15
+00:01:04,220 --> 00:01:06,890
+So it was slash actuator.
+
+16
+00:01:06,890 --> 00:01:12,050
+Now it's slash application so early as it was earlier it was slash actuator.
+
+17
+00:01:12,050 --> 00:01:20,670
+Now it's Splash application since Springle 2.0 the uare is slash application.
+
+18
+00:01:20,690 --> 00:01:26,510
+Let's take a quick demo offspring would actually we are actually using something called a whole browser
+
+19
+00:01:26,740 --> 00:01:32,420
+to look at this spring boot actuator and if you look at this being boot actuator it exposes a lot of
+
+20
+00:01:32,420 --> 00:01:35,880
+details in info and we don't let go too and we don't want.
+
+21
+00:01:35,930 --> 00:01:41,570
+So this shows all the information where the application is deployed.
+
+22
+00:01:41,600 --> 00:01:43,340
+So you can see what is the question of.
+
+23
+00:01:43,360 --> 00:01:48,860
+What is the different details that are related to the job of Yemen that is specific to here where is
+
+24
+00:01:48,860 --> 00:01:55,520
+it installed and also different details related to the Java library the classpath which is being used
+
+25
+00:01:55,940 --> 00:02:04,530
+and a lot of our environment information is present in the Ian slashy application flash and that's where
+
+26
+00:02:04,580 --> 00:02:05,270
+this is split.
+
+27
+00:02:05,270 --> 00:02:10,370
+And other than that the autoconfig has all the information about what configuration.
+
+28
+00:02:10,370 --> 00:02:13,570
+We looked at it during the auto configuration video.
+
+29
+00:02:13,760 --> 00:02:18,980
+You can see what are the positive matches what they do match just for auto configuration if you want
+
+30
+00:02:18,980 --> 00:02:19,720
+to get a heap done.
+
+31
+00:02:19,730 --> 00:02:26,240
+You can use them if you want but generally get a high level help of the application whether the application
+
+32
+00:02:26,240 --> 00:02:29,920
+is up or whether the database we are connecting to is up and things like that.
+
+33
+00:02:29,930 --> 00:02:31,550
+You can go to the head.
+
+34
+00:02:31,550 --> 00:02:36,490
+So it shows that the state of the application is up the DB status is up.
+
+35
+00:02:36,500 --> 00:02:39,920
+The kind of database we are connecting to what is the disk space.
+
+36
+00:02:40,070 --> 00:02:43,260
+How much is free and all that kind of information.
+
+37
+00:02:44,170 --> 00:02:46,550
+The other important thing is metrics.
+
+38
+00:02:46,660 --> 00:02:54,450
+So over here you can see all the different metrics about the application at the high level.
+
+39
+00:02:54,450 --> 00:03:01,090
+You can see information about how much memory is there how much is there and how much how many processes
+
+40
+00:03:01,090 --> 00:03:01,850
+are present.
+
+41
+00:03:01,850 --> 00:03:02,650
+What are the threats.
+
+42
+00:03:02,680 --> 00:03:04,500
+How many classes are loaded.
+
+43
+00:03:04,660 --> 00:03:07,470
+Details about the garbage collection and the hitch.
+
+44
+00:03:07,480 --> 00:03:15,100
+DP sessions Well one of the important things about the metrics is actually you can even crack metrics
+
+45
+00:03:15,160 --> 00:03:22,270
+of your application related to you or else what I'm doing here is I'm hitting one of the highlights
+
+46
+00:03:22,270 --> 00:03:28,260
+in the application that we have created local OCDE to use this when I'm hitting it a few times.
+
+47
+00:03:28,330 --> 00:03:33,620
+And also I know that a specific user ID does not exist so that as well.
+
+48
+00:03:33,640 --> 00:03:38,410
+A few times now you can see an exception response that is coming back in here as well.
+
+49
+00:03:38,770 --> 00:03:41,810
+So I cause a few errors as well as a few successes.
+
+50
+00:03:41,860 --> 00:03:48,820
+And now I would go and refresh our metrics some refresh and the metrics out.
+
+51
+00:03:48,830 --> 00:03:54,180
+And now you can see more details about this thing so user ID.
+
+52
+00:03:54,260 --> 00:03:58,440
+So we caused a forum for error with the service users.
+
+53
+00:03:58,490 --> 00:04:00,610
+Eighty seven times.
+
+54
+00:04:00,680 --> 00:04:04,660
+And this also returned a successful message seven times.
+
+55
+00:04:04,660 --> 00:04:11,780
+So if I got enough and cause a couple more failures and refresh you would see enough that the number
+
+56
+00:04:11,780 --> 00:04:19,320
+of failure would have been up so 3:56 user ID is Levan and to do 200 user id remained at seven.
+
+57
+00:04:19,550 --> 00:04:25,720
+So you can see how many times a specific uare is successful a specific request has failed.
+
+58
+00:04:25,880 --> 00:04:29,930
+And you can use this information to monitor your application.
+
+59
+00:04:29,930 --> 00:04:34,960
+So if you are spending a lot of banks then you know there is something wrong with it.
+
+60
+00:04:34,960 --> 00:04:39,350
+So you can use all that kind of monitoring from here.
+
+61
+00:04:39,650 --> 00:04:43,120
+So explain to a lot of important metrics idea.
+
+62
+00:04:43,380 --> 00:04:48,890
+And we don't want as well as about the user application also so all the rest.
+
+63
+00:04:48,910 --> 00:04:51,020
+So he says your application is exploding.
+
+64
+00:04:51,080 --> 00:04:54,470
+You can get information off about them using the matrix.
+
+65
+00:04:54,500 --> 00:05:01,070
+So it's a local host ADHD application metrics logger's gives you more information about what logs are
+
+66
+00:05:01,070 --> 00:05:05,870
+configured and also gives you more information about the last few requests.
+
+67
+00:05:05,870 --> 00:05:11,570
+What is the request what is the response that was sent out mapping shows what are the different areas
+
+68
+00:05:11,570 --> 00:05:13,190
+that are mapped.
+
+69
+00:05:13,250 --> 00:05:19,430
+So all your press controls all you add error controllers all those kind of things shouldn't be mappings
+
+70
+00:05:19,910 --> 00:05:26,450
+being shows all the spring beans that are configured as part of your application so you can see that
+
+71
+00:05:26,570 --> 00:05:28,610
+we have swagga can be mapped.
+
+72
+00:05:28,610 --> 00:05:30,980
+So this is the Swagel documentation.
+
+73
+00:05:30,980 --> 00:05:37,350
+This is a bin which causes begin with the swagga documentation so that is present in here and you'll
+
+74
+00:05:37,370 --> 00:05:42,470
+see a whole host of other beads that are present so you can see all the detail of disappearing beans
+
+75
+00:05:42,470 --> 00:05:46,730
+that are exposed or that are created as part of application beans.
+
+76
+00:05:47,090 --> 00:05:53,600
+A dump can be used to get thread dump and conflict properties can be used to look at all the configuration
+
+77
+00:05:53,600 --> 00:06:00,020
+properties that all the things that you can configure through the application are properties all those
+
+78
+00:06:00,020 --> 00:06:08,010
+kind of stuff is pleasant in actuator is basically like a management and so it helps you to manage your
+
+79
+00:06:08,010 --> 00:06:09,390
+application.
+
+80
+00:06:09,390 --> 00:06:15,150
+You can look at all the different information relating to your information including the application
+
+81
+00:06:15,150 --> 00:06:18,770
+related metrics and build the next with your boy.
+

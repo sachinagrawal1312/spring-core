@@ -1,0 +1,448 @@
+1
+00:00:02,710 --> 00:00:07,870
+Welcome back in this you will look at important questions which are related to Aspect Oriented Programming
+
+2
+00:00:08,190 --> 00:00:11,940
+that really you will start with looking at an important question like What are crosscutting cancers
+
+3
+00:00:11,950 --> 00:00:15,200
+How do you implement cross-cutting concerns in your application.
+
+4
+00:00:15,490 --> 00:00:20,770
+If you want to log every request to a web application what are the options you can think of and how
+
+5
+00:00:20,770 --> 00:00:24,250
+do you crack performance of every request.
+
+6
+00:00:24,280 --> 00:00:27,460
+What options can you think of those are the different things that we would get.
+
+7
+00:00:27,520 --> 00:00:28,450
+So let's get started.
+
+8
+00:00:28,450 --> 00:00:32,110
+A cross-cutting concerns when you talk about web applications.
+
+9
+00:00:32,110 --> 00:00:39,790
+There are multiple the right web business data integration and other the least each layer specializes
+
+10
+00:00:39,880 --> 00:00:41,440
+in doing something.
+
+11
+00:00:41,890 --> 00:00:45,560
+However there are things which are across the.
+
+12
+00:00:45,560 --> 00:00:54,380
+So for example logging security these are things that you would want to manage across the application
+
+13
+00:00:54,410 --> 00:00:56,690
+performance management for example.
+
+14
+00:00:56,690 --> 00:01:02,460
+These are things which are concerns of every of which is present in the application.
+
+15
+00:01:03,020 --> 00:01:10,300
+And these are called cross-cutting concerns cross-cutting concerns are concerns of all the layers which
+
+16
+00:01:10,300 --> 00:01:17,870
+are present in an application typically all these cross-cutting consultants are implemented using something
+
+17
+00:01:17,870 --> 00:01:22,770
+called aspect oriented programming a or b.
+
+18
+00:01:23,090 --> 00:01:29,680
+For example if you want to log every request that comes to a web application how do I do that.
+
+19
+00:01:29,720 --> 00:01:31,510
+One of the options that I.
+
+20
+00:01:31,540 --> 00:01:34,040
+E provide to me is to configure a filter.
+
+21
+00:01:34,040 --> 00:01:34,330
+Right.
+
+22
+00:01:34,340 --> 00:01:41,420
+I can configure a filter and then implement a simple method to lob the request and log the response
+
+23
+00:01:41,420 --> 00:01:41,710
+back.
+
+24
+00:01:41,710 --> 00:01:49,100
+That's one way or the other way is I can write a or b so I can do some aspect oriented programming saying
+
+25
+00:01:49,460 --> 00:01:55,370
+I would want to intercept all calls to this controller and before calling any method in this controller
+
+26
+00:01:55,850 --> 00:02:03,380
+log request and log the response that's what aspect oriented programming would allow us to do even if
+
+27
+00:02:03,440 --> 00:02:10,340
+I wanted to track the performance of every request even that kind of stuff can also be done using aspect
+
+28
+00:02:10,340 --> 00:02:12,110
+oriented programming.
+
+29
+00:02:12,410 --> 00:02:18,170
+Let's now shift our attention towards things like specked foreign Kirt And what are the different types
+
+30
+00:02:18,170 --> 00:02:23,660
+of AOP that advisors that are present and what is weaving and things like that before we complicate
+
+31
+00:02:23,660 --> 00:02:25,570
+our minds with any of these things.
+
+32
+00:02:25,640 --> 00:02:33,260
+Let's look at an eop example right to have a simple hi by servies so I have a third Saibai method and
+
+33
+00:02:33,260 --> 00:02:35,540
+this is written something.
+
+34
+00:02:35,720 --> 00:02:42,800
+So these are three method what I want to do is before I call this method on the high by servies I would
+
+35
+00:02:42,800 --> 00:02:51,500
+want to print the name of the method and I would want to be able to print the different arguments that
+
+36
+00:02:51,620 --> 00:02:52,250
+are present.
+
+37
+00:02:52,250 --> 00:02:58,810
+So whenever a method in high school I would want to print its name as well as its arguments.
+
+38
+00:02:58,970 --> 00:03:03,080
+These are the kind of things that AOP is really good at doing.
+
+39
+00:03:03,110 --> 00:03:11,780
+So before any of these things is called we'll be able to use AOP to induce recall the name and in the
+
+40
+00:03:11,780 --> 00:03:12,730
+argument.
+
+41
+00:03:12,770 --> 00:03:13,860
+How do we do that.
+
+42
+00:03:13,970 --> 00:03:15,780
+Let's look at an example.
+
+43
+00:03:16,100 --> 00:03:20,050
+So what we are defining in here is as big.
+
+44
+00:03:20,150 --> 00:03:26,000
+So we're creating an aspect let's discuss the theory behind this aspect a little later.
+
+45
+00:03:26,030 --> 00:03:31,800
+So we're creating a spring component and what we are defining in here is something called a point could
+
+46
+00:03:31,850 --> 00:03:37,870
+what we are saying is high by Sowerby's so high by service any method.
+
+47
+00:03:37,870 --> 00:03:45,360
+So by start we mean any method is called on the high by servies and any arguments.
+
+48
+00:03:45,630 --> 00:03:51,710
+What we're saying is before so Ed before means before the method is called.
+
+49
+00:03:51,780 --> 00:03:59,370
+So you're saying before any method is called on the high by servies what you would need to do is you
+
+50
+00:03:59,370 --> 00:04:03,180
+need to get the nature of that specific moment.
+
+51
+00:04:03,450 --> 00:04:12,120
+So get this Diggnation of that method and get its name and also print what arguments are being passed.
+
+52
+00:04:12,120 --> 00:04:19,270
+So whenever this method any of these methods is called what would happen is these details are printed
+
+53
+00:04:19,320 --> 00:04:24,940
+to say hi with Wardo value was being passed and the name will be printed out.
+
+54
+00:04:25,230 --> 00:04:29,200
+So similar to that if it's a controller at let's say this was a control method.
+
+55
+00:04:29,220 --> 00:04:31,780
+And these are all the different methods in the controller.
+
+56
+00:04:32,040 --> 00:04:40,020
+So this is before aspect I mean here we are trying to intercept the method call before it happens.
+
+57
+00:04:40,050 --> 00:04:45,410
+You can also intercept the method call after it happened as well.
+
+58
+00:04:45,550 --> 00:04:52,050
+What we are seeing after returning so after the metal has completed exec fusion we would want to see
+
+59
+00:04:52,050 --> 00:04:53,060
+what that is.
+
+60
+00:04:53,230 --> 00:04:55,290
+He's all here.
+
+61
+00:04:55,380 --> 00:05:00,270
+We're using it after training and defining a point got too high by so.
+
+62
+00:05:00,420 --> 00:05:07,260
+So any metal on the base is saying take the result and put it into this object so the result will be
+
+63
+00:05:07,260 --> 00:05:09,450
+available to us in this object.
+
+64
+00:05:09,450 --> 00:05:14,140
+So that's why we put reasoning's equal to the cells so the result is made available in here.
+
+65
+00:05:14,400 --> 00:05:19,240
+So what we're doing in here is at that point that get signature good name.
+
+66
+00:05:19,240 --> 00:05:24,630
+So you're saying that the method is executed in the name of the mentor as well as what was the research
+
+67
+00:05:24,630 --> 00:05:32,330
+which was done back what we have said is after the execution of this basic method print the name of
+
+68
+00:05:32,330 --> 00:05:34,720
+the mental as well as whatever was written back.
+
+69
+00:05:34,720 --> 00:05:38,840
+So in this case and in this case that nothing will be written back it will be null.
+
+70
+00:05:38,990 --> 00:05:44,600
+But here high buy would be written and that could be printed out with it or people would be able to
+
+71
+00:05:44,600 --> 00:05:50,630
+intercept the method calls and do something just before and after as.
+
+72
+00:05:50,900 --> 00:05:56,840
+The most powerful of the A or B interceptions is what is called round.
+
+73
+00:05:57,050 --> 00:05:59,970
+So what you can do with an rounded wise.
+
+74
+00:06:00,080 --> 00:06:02,220
+Here we are implementing and rounded ways.
+
+75
+00:06:02,330 --> 00:06:04,260
+So what we are doing is simple.
+
+76
+00:06:04,400 --> 00:06:10,220
+So we have a new method on the high bar so we would want to intercept what we are trying to do in here.
+
+77
+00:06:10,240 --> 00:06:16,370
+We use a proceeding join point proceeding join point will allow us to proceed on to what we're doing
+
+78
+00:06:16,370 --> 00:06:19,570
+here is around the method call.
+
+79
+00:06:19,700 --> 00:06:28,130
+So what happens is just before this method is called just before the method is called the control goes
+
+80
+00:06:28,250 --> 00:06:32,430
+over to the ground edgewise.
+
+81
+00:06:32,500 --> 00:06:39,300
+So what happens is we are actually taking this to our game at the start of the third and then we are
+
+82
+00:06:39,300 --> 00:06:43,600
+saying OK giant point that policy this will make sure that the method is executed.
+
+83
+00:06:43,600 --> 00:06:47,460
+Whatever method is intercepted that is executed.
+
+84
+00:06:47,470 --> 00:06:53,410
+The result is returned back and after the completion of the method we are noting the end game and we
+
+85
+00:06:53,410 --> 00:06:59,210
+are calculating the execution time of that method and printing it out.
+
+86
+00:06:59,560 --> 00:07:01,560
+That's called and around Edwy.
+
+87
+00:07:01,570 --> 00:07:03,180
+So somebody is calling this a high.
+
+88
+00:07:03,270 --> 00:07:09,730
+Third what we'll do is be intercepted before calling them that we are unloading down the time we're
+
+89
+00:07:09,850 --> 00:07:11,110
+letting it proceed.
+
+90
+00:07:11,260 --> 00:07:15,910
+And then after that we are not in the time and the difference is the amount of time that was taken to
+
+91
+00:07:15,910 --> 00:07:17,550
+execute this method.
+
+92
+00:07:17,560 --> 00:07:23,920
+Imagine if we can do this with a control method or a business method or do you admit that we'll be able
+
+93
+00:07:23,920 --> 00:07:31,420
+to find the amount of time each of these methods in the previous set of questions we talked about performance
+
+94
+00:07:31,420 --> 00:07:35,180
+management and we said we can implement that using a or b.
+
+95
+00:07:35,200 --> 00:07:44,020
+So the best advice to implement that would be in round advice so around sideways is basically you can
+
+96
+00:07:44,020 --> 00:07:49,270
+do something before the method is executed and you can do something after the method is executed.
+
+97
+00:07:49,270 --> 00:07:54,970
+What we're doing here is noting down the time of the start of the method and end game of dhimmitude
+
+98
+00:07:55,310 --> 00:08:01,750
+and then after the method is completed execution and using the difference as the execution time of that
+
+99
+00:08:01,750 --> 00:08:07,430
+piece we entered using this point good so we can define what the word meant that we would want to intercept
+
+100
+00:08:07,450 --> 00:08:13,180
+so I can let's say define in sort of the high bar so I can say I would want to intercept all calls to
+
+101
+00:08:13,180 --> 00:08:14,470
+the data earlier.
+
+102
+00:08:14,650 --> 00:08:18,170
+Or I can intercept all calls to the business leader.
+
+103
+00:08:18,550 --> 00:08:24,400
+What we're looking at are code examples which are using aspect G aspect.
+
+104
+00:08:24,400 --> 00:08:31,960
+JS One of the most famous or P free books here we are intercepting method calls but with AOP actually
+
+105
+00:08:31,960 --> 00:08:35,680
+you can even intercept changes to values in a field.
+
+106
+00:08:35,680 --> 00:08:43,240
+So if you have a bean and a bean attribute value has changed or a field value has changed.
+
+107
+00:08:43,240 --> 00:08:49,690
+Even those kind of things you can find out using aspic cheat in the next week you will get down to the
+
+108
+00:08:49,690 --> 00:08:56,290
+technical details and identify what are the different things which are present in the examples that
+
+109
+00:08:56,290 --> 00:08:56,920
+we don't do it.
+
+110
+00:08:56,920 --> 00:08:57,910
+What is Ajarn point.
+
+111
+00:08:57,910 --> 00:08:59,580
+What is your advice what is the point Curt.
+
+112
+00:08:59,620 --> 00:09:03,060
+What is an aspect we ring and leave it until the next to are way.
+

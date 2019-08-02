@@ -1,0 +1,408 @@
+1
+00:00:01,780 --> 00:00:07,480
+Welcome back in this you we'll talk about form form validation and other such features which can be
+
+2
+00:00:07,480 --> 00:00:09,300
+implemented with spring NBC.
+
+3
+00:00:09,360 --> 00:00:14,180
+So what do we mean by a form so let's say I want to update this particular to do so.
+
+4
+00:00:14,200 --> 00:00:20,410
+I would want to enter some details here and I would want to change the target date to 29.
+
+5
+00:00:20,710 --> 00:00:28,000
+And I would want to submit this in here what we would need to do is in here we would need to create
+
+6
+00:00:28,000 --> 00:00:28,740
+a form.
+
+7
+00:00:28,750 --> 00:00:33,030
+So this is basically a form which contains two fields which are present in here.
+
+8
+00:00:33,040 --> 00:00:36,560
+The other thing is we want to do in the form is to add validation.
+
+9
+00:00:36,560 --> 00:00:43,060
+So I would want to add validations which says I would want to at least have six characters in the description.
+
+10
+00:00:43,060 --> 00:00:45,420
+So this is what is called validation.
+
+11
+00:00:45,610 --> 00:00:51,790
+I want to be able to implement this validation on the server side so I don't want client side validation
+
+12
+00:00:51,790 --> 00:00:52,180
+for this.
+
+13
+00:00:52,180 --> 00:00:56,560
+I would want to be able to implement this validation on the Java side of things.
+
+14
+00:00:56,560 --> 00:01:02,070
+So in this video let's look at how sping MVC would enable you to do such kind of things will disclose
+
+15
+00:01:02,140 --> 00:01:06,510
+all the interview questions which are related to these concepts.
+
+16
+00:01:06,670 --> 00:01:10,320
+Let's start with the first question which is form backing object.
+
+17
+00:01:10,310 --> 00:01:14,440
+So this is the form right to represent this form in spring.
+
+18
+00:01:14,440 --> 00:01:17,840
+You would need to have something called a Form backing object.
+
+19
+00:01:18,080 --> 00:01:24,420
+So form backing object is basically the backend representation the suicide representation of this form.
+
+20
+00:01:24,500 --> 00:01:31,210
+The table in which this form is map is called the form backing or object or here.
+
+21
+00:01:31,240 --> 00:01:36,180
+If you look at the control I'm sure to page you're adding an attribute called to do.
+
+22
+00:01:36,180 --> 00:01:38,260
+So we are saying to do what.
+
+23
+00:01:38,410 --> 00:01:41,200
+To do that is being added with the default one.
+
+24
+00:01:41,200 --> 00:01:47,710
+So this is the new page when I go to the Toulouse and say add this is a new page.
+
+25
+00:01:47,710 --> 00:01:52,470
+So if you look at the description it's empty and the target date is today's date.
+
+26
+00:01:52,480 --> 00:01:53,550
+How are we getting it.
+
+27
+00:01:53,650 --> 00:01:59,540
+Because we are adding this as the form backing object we are seeing to use the form backing object.
+
+28
+00:01:59,590 --> 00:02:01,740
+The details are zero.
+
+29
+00:02:01,800 --> 00:02:04,550
+I'm also adding a description of him.
+
+30
+00:02:04,700 --> 00:02:12,670
+And that in today's date as the what would happen is that to do would be written back and Truda or just
+
+31
+00:02:12,670 --> 00:02:15,460
+be would be shown to use the name of The View.
+
+32
+00:02:15,730 --> 00:02:24,010
+And if you look at the GSB command name which is used here is to do so we are saying this to do in here.
+
+33
+00:02:24,010 --> 00:02:33,940
+This object should be mapped to this form so any form the description DSG field to do maps to this particular
+
+34
+00:02:34,420 --> 00:02:35,710
+description field.
+
+35
+00:02:35,980 --> 00:02:38,790
+The target date maps to this specific thing.
+
+36
+00:02:38,800 --> 00:02:44,210
+So we are basically mapping the form backing objects so we are saying this is the object.
+
+37
+00:02:44,380 --> 00:02:47,690
+And this is how it relates to the form.
+
+38
+00:02:48,130 --> 00:02:54,510
+And what happens when you click the submit button is we would again map that particular thing to the
+
+39
+00:02:54,670 --> 00:02:55,810
+to do in here.
+
+40
+00:02:55,810 --> 00:02:57,120
+So we are mapping it again.
+
+41
+00:02:57,130 --> 00:03:01,670
+So this is the app to do matter which gets invoked when a pause to happen.
+
+42
+00:03:01,680 --> 00:03:03,790
+So here you see slash at the do.
+
+43
+00:03:04,030 --> 00:03:05,590
+And the method is both.
+
+44
+00:03:05,590 --> 00:03:09,160
+So when the Post happens this basic method is invoked.
+
+45
+00:03:09,190 --> 00:03:14,940
+And what we are doing in here is we are trying to add that to do so we are trying to get the description
+
+46
+00:03:14,950 --> 00:03:18,760
+we're trying to add the To Do list of tools that we have.
+
+47
+00:03:18,820 --> 00:03:22,490
+And then we add rededicating to the list to do speech.
+
+48
+00:03:22,510 --> 00:03:24,300
+This is the normal flow.
+
+49
+00:03:24,310 --> 00:03:27,730
+Now we also saw that there was a violation that is getting triggered.
+
+50
+00:03:27,730 --> 00:03:30,250
+How is it implemented using sping NBC.
+
+51
+00:03:30,240 --> 00:03:33,250
+What I we need to do is to implement validation.
+
+52
+00:03:33,250 --> 00:03:40,380
+You need to use something called Jowler validation EPA and the default intimidation for job abolishing
+
+53
+00:03:40,390 --> 00:03:43,820
+EPA IIS hibernate data.
+
+54
+00:03:43,900 --> 00:03:46,540
+We're using a few annotations from it here.
+
+55
+00:03:46,540 --> 00:03:53,530
+So if I want to do validation what I'll do is I can actually go here and say at size and say this description
+
+56
+00:03:53,530 --> 00:03:59,920
+field should have a minimum of six characters and this is the message which should be shown if that
+
+57
+00:03:59,920 --> 00:04:01,140
+feeds.
+
+58
+00:04:01,150 --> 00:04:06,570
+So what we're doing here is we are adding validation to bean directly.
+
+59
+00:04:06,670 --> 00:04:09,560
+So I wanted to do a class on it to be in.
+
+60
+00:04:09,640 --> 00:04:11,520
+We are adding a validation.
+
+61
+00:04:11,710 --> 00:04:15,200
+So this is adding a validation on the B into excises.
+
+62
+00:04:15,220 --> 00:04:20,270
+One of the annotations which had rallied as far as Jallow abolition EPA is concerned.
+
+63
+00:04:20,470 --> 00:04:24,030
+And what we would do is on the bean.
+
+64
+00:04:24,040 --> 00:04:30,610
+So all here what we are doing at valid to what we are saying is we added and at the annotation on that
+
+65
+00:04:30,610 --> 00:04:34,930
+to do so when data from the form gets mapped.
+
+66
+00:04:34,930 --> 00:04:39,770
+Here we are saying validated by putting D at the end of.
+
+67
+00:04:39,790 --> 00:04:44,280
+And one more thing which we are adding in is the binding result.
+
+68
+00:04:44,470 --> 00:04:46,660
+What happens when I click submit.
+
+69
+00:04:46,680 --> 00:04:53,440
+Here what happens is that fill up a couple of details is the answer.
+
+70
+00:04:53,680 --> 00:05:02,550
+What happens is the values from here get bound to this specific method to the to do and what happens
+
+71
+00:05:02,640 --> 00:05:08,850
+also is that devaluation gets invoked and the result of the validation gets stored in something called
+
+72
+00:05:08,850 --> 00:05:11,680
+a binding resurged result.
+
+73
+00:05:11,790 --> 00:05:18,410
+If there are no errors if Brazil has errors then we are redirecting him to the to do page again.
+
+74
+00:05:18,420 --> 00:05:22,320
+So what we are doing is we are sending them back to the to do page.
+
+75
+00:05:22,320 --> 00:05:26,160
+There are no errors then we would want to add to do in.
+
+76
+00:05:26,350 --> 00:05:31,110
+So what we are doing is we added our evaluation on the bean then under control of controller method
+
+77
+00:05:31,110 --> 00:05:37,740
+we said at the rally and we took the binding result and we did it redirected it to digest.
+
+78
+00:05:38,010 --> 00:05:43,270
+How do we display validation errors on the JCP it's by using springform bag.
+
+79
+00:05:43,290 --> 00:05:51,060
+It's by using form Arabs and saying show the errors for that field what field description field.
+
+80
+00:05:51,060 --> 00:05:57,930
+So what happens is spring NBC would map the error which comes back over here and we would get to see
+
+81
+00:05:58,290 --> 00:06:03,840
+the validation message in here a little bit of a roundabout kind of thing.
+
+82
+00:06:03,840 --> 00:06:10,080
+So what we are doing to implement validation in here is be implemented on the bean in the control method.
+
+83
+00:06:10,290 --> 00:06:16,140
+We would add that really the annotation and the result get stored in binding result we check whether
+
+84
+00:06:16,140 --> 00:06:18,210
+there are any errors if there are errors.
+
+85
+00:06:18,210 --> 00:06:24,380
+We did it back to the same page and in the same page we have the form errors which display the errors
+
+86
+00:06:24,480 --> 00:06:25,360
+in here.
+
+87
+00:06:25,560 --> 00:06:30,060
+So if you look at validation which is implemented by this being an important concept we talked about
+
+88
+00:06:30,130 --> 00:06:36,420
+our binding result and also have your map validation details if you will that both of them are binding
+
+89
+00:06:36,420 --> 00:06:39,740
+result is the result of the validation on the controller.
+
+90
+00:06:39,750 --> 00:06:44,000
+So the controller it's in that is stored in here.
+
+91
+00:06:44,250 --> 00:06:48,460
+And the way we display the arrows on the view is by using the form spec.
+
+92
+00:06:48,660 --> 00:06:52,560
+We also look at some of the springform tags in our view.
+
+93
+00:06:52,560 --> 00:06:53,040
+Right.
+
+94
+00:06:53,040 --> 00:06:54,440
+So this is the label.
+
+95
+00:06:54,480 --> 00:06:57,510
+So this label is whatever is shown on the screen.
+
+96
+00:06:57,800 --> 00:06:58,330
+Right.
+
+97
+00:06:58,440 --> 00:07:06,150
+So this is the label which is shown in bold That's the label the input is input field and also the form
+
+98
+00:07:06,150 --> 00:07:12,860
+input which is present in here so form form is used to create and form some of the important springform
+
+99
+00:07:12,870 --> 00:07:18,660
+tags are fome fome fome label form input form letters and things like that.
+
+100
+00:07:18,870 --> 00:07:24,330
+In this video we looked at how do you back a farm using sping MVC using a farm backing object.
+
+101
+00:07:24,360 --> 00:07:29,900
+And also we looked at the basics of how validations are done using spelling bees and in the next video
+
+102
+00:07:30,050 --> 00:07:30,290
+we're.
+

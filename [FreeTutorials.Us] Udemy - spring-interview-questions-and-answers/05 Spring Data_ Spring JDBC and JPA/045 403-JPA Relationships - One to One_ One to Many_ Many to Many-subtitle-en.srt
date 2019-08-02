@@ -1,0 +1,280 @@
+1
+00:00:02,870 --> 00:00:10,110
+Come back from anti-d's we will shift to relationships and this WE you will look at how do you map relationship
+
+2
+00:00:10,110 --> 00:00:12,800
+in JPA What are the different types of relationships.
+
+3
+00:00:12,870 --> 00:00:17,420
+How do you define one to one one to many to many relationships in GPA.
+
+4
+00:00:17,790 --> 00:00:24,940
+There are the kinds of relationships which isn't like one to one one to many and many to me.
+
+5
+00:00:25,010 --> 00:00:31,510
+Look at a few examples for this and look at how to map them using GPA in this specific video.
+
+6
+00:00:31,550 --> 00:00:34,550
+The first type of relationship that we would be talking about is one student right.
+
+7
+00:00:34,550 --> 00:00:38,640
+A student has a passport and a passport is associated with a single student.
+
+8
+00:00:38,640 --> 00:00:38,870
+Right.
+
+9
+00:00:38,870 --> 00:00:45,020
+So this is a perfect example of one doing so in the past but there is a relationship with one student
+
+10
+00:00:45,050 --> 00:00:46,250
+and student.
+
+11
+00:00:46,490 --> 00:00:48,050
+There is one passport.
+
+12
+00:00:48,080 --> 00:00:54,380
+So how do we create one to one relationship between them be used in a dish and called at one twin here
+
+13
+00:00:54,380 --> 00:00:55,630
+racing at one twin.
+
+14
+00:00:56,000 --> 00:01:02,590
+And here we are saying one to one most important thing is to define where the car loan would be created
+
+15
+00:01:03,080 --> 00:01:05,840
+with a passport ID column be created in the student.
+
+16
+00:01:05,870 --> 00:01:09,250
+Or would a student ID column be created in the passport.
+
+17
+00:01:09,440 --> 00:01:15,950
+For that we would need to define which would be the orning side of the relationship here.
+
+18
+00:01:15,970 --> 00:01:20,970
+What we are trying to do is we would want to have a passport ID in the student.
+
+19
+00:01:21,020 --> 00:01:28,130
+So what we are doing here is putting an attribute called Map pre-buy is equal to passport if the map
+
+20
+00:01:28,370 --> 00:01:35,090
+is equal to passport what would happen is the passport ID would be created in this true identity but
+
+21
+00:01:35,090 --> 00:01:41,590
+also in the Student table there will be a column called Passport underscore ID and that passport ID
+
+22
+00:01:41,600 --> 00:01:46,790
+would be used in the passport be able to store the passport details.
+
+23
+00:01:46,880 --> 00:01:55,190
+So we would map the student to up passport if you actually remove the map remove the map Atabay passport
+
+24
+00:01:55,520 --> 00:02:00,740
+then you would see that actually there will be a student ID that would be created in the passport as
+
+25
+00:02:00,770 --> 00:02:00,950
+well.
+
+26
+00:02:00,950 --> 00:02:05,190
+So they would be a column in the Student table and they'll be in a column.
+
+27
+00:02:05,210 --> 00:02:07,970
+There also be a column in the passport for student ID.
+
+28
+00:02:07,970 --> 00:02:14,290
+So they'll be a column in the Student table for passport I.D. and passport able for today.
+
+29
+00:02:14,330 --> 00:02:19,790
+And that's not what you would want in typical want to enter relationship in any relationship you would
+
+30
+00:02:19,790 --> 00:02:20,270
+want.
+
+31
+00:02:20,300 --> 00:02:27,430
+One of the entities to own the relationship here we would want the student table to contain the passport.
+
+32
+00:02:27,560 --> 00:02:30,530
+And that's why we have defined it mapped by us.
+
+33
+00:02:30,530 --> 00:02:35,000
+But the important thing that we would need to make sure is one of the side of the relationship should
+
+34
+00:02:35,000 --> 00:02:36,770
+be using the fridge.
+
+35
+00:02:37,130 --> 00:02:44,510
+So I'm trying to figure out what would happen is JPA sees that it's one to one relationship and by default
+
+36
+00:02:44,520 --> 00:02:47,970
+fecche tape is not lazy Stape is eager.
+
+37
+00:02:48,040 --> 00:02:54,940
+So it tries and gets the passport details and once it gets the passport details if this is also if the
+
+38
+00:02:54,930 --> 00:03:01,190
+student mapping is also eager then it can result in a infinite loop kind of situation.
+
+39
+00:03:01,190 --> 00:03:07,460
+So what we are doing here is we are trying be at making the tape for this particular thing.
+
+40
+00:03:07,700 --> 00:03:14,110
+So this is how you define one to one relationships how do we find one to many relationship for example
+
+41
+00:03:14,110 --> 00:03:19,070
+a project and tasked to a project might have multiple tasks that needs to be done.
+
+42
+00:03:19,080 --> 00:03:22,660
+They took this one to many relationship.
+
+43
+00:03:22,660 --> 00:03:26,360
+So what we are seeing is project has many tasks.
+
+44
+00:03:26,380 --> 00:03:28,810
+So we are saying it's on too many relationships for the thing.
+
+45
+00:03:28,810 --> 00:03:34,710
+They project there'll be multiple desks for the same task master project relationship is many to one
+
+46
+00:03:35,020 --> 00:03:38,410
+many projects can have one task.
+
+47
+00:03:38,620 --> 00:03:41,300
+That's the relationship which we are putting in here.
+
+48
+00:03:41,560 --> 00:03:47,680
+In addition to that what we are doing is we are adding a joined column in the US so in the task column
+
+49
+00:03:47,950 --> 00:03:53,250
+we are actually adding a join column saying the name of the column should be project underscore.
+
+50
+00:03:53,500 --> 00:03:59,590
+So in the task table there'll be a column created with the name project and is called ID but you'll
+
+51
+00:03:59,590 --> 00:04:04,330
+be representing the project that the task is as you see it.
+
+52
+00:04:04,480 --> 00:04:08,880
+The other thing which we are adding in is something called Mapping a bit similar to the one to one deletion
+
+53
+00:04:08,890 --> 00:04:09,470
+ship.
+
+54
+00:04:09,640 --> 00:04:11,520
+So the map debate project.
+
+55
+00:04:11,530 --> 00:04:15,210
+So we are this is the project that we are referring to in here.
+
+56
+00:04:15,210 --> 00:04:24,020
+So we are seeing this tasks actually refers to this column Project ID which is apt to project.
+
+57
+00:04:24,310 --> 00:04:28,510
+So here we are defining up one to many relationship.
+
+58
+00:04:28,540 --> 00:04:31,960
+So project is related to many sites.
+
+59
+00:04:32,150 --> 00:04:37,260
+The that kind of relationship is many to many relationship relate to project.
+
+60
+00:04:37,330 --> 00:04:43,390
+So to date this is defining a many to many relationship between projects instrument a student can be
+
+61
+00:04:43,390 --> 00:04:46,710
+associated with many projects a project can have multiple solutions.
+
+62
+00:04:46,780 --> 00:04:48,720
+So I use and at many many to.
+
+63
+00:04:48,720 --> 00:04:53,430
+In addition to define this stuff when we have a many to many relationship.
+
+64
+00:04:53,590 --> 00:04:59,140
+Then we would have a relationship table that is created which would have two columns.
+
+65
+00:04:59,140 --> 00:05:02,550
+Project ID and the student day.
+
+66
+00:05:02,920 --> 00:05:07,510
+So we would have a project table a student table and a project student table which would contain the
+
+67
+00:05:07,510 --> 00:05:10,510
+relationship between project and students.
+
+68
+00:05:10,660 --> 00:05:16,080
+In this video we looked at how to map relationships in G-B Awadallah different kinds of relationship.
+
+69
+00:05:16,090 --> 00:05:21,610
+One of the examples for them and what are the important tips and tricks related to them and then the
+
+70
+00:05:21,610 --> 00:05:22,590
+next would you say.
+

@@ -1,0 +1,144 @@
+1
+00:00:02,310 --> 00:00:02,980
+Welcome back.
+
+2
+00:00:03,030 --> 00:00:08,000
+In this video let's talk a little bit about how you can configure your dispatcher so late in the previous
+
+3
+00:00:08,010 --> 00:00:08,780
+We deal with dog.
+
+4
+00:00:08,800 --> 00:00:11,440
+Dispatcher So will it being different controller.
+
+5
+00:00:11,700 --> 00:00:17,040
+So any questions spring NBC would first come to the dispatcher Solet and dispatcher so it would then
+
+6
+00:00:17,370 --> 00:00:21,400
+look at the handler mappings and be directed to the appropriate control.
+
+7
+00:00:21,840 --> 00:00:27,990
+And when I'm sending the view back as well from the control I would get the name dispatch table it would
+
+8
+00:00:27,990 --> 00:00:33,300
+map it to a physical view by using the beautiful word and then exclude the view and return the data
+
+9
+00:00:33,330 --> 00:00:33,650
+back.
+
+10
+00:00:33,660 --> 00:00:36,680
+So that basically the entire floor where the dispatcher said.
+
+11
+00:00:36,690 --> 00:00:37,020
+Right.
+
+12
+00:00:37,010 --> 00:00:39,510
+So how do you set up a dispatcher.
+
+13
+00:00:39,570 --> 00:00:41,070
+That's the question that we would discuss.
+
+14
+00:00:41,070 --> 00:00:46,060
+Now if you look at the dispatcher Sublette it's configured in very similar.
+
+15
+00:00:46,080 --> 00:00:49,820
+So anywhere we are configuring us of late.
+
+16
+00:00:49,970 --> 00:00:53,610
+So we are creating a normal service to this.
+
+17
+00:00:53,610 --> 00:00:57,720
+It should be possible that which is being configured in their product segment we're passing one of the
+
+18
+00:00:57,720 --> 00:01:04,110
+bad ammeters department is we are passing in is the location obvious pring context where is us in context
+
+19
+00:01:04,150 --> 00:01:09,910
+present in this application this being context is present at Rabanne of Crucible takes him at this ex-American
+
+20
+00:01:09,920 --> 00:01:15,190
+paints the bad pring context that is needed to run that web application.
+
+21
+00:01:15,390 --> 00:01:22,530
+And once you configure the dispatcher dispatcher serviette then what we need to do is to map as you
+
+22
+00:01:22,530 --> 00:01:24,090
+are able to it here.
+
+23
+00:01:24,090 --> 00:01:26,190
+Did you at least map to it.
+
+24
+00:01:26,190 --> 00:01:33,830
+So the other option is to map slash spring NBC or slash EPA or slash whatever you want to be.
+
+25
+00:01:34,080 --> 00:01:40,410
+So in this first reconfiguration of their backs and then all requests would go to the dispatcher certainly
+
+26
+00:01:40,560 --> 00:01:43,950
+any request would first go to the dispatcher.
+
+27
+00:01:44,490 --> 00:01:49,590
+This is how you can figure dispatchers servlet in a typical web application.
+
+28
+00:01:49,590 --> 00:01:56,100
+However if you are using springboard then you would not need to do this configuration at all because
+
+29
+00:01:56,190 --> 00:02:02,060
+springboard has this feature called Ardo configuration wherein as soon as you add in spring where NBC
+
+30
+00:02:02,070 --> 00:02:03,530
+Jard into the class.
+
+31
+00:02:03,540 --> 00:02:09,030
+But it would see that it would know that you are trying get out of a web application and it would auto
+
+32
+00:02:09,030 --> 00:02:11,910
+configure dispatches late for you.
+
+33
+00:02:11,940 --> 00:02:17,470
+So if you are using basic spring unzipping NBC and here's how you do the configuration if you do it
+
+34
+00:02:17,620 --> 00:02:23,020
+using springboard then dispatcher so it would be configured for you.
+
+35
+00:02:23,020 --> 00:02:23,940
+And then the next step.
+
+36
+00:02:23,940 --> 00:02:24,220
+Bewray.
+

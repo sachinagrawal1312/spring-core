@@ -1,0 +1,260 @@
+1
+00:00:02,100 --> 00:00:08,190
+This with you let's get a quick overview of the order in which we would be approaching different things
+
+2
+00:00:08,430 --> 00:00:09,710
+in this court.
+
+3
+00:00:09,750 --> 00:00:15,360
+One of the important things is you can keep around like you would want even though we go in a specific
+
+4
+00:00:15,360 --> 00:00:20,810
+order we would start with spring spring NBC and then go to Spring Springwood and so on and so forth.
+
+5
+00:00:20,910 --> 00:00:26,580
+You can actually directly skip to spring but if that's the topic you are really interested in the order
+
+6
+00:00:26,580 --> 00:00:29,010
+in which we will be covering topics in the discourse.
+
+7
+00:00:29,040 --> 00:00:30,740
+Our roots start with spring.
+
+8
+00:00:30,780 --> 00:00:36,240
+Because about the basics of spring like loose coupling dependency question of control application context
+
+9
+00:00:36,760 --> 00:00:40,920
+actual application context job application context and different.
+
+10
+00:00:40,950 --> 00:00:44,540
+In addition to which I used in spring we talk about the default school.
+
+11
+00:00:44,550 --> 00:00:50,430
+We talk about different types of injections set an injection and construct injection.
+
+12
+00:00:50,430 --> 00:00:54,620
+And we would talk about how to debug problems with springform book.
+
+13
+00:00:54,630 --> 00:00:58,110
+We would talk about primary at qualifier annotations.
+
+14
+00:00:58,260 --> 00:01:01,530
+You talk about the new features into pling framework.
+
+15
+00:01:01,530 --> 00:01:06,390
+What are the different spring model to represent what are the different spin projects which represent
+
+16
+00:01:06,810 --> 00:01:11,200
+and we would end D.S. giving you a big picture of the Spring Framework.
+
+17
+00:01:11,340 --> 00:01:13,200
+Understanding why is it popular.
+
+18
+00:01:14,520 --> 00:01:19,400
+In the next section we would move into spring and we see what we would be talking about is the basics
+
+19
+00:01:19,410 --> 00:01:26,010
+of our pictures of web applications model one model to model different controller and things like that.
+
+20
+00:01:26,010 --> 00:01:31,630
+After that we would talk about the basics of spring and we see a simple flow in spring NBC we talked
+
+21
+00:01:31,650 --> 00:01:37,430
+about Dispatches several that you resolve with a moral model and view and how you map requests.
+
+22
+00:01:37,440 --> 00:01:41,130
+We also talk about validation and form backing objects.
+
+23
+00:01:41,160 --> 00:01:47,010
+We use Binding result to do our validations and we'll all to talk a little bit about being formed X
+
+24
+00:01:47,340 --> 00:01:53,680
+and model in-session and after that we move into a section on springboard.
+
+25
+00:01:53,700 --> 00:02:00,510
+We try to understand the different goals and features in spring but we're trying to compare spring with
+
+26
+00:02:00,510 --> 00:02:08,580
+spring and spring and we see we talk about other projects or configuration spring initialiser we talk
+
+27
+00:02:08,580 --> 00:02:14,370
+about profiles and also about actuator and we'll end this section by talking about command line.
+
+28
+00:02:14,370 --> 00:02:18,520
+Run them in the next section we would go into database connectivity.
+
+29
+00:02:18,540 --> 00:02:24,990
+We talk about these things we see and g.p we talk about entity manager persistence context the different
+
+30
+00:02:24,990 --> 00:02:27,550
+types of relationships in Jaypee and all.
+
+31
+00:02:27,570 --> 00:02:28,960
+How do you configure GPA.
+
+32
+00:02:29,010 --> 00:02:35,220
+One of the important things is this kind of an all of U.S. I mean that it needs a really detailed cost
+
+33
+00:02:35,220 --> 00:02:38,230
+to go into the details of everything related to GAAP.
+
+34
+00:02:38,250 --> 00:02:43,950
+So this kind of giving you an all world view of Gippi while still staying in touch with how you would
+
+35
+00:02:43,950 --> 00:02:49,120
+use spring to connect to GP in the next section we would be talking about sping data.
+
+36
+00:02:49,140 --> 00:02:54,360
+What is the need for spring that what is being AJP And what are the different kinds of repositories
+
+37
+00:02:54,360 --> 00:02:55,440
+that are unpleasant.
+
+38
+00:02:56,670 --> 00:02:58,950
+That we would move into unit testing.
+
+39
+00:02:58,950 --> 00:03:01,670
+We would look at three example unit tests.
+
+40
+00:03:01,800 --> 00:03:07,890
+One is using Machi my favorite mocking work as well as the default mocking cream book with spring but
+
+41
+00:03:08,510 --> 00:03:14,160
+we would also look at how to write a unit test with Mark NBC and also how to write integration test
+
+42
+00:03:14,160 --> 00:03:15,590
+with spring boot.
+
+43
+00:03:15,670 --> 00:03:20,950
+After that we would move into AOP understand the different concepts which are related to ERP like aspect
+
+44
+00:03:21,080 --> 00:03:23,610
+bind code and different things like that.
+
+45
+00:03:23,700 --> 00:03:31,080
+We'll also understand the most popular AOP from book Aspasia and compare it with the spring will.
+
+46
+00:03:31,440 --> 00:03:34,590
+After that we moved into a section on topup services.
+
+47
+00:03:34,680 --> 00:03:40,950
+We would talk about the contract first approach of developing web services with spinning Web services.
+
+48
+00:03:40,950 --> 00:03:46,890
+We talk about the different content related to superb services so so peda so bored the soap envelope
+
+49
+00:03:46,890 --> 00:03:54,160
+and things like that along the W-S DL Xs D Jax be in point and we also talk about message dispatches
+
+50
+00:03:54,310 --> 00:03:58,520
+that we end with the section on press for that.
+
+51
+00:03:58,530 --> 00:04:04,080
+So he says the world is moving to its macro so he says and this will web services play a key part in
+
+52
+00:04:04,080 --> 00:04:04,490
+that.
+
+53
+00:04:04,630 --> 00:04:08,070
+We'll talk about what is best what are the key concepts in designing.
+
+54
+00:04:08,110 --> 00:04:11,610
+Let's Philippe and also the best practices related to them.
+
+55
+00:04:11,940 --> 00:04:17,140
+We look at creating gate and portmanteaux what on the sort and also what are the different response
+
+56
+00:04:17,140 --> 00:04:23,600
+state to Sissi should respond back for those requests that we look at had Dior's have to document a
+
+57
+00:04:23,610 --> 00:04:26,220
+restful Web services using swagger.
+
+58
+00:04:26,220 --> 00:04:31,450
+We understand what is in negotiation and also understand how to add similar support for your restfully
+
+59
+00:04:31,460 --> 00:04:32,630
+Web services.
+
+60
+00:04:32,700 --> 00:04:39,540
+Along with discussing about the best practices related to exception handling and worshipping that really
+
+61
+00:04:39,540 --> 00:04:42,950
+a wide range of topics that we would try and cover during this court.
+
+62
+00:04:43,020 --> 00:04:48,870
+So you can feel free to skip around to the section that you would want to do first and then feel free
+
+63
+00:04:48,870 --> 00:04:52,220
+to skip around to other sections as well in the next week.
+
+64
+00:04:52,340 --> 00:04:55,960
+We would start with discussing about the basics of spring.
+
+65
+00:04:56,040 --> 00:04:57,520
+Well until then.
+

@@ -1,0 +1,320 @@
+1
+00:00:01,680 --> 00:00:11,320
+And putting there are a wide range of models such as in the spring Facebook when we talk about job applications
+
+2
+00:00:11,640 --> 00:00:20,860
+we build applications with multiple years each layer has its own concern that it's trying to implement.
+
+3
+00:00:20,860 --> 00:00:21,230
+Right.
+
+4
+00:00:21,250 --> 00:00:26,840
+You have a leader whose concern is to get the data from the browser or get the look.
+
+5
+00:00:26,950 --> 00:00:33,820
+If it's a web service then provide the external interface so that it does all the translations from
+
+6
+00:00:34,180 --> 00:00:40,690
+you were just one format to your beans are from your similar format to your beans or things like that.
+
+7
+00:00:40,690 --> 00:00:46,590
+So that's kind of the roll off of their framework to provide the viewer to provide the external interface
+
+8
+00:00:47,170 --> 00:00:51,040
+the business layer is concerned with the logic.
+
+9
+00:00:51,250 --> 00:00:55,110
+So it's concerned with what is the business logic of the application.
+
+10
+00:00:55,120 --> 00:01:02,110
+How do I make sure that the business logic is written well how do I make sure that transactions are
+
+11
+00:01:02,110 --> 00:01:04,390
+properly implemented and things like that.
+
+12
+00:01:04,390 --> 00:01:06,490
+Those are the concerns of a business leader.
+
+13
+00:01:06,730 --> 00:01:11,770
+The data layer is concerned with how do we talk to a database how they talk to an external system.
+
+14
+00:01:11,770 --> 00:01:14,660
+How do we talk to a big data or data stored.
+
+15
+00:01:14,860 --> 00:01:23,200
+Each of these layers have different concerns and Spring Framework has different models for each of these
+
+16
+00:01:23,200 --> 00:01:23,990
+early years.
+
+17
+00:01:24,160 --> 00:01:31,570
+And also there are things called cross-cutting concerns which are concept of multiple layers and spring
+
+18
+00:01:31,570 --> 00:01:34,890
+also has models to support that.
+
+19
+00:01:34,900 --> 00:01:40,420
+Let's start with the core container the core container is the crux of this.
+
+20
+00:01:40,420 --> 00:01:47,290
+Putting in the core features of spring as we discussed earlier our dependency injection or door wiring
+
+21
+00:01:47,740 --> 00:01:49,460
+managing the beans.
+
+22
+00:01:49,870 --> 00:01:57,790
+So this is where all those features beyond core and context context here actually means application
+
+23
+00:01:57,810 --> 00:02:07,510
+context and also has to be used at Spring expression language to support the definition of beans and
+
+24
+00:02:07,510 --> 00:02:08,630
+things like that.
+
+25
+00:02:08,710 --> 00:02:10,360
+So this is the core container.
+
+26
+00:02:10,360 --> 00:02:11,800
+This is where all you are.
+
+27
+00:02:11,870 --> 00:02:17,020
+In fact we all your application can text and all that features come in.
+
+28
+00:02:17,020 --> 00:02:24,750
+Next we will talk about the date earlier early spring has its own JTB framework called Spring JEDEC
+
+29
+00:02:25,310 --> 00:02:32,330
+spring JD B.C. makes it easy to talk to a relational database with typical JEDEC.
+
+30
+00:02:32,560 --> 00:02:38,860
+When you talk to a database you need to do a hundred different things and with daily b c you don't need
+
+31
+00:02:38,860 --> 00:02:39,950
+to do any of those.
+
+32
+00:02:39,950 --> 00:02:43,440
+We'll look at the BBC in detail a little later.
+
+33
+00:02:43,570 --> 00:02:51,420
+So if you have JEDEC application if it's let's say taking thousand lines you'd see that with spin day
+
+34
+00:02:51,440 --> 00:02:55,440
+TVC you can do the same thing in less than 200 250 lines.
+
+35
+00:02:55,450 --> 00:03:01,560
+Spring has good integration with the autumn frameworks object relational mapping frameworks being commits
+
+36
+00:03:01,630 --> 00:03:08,130
+well with Hibernate which is one of the popular autem implementations.
+
+37
+00:03:08,500 --> 00:03:16,900
+Spring also has good same model object SML mapping modules so it has good integration with other object
+
+38
+00:03:16,960 --> 00:03:19,120
+ex-MIL mapping frameworks.
+
+39
+00:03:19,120 --> 00:03:25,490
+For example Jack SSB-B and spring also has good integration with James spring.
+
+40
+00:03:25,510 --> 00:03:33,370
+JMS provides JMS implementation you'd be able to talk to other applications or the QS using JMS using
+
+41
+00:03:33,390 --> 00:03:34,530
+springiness.
+
+42
+00:03:34,570 --> 00:03:38,980
+Spring has built in support for transactions as well.
+
+43
+00:03:38,980 --> 00:03:45,130
+You'd be able to use Spring transactions and manage transactions for your JPA application.
+
+44
+00:03:45,130 --> 00:03:48,730
+Are you a hibernated based application or DJT BCBS based application.
+
+45
+00:03:48,730 --> 00:03:51,010
+Any of them moving onto the web here.
+
+46
+00:03:51,130 --> 00:03:55,190
+Spring has really good support for serviette and Bartlett.
+
+47
+00:03:55,390 --> 00:03:58,370
+And spring has a very ambitious frameup of its own.
+
+48
+00:03:58,420 --> 00:04:02,010
+It's called Spring and VC using spring and.
+
+49
+00:04:02,140 --> 00:04:08,970
+You can develop web applications very easily and also being has good support for rest.
+
+50
+00:04:08,980 --> 00:04:15,490
+So the spring MVC framework and all that used to Dola rest full applications spring also has a model
+
+51
+00:04:15,580 --> 00:04:17,960
+to support Reg socket programming.
+
+52
+00:04:18,100 --> 00:04:19,520
+So we looked a day earlier.
+
+53
+00:04:19,520 --> 00:04:26,950
+We looked at baby and there are things Veach I related to multipage that these are called cross-cutting
+
+54
+00:04:26,950 --> 00:04:33,490
+concerns typically cross-cutting concerns are things like logging exception handling and things like
+
+55
+00:04:33,490 --> 00:04:34,270
+that.
+
+56
+00:04:34,330 --> 00:04:38,920
+These are concerns of all the layers which are present in your application.
+
+57
+00:04:38,920 --> 00:04:46,180
+For example security as well AOP is a very good way to implement your cross-cutting concerns aspect
+
+58
+00:04:46,270 --> 00:04:47,940
+oriented programming.
+
+59
+00:04:47,950 --> 00:04:55,870
+Spring provides a basic aspect oriented programming model of its own and also has good support for AOP
+
+60
+00:04:55,870 --> 00:04:57,910
+frameworks like aspect.
+
+61
+00:04:58,010 --> 00:05:02,710
+We look at these two aspects a little later aswell.
+
+62
+00:05:02,760 --> 00:05:07,650
+Last but not the least important of the Mondial is spring d'Este.
+
+63
+00:05:08,050 --> 00:05:14,620
+One of the most important reasons why Spring is very popular is the dependency injection and with dependency
+
+64
+00:05:14,620 --> 00:05:18,490
+injection you'd be able to write tests very easily.
+
+65
+00:05:18,520 --> 00:05:22,230
+We'll be able to write uniters integration tests very easily.
+
+66
+00:05:22,240 --> 00:05:29,140
+It's spring and spring test helps you to write unit tests and integration Yes in this we do.
+
+67
+00:05:29,140 --> 00:05:32,350
+We took a quick look at all the spring models.
+
+68
+00:05:32,410 --> 00:05:38,770
+The most important thing is the fact that all the spring modules share the same version as the spring
+
+69
+00:05:38,770 --> 00:05:39,730
+framework.
+
+70
+00:05:39,910 --> 00:05:45,490
+So when I say there is a new release of spring spring 5 then it means there would be a new release for
+
+71
+00:05:45,580 --> 00:05:48,790
+all these modules with the version 5.
+
+72
+00:05:48,980 --> 00:05:53,600
+That's the most important difference between models and projects.
+
+73
+00:05:53,620 --> 00:06:00,190
+When I talk about models they'll have the same release version as the base spring frameworks in the
+
+74
+00:06:00,190 --> 00:06:00,480
+mix.
+
+75
+00:06:00,480 --> 00:06:02,620
+Media will look at spring projects.
+
+76
+00:06:02,620 --> 00:06:08,140
+These are things which are related to spring but they don't share the same version so probably when
+
+77
+00:06:08,140 --> 00:06:15,580
+I say spring version 5 and springboard might be using a version to see so they will have different work
+
+78
+00:06:15,580 --> 00:06:19,370
+shouldn't compare to spring and spring modules.
+
+79
+00:06:19,450 --> 00:06:22,000
+We'll look at that in detail in the next week.
+
+80
+00:06:22,060 --> 00:06:22,920
+Until then my.
+

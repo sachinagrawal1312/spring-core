@@ -1,0 +1,420 @@
+1
+00:00:02,070 --> 00:00:09,170
+Welcome to the section on need testing one of the most important features of Spring Framework is it
+
+2
+00:00:09,170 --> 00:00:11,200
+makes unit testing very simple.
+
+3
+00:00:11,330 --> 00:00:13,960
+We'll look at examples of that in this section.
+
+4
+00:00:13,970 --> 00:00:16,320
+Let's start with these questions.
+
+5
+00:00:16,550 --> 00:00:18,850
+How does building make unit testing easy.
+
+6
+00:00:18,890 --> 00:00:22,750
+What is more kiddo and what is your favorite mocking green book.
+
+7
+00:00:22,750 --> 00:00:27,540
+Also things like what is a default mocking Chromebook in spring boot.
+
+8
+00:00:27,560 --> 00:00:32,740
+How do you Magdi do and what are the different mocking annotations that you work with.
+
+9
+00:00:32,770 --> 00:00:35,960
+We can group a lot of questions under this category.
+
+10
+00:00:35,960 --> 00:00:37,330
+Let's look at them right now.
+
+11
+00:00:37,550 --> 00:00:42,150
+So let's say I have some business I am build which is using a data service.
+
+12
+00:00:42,300 --> 00:00:45,110
+So what it's doing is finding great deaths from all the data.
+
+13
+00:00:45,110 --> 00:00:50,310
+So basically there's a construct here some business and we should not bring in here but the method get
+
+14
+00:00:50,320 --> 00:00:51,640
+find the greatest from all that.
+
+15
+00:00:51,660 --> 00:00:56,750
+What it does is it talks to the database it gets the data from the data service and from all the data
+
+16
+00:00:56,750 --> 00:01:00,590
+I get it returns the greatest value back.
+
+17
+00:01:00,620 --> 00:01:06,440
+So if it gets five elements it will find the largest among them and it will return it back.
+
+18
+00:01:06,470 --> 00:01:07,450
+That's the business logic.
+
+19
+00:01:07,450 --> 00:01:08,920
+So let's say this is great.
+
+20
+00:01:09,000 --> 00:01:11,070
+Greatest business I am alone.
+
+21
+00:01:11,090 --> 00:01:12,800
+Good find degraders business.
+
+22
+00:01:12,850 --> 00:01:14,610
+Bill what do you want to call it.
+
+23
+00:01:14,780 --> 00:01:20,440
+So this is a matter which gets some good data and from the data it finds the largest one and written
+
+24
+00:01:20,470 --> 00:01:22,640
+seatback that's as simple as that.
+
+25
+00:01:22,640 --> 00:01:27,440
+So one of the most important things when we write a unit test is we do not really want to talk with
+
+26
+00:01:27,440 --> 00:01:32,030
+the database so I don't want to talk to the data service because they say it is what Doctor the database
+
+27
+00:01:32,030 --> 00:01:34,190
+file query and get it from the database.
+
+28
+00:01:34,310 --> 00:01:39,320
+But that's not good because then you are dependent on the database to be available if the database is
+
+29
+00:01:39,320 --> 00:01:43,130
+down the unit test would fade if the data in the database changes.
+
+30
+00:01:43,130 --> 00:01:48,750
+Then also your unit test fails so you don't want that dependency on your unit as in your unit test.
+
+31
+00:01:48,770 --> 00:01:51,500
+You'd want to do something called marking.
+
+32
+00:01:51,530 --> 00:01:57,940
+You don't want to talk to the data service but you would want to do a mock of the data set.
+
+33
+00:01:58,100 --> 00:02:05,140
+So you would want to dictate what the data say we should return and based on it we would write a test.
+
+34
+00:02:05,150 --> 00:02:13,010
+So if this data is returned to values let's say 5 10 and 15 then this method should return a value of
+
+35
+00:02:13,150 --> 00:02:15,620
+the greatest of all of them 15 right.
+
+36
+00:02:15,800 --> 00:02:18,600
+So that's the kind of test that we would want to be able to write.
+
+37
+00:02:18,620 --> 00:02:21,920
+Then the tests are independent of the database.
+
+38
+00:02:21,950 --> 00:02:24,200
+We don't really care about the database at all.
+
+39
+00:02:24,200 --> 00:02:29,330
+So even if they don't in the database Changez databases is down this test would still succeed because
+
+40
+00:02:29,660 --> 00:02:31,090
+we're not really going to go into the database.
+
+41
+00:02:31,100 --> 00:02:33,340
+We are using a mark for the data.
+
+42
+00:02:33,340 --> 00:02:42,040
+So is that is the kind of as splitting enables us to write the most popular marking market book is Marketo
+
+43
+00:02:42,340 --> 00:02:47,320
+let's look at sping and Marketo together in some of the next examples.
+
+44
+00:02:47,430 --> 00:02:51,970
+This shows a simple test where we're making use of marking.
+
+45
+00:02:52,110 --> 00:02:55,580
+So we are doing the test for finding great from our data.
+
+46
+00:02:55,740 --> 00:02:58,530
+So what we are doing is creating a mark.
+
+47
+00:02:58,710 --> 00:03:02,750
+So the Marketo framework offers a lot of marking method.
+
+48
+00:03:02,760 --> 00:03:04,190
+One of them is Mark.
+
+49
+00:03:04,290 --> 00:03:11,250
+So Mark it's one of the static methods in the more Kito class Mark do not mark date as we start.
+
+50
+00:03:11,280 --> 00:03:17,730
+So what we are doing is we are trying to mark the date so we class what we're saying is when they say
+
+51
+00:03:17,750 --> 00:03:22,190
+it is not that all it is called Tovan.
+
+52
+00:03:22,280 --> 00:03:31,020
+This survey is not really all that is called when this is called then we've done 24 15 and three.
+
+53
+00:03:31,050 --> 00:03:38,730
+So we are saying data is don't use the real object use the mark and when retrieval data is called the
+
+54
+00:03:38,730 --> 00:03:42,830
+turn this data back we are seeing the 10:24 15 entry back.
+
+55
+00:03:42,830 --> 00:03:47,910
+So what would happen when this method is called when data so is that the way they do is call when passing
+
+56
+00:03:47,900 --> 00:03:48,350
+them walk.
+
+57
+00:03:48,350 --> 00:03:54,300
+What happens when all they do is call it would return the data which we have populated in here.
+
+58
+00:03:54,320 --> 00:03:57,390
+That is what the marking book helps us to do.
+
+59
+00:03:57,440 --> 00:04:03,240
+It helps us to define what each method should return so on this day service.
+
+60
+00:04:03,340 --> 00:04:09,040
+I'm saying it should return this data 24 15 three.
+
+61
+00:04:09,160 --> 00:04:13,380
+So when did it last I resorted to the wall that is call it with it and 24:15 three.
+
+62
+00:04:13,390 --> 00:04:16,240
+And if this method works fine then degraders.
+
+63
+00:04:16,270 --> 00:04:22,320
+Among them is 24:24 should be returned back to what I'm saying is I'm creating an instance of this business
+
+64
+00:04:22,320 --> 00:04:24,690
+I am built using the Mauck.
+
+65
+00:04:24,760 --> 00:04:30,490
+So to deconstruct what I'm sending is not the data is that I'm sending the mark.
+
+66
+00:04:30,500 --> 00:04:38,620
+So I'm sending the mock object to the same business I am Bill and I'm calculating and finding the greatest
+
+67
+00:04:38,620 --> 00:04:42,470
+from all data and I'm asserting that 24 is the result.
+
+68
+00:04:42,520 --> 00:04:47,260
+So this is a very good uniters because this does not depend on the database at all.
+
+69
+00:04:47,260 --> 00:04:52,330
+We are using a mock and creating an instance of the numbers in the sample and writing a unit test for
+
+70
+00:04:52,330 --> 00:04:52,780
+that.
+
+71
+00:04:52,780 --> 00:04:55,260
+So this is a really unique test.
+
+72
+00:04:55,330 --> 00:05:01,060
+If I talk to the real database the data service then it becomes an integration test that is no longer
+
+73
+00:05:01,270 --> 00:05:01,650
+unique.
+
+74
+00:05:01,660 --> 00:05:02,860
+This is a unit test.
+
+75
+00:05:03,010 --> 00:05:09,160
+We would mark out the dependencies and write the unit test for the business logic which is present inside
+
+76
+00:05:09,160 --> 00:05:11,020
+this method.
+
+77
+00:05:11,410 --> 00:05:15,190
+This is an example of basic marking.
+
+78
+00:05:15,230 --> 00:05:19,750
+The thing is mockable makes it even more easier than this.
+
+79
+00:05:19,750 --> 00:05:24,400
+The reason why we wanted to show the basic knocking is here we're not even making use of any of the
+
+80
+00:05:24,400 --> 00:05:30,930
+annotations but Machi to make it makes it really easy when we use annotations.
+
+81
+00:05:31,240 --> 00:05:33,660
+So there is a rhino called Marquis de.
+
+82
+00:05:33,720 --> 00:05:34,400
+Netrunner.
+
+83
+00:05:34,450 --> 00:05:39,300
+So when we ran the unit test with that trainer we can make use of the annotations.
+
+84
+00:05:39,400 --> 00:05:43,370
+So here the way we were creating a mark is Mark off more data.
+
+85
+00:05:43,380 --> 00:05:48,390
+So we don't class class you don't need to do that or that you need to do is put at Mauck.
+
+86
+00:05:48,520 --> 00:05:54,170
+So if you put at Mark this mark is created we had to create the business I am in.
+
+87
+00:05:54,310 --> 00:06:00,590
+And we had to wire the data as we walk in so we are creating a constructor and passing it in.
+
+88
+00:06:00,640 --> 00:06:02,200
+That also is not needed.
+
+89
+00:06:02,210 --> 00:06:07,990
+All that you need to do is put and inject Mock's what the market markets in it or not does it create
+
+90
+00:06:08,190 --> 00:06:08,570
+a date.
+
+91
+00:06:08,580 --> 00:06:11,850
+So is Mark for this in on this interface.
+
+92
+00:06:12,010 --> 00:06:14,670
+And it injects it into the business.
+
+93
+00:06:14,680 --> 00:06:20,110
+I am Bill and all that we need to do in the test is that there is data that we will determine.
+
+94
+00:06:20,140 --> 00:06:22,890
+This is called The Return 24:15.
+
+95
+00:06:23,170 --> 00:06:29,190
+And when business I build or find great from all that is called I said that that equals 24.
+
+96
+00:06:29,200 --> 00:06:32,830
+This is such a simple unit test too right isn't it.
+
+97
+00:06:32,830 --> 00:06:37,310
+So this is how we write unit tests for business layer.
+
+98
+00:06:37,300 --> 00:06:43,530
+So even complex methods like this can be easily tested using annotations in this space.
+
+99
+00:06:43,570 --> 00:06:48,360
+You can see that I will write a unit test for it within a very few lines.
+
+100
+00:06:48,610 --> 00:06:54,310
+I mean if I have to create 100 scenarios like this I would be able to easily create them in this.
+
+101
+00:06:54,320 --> 00:07:00,080
+We do believe that house pre-increment makes testing very easy when you have proper dependences defending
+
+102
+00:07:00,100 --> 00:07:00,930
+all that kind of stuff.
+
+103
+00:07:00,930 --> 00:07:04,410
+Unit testing is very easy and we love that market.
+
+104
+00:07:04,700 --> 00:07:08,560
+And we also looked at how to market data with Marketo.
+
+105
+00:07:08,750 --> 00:07:15,150
+And also we looked at a few marking and that are present with market until next Tuesday.
+

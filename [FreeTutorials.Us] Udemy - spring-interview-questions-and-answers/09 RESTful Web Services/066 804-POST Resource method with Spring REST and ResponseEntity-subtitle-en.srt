@@ -1,0 +1,256 @@
+1
+00:00:02,650 --> 00:00:03,290
+This would you.
+
+2
+00:00:03,460 --> 00:00:09,860
+Let's talk about the code for implementing a forced method both method is used to create resources so
+
+3
+00:00:09,860 --> 00:00:11,490
+I would want to create a resource.
+
+4
+00:00:11,510 --> 00:00:15,540
+Also we'll look at why we use response entity in areas for.
+
+5
+00:00:16,220 --> 00:00:18,740
+Let's look at an example implementation.
+
+6
+00:00:18,800 --> 00:00:23,500
+So here I would want to create a user that I would want to create and you would use it.
+
+7
+00:00:23,510 --> 00:00:25,550
+How do I create a new user.
+
+8
+00:00:25,550 --> 00:00:28,890
+We would send a POST request to slash users.
+
+9
+00:00:28,970 --> 00:00:31,190
+So what we are using is a forced mapping.
+
+10
+00:00:31,190 --> 00:00:37,320
+So we're using our annotation plus mapping and the uare slash users so this would handle the post was
+
+11
+00:00:37,320 --> 00:00:38,480
+to slash users.
+
+12
+00:00:38,940 --> 00:00:45,350
+What we can think of the request is or whatever is part of the content of the requests that get mapped
+
+13
+00:00:45,380 --> 00:00:46,920
+to the user.
+
+14
+00:00:46,970 --> 00:00:48,020
+How do we do that.
+
+15
+00:00:48,070 --> 00:00:54,560
+We are doing that by using the at request body in addition to whatever is the post request content would
+
+16
+00:00:54,560 --> 00:00:56,460
+be mapped to this user.
+
+17
+00:00:56,540 --> 00:00:57,950
+So that's easy right.
+
+18
+00:00:58,160 --> 00:01:04,490
+I want to map the content to the user so that I can create the new user in here what we are doing is
+
+19
+00:01:04,490 --> 00:01:09,630
+we are actually using the service the state the user details to the database.
+
+20
+00:01:09,710 --> 00:01:14,640
+So we saved the user details to the database and it turned the saved user.
+
+21
+00:01:14,870 --> 00:01:20,920
+What is this piece of code doing this piece of code is ensuring that we are relating to the rest full
+
+22
+00:01:20,980 --> 00:01:22,970
+service best practices.
+
+23
+00:01:22,980 --> 00:01:24,480
+We know we created it.
+
+24
+00:01:24,530 --> 00:01:30,000
+We thought that we should send that as status off to all one here.
+
+25
+00:01:30,080 --> 00:01:37,400
+If I return this save the user back what would happen is this will directly return a status of success.
+
+26
+00:01:37,400 --> 00:01:40,760
+It would send a status of success back.
+
+27
+00:01:40,850 --> 00:01:47,420
+But what we would want to do is we would want to send the status of created back as well as you'd want
+
+28
+00:01:47,420 --> 00:01:50,760
+to send the details of the created user.
+
+29
+00:01:50,870 --> 00:01:54,090
+What is the new resource that is created.
+
+30
+00:01:54,270 --> 00:01:59,300
+The neutralizer that is created is having ID off get ID.
+
+31
+00:01:59,420 --> 00:02:06,230
+So I would want to actually form the you wire of the new resource and send it back to the consumer so
+
+32
+00:02:06,230 --> 00:02:10,270
+that they can directly access that resource details.
+
+33
+00:02:10,400 --> 00:02:11,850
+How do I do that.
+
+34
+00:02:12,140 --> 00:02:16,690
+That is done by using responsa entity response entity.
+
+35
+00:02:16,760 --> 00:02:23,960
+You can say a status of created to I want to send a state as have created and here I am actually creating
+
+36
+00:02:23,960 --> 00:02:25,280
+the you Ira.
+
+37
+00:02:25,340 --> 00:02:34,010
+So I'm saying get to the current request uare at penned this pop to dispatch users Abend slash ID and
+
+38
+00:02:34,010 --> 00:02:40,730
+replace this template ID with whatever ID is coming back from the database.
+
+39
+00:02:40,760 --> 00:02:44,830
+So lets add this use I was saved with the database and he gets an ID of hundred.
+
+40
+00:02:44,980 --> 00:02:53,210
+So lets users slash hundred would be the uare which would be returned as part of the response header.
+
+41
+00:02:53,480 --> 00:02:56,420
+Let's look at a simple example of a so I would want to post.
+
+42
+00:02:56,420 --> 00:03:00,380
+So I chose post-master and I'm typing in a local host 88.
+
+43
+00:03:00,440 --> 00:03:01,540
+Less use.
+
+44
+00:03:01,910 --> 00:03:09,530
+And in the body and putting the content of what I would want to a name and birthdate and posting about
+
+45
+00:03:09,620 --> 00:03:10,320
+it in here.
+
+46
+00:03:10,520 --> 00:03:16,200
+And when you say in this what you would get back is a status of two hundred and one.
+
+47
+00:03:16,310 --> 00:03:20,460
+And indeed that is the work of didn't you created.
+
+48
+00:03:20,470 --> 00:03:24,060
+You said you can see the location in here it says location 88.
+
+49
+00:03:24,100 --> 00:03:25,860
+Slash uses slash.
+
+50
+00:03:26,000 --> 00:03:28,870
+So that's basically what we have been discussing until now.
+
+51
+00:03:28,970 --> 00:03:35,970
+So whatever can we put in for the users part of the body is mapped in here at request body and we are
+
+52
+00:03:35,970 --> 00:03:42,440
+forming the location of the response you Ira that we would want to send as part of the location header
+
+53
+00:03:42,590 --> 00:03:45,890
+and we're adding a status of created.
+
+54
+00:03:45,890 --> 00:03:51,530
+So if you understand how it's being fired and what is the response that is coming back and what is the
+
+55
+00:03:51,530 --> 00:03:53,810
+header location header that is coming back.
+
+56
+00:03:53,810 --> 00:03:59,560
+It's very easy to directly look at this and relate to what is happening in here.
+
+57
+00:03:59,810 --> 00:04:07,670
+In this video we looked at how to create resource by using a force request using spinning wrist.
+
+58
+00:04:07,670 --> 00:04:13,940
+We also at why we need response and we need response entity in this specific example because we wanted
+
+59
+00:04:14,000 --> 00:04:16,990
+to return a status of created back.
+
+60
+00:04:17,000 --> 00:04:19,400
+We didn't just want to Britton's taxes.
+
+61
+00:04:19,570 --> 00:04:26,960
+We want to return a specific status quo created the location of the created resource with the rest of
+
+62
+00:04:26,990 --> 00:04:28,760
+the created source.
+
+63
+00:04:28,910 --> 00:04:32,130
+And that's the reason why we used sponte indeed.
+
+64
+00:04:32,290 --> 00:04:33,770
+And then the next week you play.
+

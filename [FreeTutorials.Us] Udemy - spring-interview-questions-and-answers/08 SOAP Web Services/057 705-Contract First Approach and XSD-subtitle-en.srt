@@ -1,0 +1,352 @@
+1
+00:00:03,070 --> 00:00:05,300
+Well come back in this week you will be there.
+
+2
+00:00:05,300 --> 00:00:11,450
+But what is a contract first approach what is next is the example of access.
+
+3
+00:00:11,730 --> 00:00:14,600
+So let's start with contract first approach.
+
+4
+00:00:14,610 --> 00:00:17,080
+What is really a contractures approach.
+
+5
+00:00:17,200 --> 00:00:19,680
+First what is a contract.
+
+6
+00:00:19,680 --> 00:00:22,600
+In the earlier video we looked at that as deal right.
+
+7
+00:00:22,640 --> 00:00:28,200
+Because it was Dell Perhaps that is the definition language versus definition language is something
+
+8
+00:00:28,200 --> 00:00:36,480
+called a service definition or a contract contract is basically like just like when you do some trade
+
+9
+00:00:36,790 --> 00:00:40,200
+you have an agreement between the seller and the buyer.
+
+10
+00:00:40,230 --> 00:00:44,440
+You will have any agreement between the service provider and the service consumer.
+
+11
+00:00:44,730 --> 00:00:49,330
+So similarly when we talk about Web services we also have a contract here.
+
+12
+00:00:49,350 --> 00:00:56,910
+The contract specifies what is the format of the request whether it's ex-MIL day or so on what kind
+
+13
+00:00:56,910 --> 00:00:58,420
+of format do you support.
+
+14
+00:00:58,460 --> 00:01:00,630
+What is the format of the response.
+
+15
+00:01:00,630 --> 00:01:06,090
+The second thing which is important is the structure of the request and it spawns the most important
+
+16
+00:01:06,090 --> 00:01:10,080
+thing is what its transport used it or whether rage over.
+
+17
+00:01:10,090 --> 00:01:12,730
+Q And how can this service be.
+
+18
+00:01:12,770 --> 00:01:22,120
+God these are the most important things in U.S. service definition or your contract contract first approach.
+
+19
+00:01:22,260 --> 00:01:29,530
+What we would do is we would focus on defining the contract at the start of implementing a service.
+
+20
+00:01:29,580 --> 00:01:34,830
+So when you implement a service you will not directly go and jump in to implement the Java code for
+
+21
+00:01:34,830 --> 00:01:35,160
+it.
+
+22
+00:01:35,160 --> 00:01:42,640
+What we do is we first define access D or we try to come up with WS deal.
+
+23
+00:01:42,840 --> 00:01:49,170
+So we kind of try and define what is the structure of the request what is the structure of the response
+
+24
+00:01:49,500 --> 00:01:57,300
+what are the transport used and how can a consumer consume ourselves to make.
+
+25
+00:01:57,360 --> 00:02:00,490
+We create a file defining all these stuff.
+
+26
+00:02:00,510 --> 00:02:08,400
+When we talk about superciliousness this contract is specified in the 5th it w as the webservices definition
+
+27
+00:02:08,400 --> 00:02:10,950
+language when it comes to race full web services.
+
+28
+00:02:10,950 --> 00:02:13,440
+There is no standard really.
+
+29
+00:02:13,470 --> 00:02:18,610
+So you can use any of the options that we discussed in contract first.
+
+30
+00:02:18,720 --> 00:02:19,280
+What we do.
+
+31
+00:02:19,320 --> 00:02:27,630
+We define our contract first and we bring Web services out w SDL that is our contract is defined or
+
+32
+00:02:27,660 --> 00:02:31,220
+is generated from an excess D.
+
+33
+00:02:31,230 --> 00:02:39,660
+So what we would do is we would first define Xs D and X is the existing schema definition XML schema
+
+34
+00:02:39,780 --> 00:02:40,320
+definition.
+
+35
+00:02:40,320 --> 00:02:41,150
+Lets look at it right.
+
+36
+00:02:41,300 --> 00:02:46,560
+The it specifies what a valid ex-MIL looks like.
+
+37
+00:02:46,830 --> 00:02:52,620
+For example here I am saying OK I want to create a get cause details request.
+
+38
+00:02:52,710 --> 00:02:59,460
+I would want to use the namespace of courses and I would want to have an ID element in it and this can
+
+39
+00:02:59,550 --> 00:03:02,660
+accept only numbers.
+
+40
+00:03:02,730 --> 00:03:09,710
+So there is this structure I would want to define for my request example XML schema definition allows
+
+41
+00:03:09,810 --> 00:03:11,480
+us to define this.
+
+42
+00:03:11,490 --> 00:03:14,190
+So how do we do that in an example schema definition.
+
+43
+00:03:14,190 --> 00:03:15,240
+Its very simple.
+
+44
+00:03:15,240 --> 00:03:19,160
+So we are saying access element name is to get.
+
+45
+00:03:19,250 --> 00:03:20,180
+Details.
+
+46
+00:03:20,220 --> 00:03:25,730
+So we are saying I would want to create an element by name get cause details request.
+
+47
+00:03:25,830 --> 00:03:31,710
+You say this there can be another element we are saying this is a complex state which will have a sequence
+
+48
+00:03:31,710 --> 00:03:34,600
+of element here had There is only one element.
+
+49
+00:03:34,650 --> 00:03:40,470
+When we look at the response we'll see that there will be multiple element a sequence of elements and
+
+50
+00:03:40,470 --> 00:03:43,450
+there is this element with the name ID.
+
+51
+00:03:43,500 --> 00:03:49,610
+So I would want to have inside the get go details to request an element named ID and said Good God detailed
+
+52
+00:03:49,630 --> 00:03:50,060
+request.
+
+53
+00:03:50,070 --> 00:03:51,550
+I would want to have ID.
+
+54
+00:03:51,900 --> 00:03:53,280
+And what values can it have.
+
+55
+00:03:53,280 --> 00:03:56,130
+It can only have in DJO values.
+
+56
+00:03:56,140 --> 00:03:59,000
+So this can only have integer values.
+
+57
+00:03:59,090 --> 00:04:05,020
+So what we are defining is how our response extremal should look like.
+
+58
+00:04:05,470 --> 00:04:08,960
+Next let's take the example our first point example.
+
+59
+00:04:09,290 --> 00:04:16,230
+So here you can look at Get cause details response and inside that we will want to code details with
+
+60
+00:04:16,260 --> 00:04:19,400
+an ID name and the description.
+
+61
+00:04:19,410 --> 00:04:26,330
+So let's look how the axes differ that looks like to be find the x is the forget color detail response.
+
+62
+00:04:26,520 --> 00:04:34,380
+We are saying get details response can names an element of type cost details and we are defining what
+
+63
+00:04:34,380 --> 00:04:37,860
+is the content of those details separately.
+
+64
+00:04:37,950 --> 00:04:47,160
+The fact that we are defining the structure of course details separately helps us to use it in Mali
+
+65
+00:04:47,220 --> 00:04:49,560
+people respond examples.
+
+66
+00:04:49,620 --> 00:04:51,630
+So this is good cause we didn't respond.
+
+67
+00:04:51,720 --> 00:04:57,150
+They might be get all cores detailed response where you might be returning a list of these kind of quarterly
+
+68
+00:04:57,270 --> 00:04:58,110
+deals.
+
+69
+00:04:58,110 --> 00:05:03,030
+So if I defined the code details separately how can we use the multiple.
+
+70
+00:05:03,340 --> 00:05:05,400
+So let's see how that looks like.
+
+71
+00:05:05,420 --> 00:05:12,370
+So when I define the code details and think this is a complex type which is a sequence sequence of thought
+
+72
+00:05:12,670 --> 00:05:19,180
+allow an ID which is an integer I'll have a name which is Thring and a description which is also a string.
+
+73
+00:05:19,180 --> 00:05:26,950
+So I'm saying there would be id name and description inside because it tells Elby ID name and description
+
+74
+00:05:27,950 --> 00:05:29,140
+that's exactly what.
+
+75
+00:05:29,140 --> 00:05:35,060
+We are also defining that X is the when we develop so we use this with playing with services.
+
+76
+00:05:35,260 --> 00:05:42,040
+What we would do is we would define the entire X as the first and bring up services would provide us
+
+77
+00:05:42,130 --> 00:05:49,350
+a feature wherein you can generate your dabblings DL out of this SSD and you can change that Abdias
+
+78
+00:05:49,360 --> 00:05:51,760
+deal to your customers.
+
+79
+00:05:51,760 --> 00:05:56,320
+This approach of creating the X is the first that's basically creating a WS.
+
+80
+00:05:56,340 --> 00:05:59,650
+The first is called Contract first approach.
+
+81
+00:05:59,650 --> 00:06:02,140
+We are defining the contract.
+
+82
+00:06:02,230 --> 00:06:08,290
+Your response looks like how you have to request looks like and all that kind of stuff before we actually
+
+83
+00:06:08,290 --> 00:06:14,730
+get into the implementation of this is in this short.
+
+84
+00:06:14,820 --> 00:06:17,820
+We look at what is a contract or what is it.
+
+85
+00:06:17,890 --> 00:06:19,130
+So it is definition.
+
+86
+00:06:19,160 --> 00:06:20,930
+We did what is a contract first approach.
+
+87
+00:06:20,980 --> 00:06:27,400
+What is ethics is the end we look up at a couple of examples of existing snippets and then the next
+
+88
+00:06:27,400 --> 00:06:28,300
+we do it by.
+

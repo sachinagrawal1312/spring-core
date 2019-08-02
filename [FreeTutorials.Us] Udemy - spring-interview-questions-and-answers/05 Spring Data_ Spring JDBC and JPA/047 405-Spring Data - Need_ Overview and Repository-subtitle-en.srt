@@ -1,0 +1,324 @@
+1
+00:00:03,640 --> 00:00:09,340
+Come to this section you get an overview of things related to spring and what we look at in this business
+
+2
+00:00:09,340 --> 00:00:10,630
+we do want to spring data.
+
+3
+00:00:10,660 --> 00:00:12,660
+What is the need for it and what is being made.
+
+4
+00:00:12,660 --> 00:00:20,370
+AJP typically when we want to talk to a entity or to a database in GP what will make use of the entity
+
+5
+00:00:20,380 --> 00:00:24,480
+manage it and what we'll be creating is something called a depositary.
+
+6
+00:00:24,490 --> 00:00:27,760
+So in a repository we would write logic like this.
+
+7
+00:00:27,760 --> 00:00:31,130
+For example here I'm handling the passport object right.
+
+8
+00:00:31,210 --> 00:00:33,280
+So I would want to save a passport.
+
+9
+00:00:33,430 --> 00:00:38,670
+And also I would want to create a passport and also get details of the passport from the database.
+
+10
+00:00:38,680 --> 00:00:43,010
+So this method get passport get the details of the passport from the date of it.
+
+11
+00:00:43,030 --> 00:00:48,560
+So it does indeed the Madrid manager passport that glass passes the ID gives the passport and it back.
+
+12
+00:00:48,670 --> 00:00:49,930
+He had to create the passport.
+
+13
+00:00:49,930 --> 00:00:53,330
+What we are doing here is create passport and passing passport.
+
+14
+00:00:53,380 --> 00:00:59,890
+And it just calls into the manager MoJ method and we have an persistent persistence context and then
+
+15
+00:00:59,890 --> 00:01:05,320
+to manage it as something which is defined inside your passport deposit.
+
+16
+00:01:05,390 --> 00:01:10,230
+Now if you look at the storage repository to save this street in detail it's exactly the same.
+
+17
+00:01:10,240 --> 00:01:15,430
+The only thing different is student student student student in sort of the passport.
+
+18
+00:01:15,580 --> 00:01:19,210
+That's the only thing which is different than then that the entire code is exactly the same.
+
+19
+00:01:19,210 --> 00:01:24,820
+So there's a lot of application in the passport repository and the student repository that's factor
+
+20
+00:01:24,820 --> 00:01:31,210
+number one the fact that Number two is also the fact that there are there's an explosion of data stores
+
+21
+00:01:31,220 --> 00:01:31,890
+right.
+
+22
+00:01:32,230 --> 00:01:35,550
+Earlier the databases were just of one kind or relational databases.
+
+23
+00:01:35,560 --> 00:01:37,930
+But today there are a lot of other big data.
+
+24
+00:01:38,110 --> 00:01:43,720
+Data is coming in how do Mongo D.B and a huge Weddady of other apps.
+
+25
+00:01:43,840 --> 00:01:49,950
+So how do we ensure that the baby talk to data is consistent.
+
+26
+00:01:49,950 --> 00:01:50,430
+I don't know.
+
+27
+00:01:50,430 --> 00:01:54,850
+Talk to one data story in one way and to another story not the other way.
+
+28
+00:01:55,190 --> 00:02:02,100
+And how do I reduce the duplications between the DPA repositories that we've seen here spring data aims
+
+29
+00:02:02,100 --> 00:02:04,120
+to solve these problems.
+
+30
+00:02:04,120 --> 00:02:11,490
+It kind of provides a common abstractions to store and retrieve data from data stores.
+
+31
+00:02:11,560 --> 00:02:16,060
+The most important thing is it is independent of the type of the data stored it does not matter whether
+
+32
+00:02:16,130 --> 00:02:20,280
+you're talking to a relational database whether you're talking to a big data that is too old or whatever
+
+33
+00:02:20,370 --> 00:02:21,260
+it is.
+
+34
+00:02:21,400 --> 00:02:28,180
+Now what does that JPA do is being that AJP extends the concepts of spring data provide a concept called
+
+35
+00:02:28,390 --> 00:02:35,230
+depositary spring did AJP extends the concept of depositary and pro-white to G.P.A. implementation footed.
+
+36
+00:02:35,410 --> 00:02:42,760
+So it helps us to use data kind of abstractions to connect to a jeep database so it can do it.
+
+37
+00:02:42,770 --> 00:02:47,040
+JP How do we use sping data AJP or did we need to do.
+
+38
+00:02:47,080 --> 00:02:51,910
+Extend is a simple class something like that repository.
+
+39
+00:02:52,060 --> 00:02:58,180
+So if I want to manage this student entity or that I need to do is say I would want to extend gradually
+
+40
+00:02:58,260 --> 00:03:03,830
+that the tree the entity I want to manage is student and the primary key is long.
+
+41
+00:03:03,880 --> 00:03:11,920
+So I just need to create an interface extending the repository interface and I'm really I have created
+
+42
+00:03:11,920 --> 00:03:13,060
+a strange repository here.
+
+43
+00:03:13,060 --> 00:03:18,960
+I'm creating a passport repository exactly the same thing that repository passport come along.
+
+44
+00:03:18,970 --> 00:03:24,370
+Defining the entity to be managed and the primary key of the entity once you do this you'd be able to
+
+45
+00:03:24,370 --> 00:03:27,700
+exude a lot of methods using decried repository.
+
+46
+00:03:27,720 --> 00:03:32,620
+Now let's look at couple more a couple more question to how does a repository and why does paging and
+
+47
+00:03:32,610 --> 00:03:33,940
+sorting repository.
+
+48
+00:03:34,090 --> 00:03:37,240
+So the important method to represent Indico deposit the RC.
+
+49
+00:03:37,300 --> 00:03:42,380
+So if I want to update or insert an entity then I would use the same method.
+
+50
+00:03:42,550 --> 00:03:46,600
+So sical the same method and say save passport.
+
+51
+00:03:46,870 --> 00:03:47,800
+Look at the passport.
+
+52
+00:03:47,830 --> 00:03:52,390
+If there's a primary key present then it will update if there is no primary key.
+
+53
+00:03:52,440 --> 00:03:56,540
+Then we insert a new row and create a new ID for it.
+
+54
+00:03:56,590 --> 00:04:03,970
+You can do a fine by ID so I can search for a specific ID so I can search for a specific passport based
+
+55
+00:04:03,970 --> 00:04:05,020
+on its ID.
+
+56
+00:04:05,050 --> 00:04:07,470
+I can check with an object exists by ID.
+
+57
+00:04:07,600 --> 00:04:14,050
+I can get all the list so I can get all the entities which represent in it be able to find all you can
+
+58
+00:04:14,080 --> 00:04:20,440
+delete by ID I can delete a specific thing by ID and I can get count of how many rules are present.
+
+59
+00:04:20,740 --> 00:04:24,050
+So these are some of the important metadata chapters in the crab repository.
+
+60
+00:04:24,220 --> 00:04:32,050
+So for the sort of repository you can use all these methods to save this student to update the student
+
+61
+00:04:32,180 --> 00:04:33,910
+to do it to a student and all that.
+
+62
+00:04:33,940 --> 00:04:37,350
+And the same thing applies for the passport object as well.
+
+63
+00:04:38,350 --> 00:04:44,280
+So when we are using the card repository we don't really need to do things like what we were doing earlier.
+
+64
+00:04:44,620 --> 00:04:46,680
+So we were doing things like this right.
+
+65
+00:04:46,700 --> 00:04:53,520
+So we needed to do and didn't manage it fine and did it with an entity manager that merge when you define
+
+66
+00:04:53,790 --> 00:04:58,060
+depositories using something that AJP you don't need to do them anymore.
+
+67
+00:04:58,350 --> 00:05:01,600
+The repository which is present is paging and sorting repository.
+
+68
+00:05:01,800 --> 00:05:07,980
+In addition to the basic method which I present in here BGN starting to pro-white sorting and paging
+
+69
+00:05:08,370 --> 00:05:09,640
+functionalities.
+
+70
+00:05:09,750 --> 00:05:15,690
+So you'll be able to sort the results on a specific way so you can say I would want to start in descending
+
+71
+00:05:15,690 --> 00:05:24,390
+order based on this field and then you'd be able to see past what depositary find all based on the star.
+
+72
+00:05:24,510 --> 00:05:30,930
+So it would get all the rules using this sorting the other thing you can do is to Bejing.
+
+73
+00:05:30,930 --> 00:05:37,070
+So if I'm getting Todi result I would want to get 10 in each page so I'll get the pages.
+
+74
+00:05:37,080 --> 00:05:43,350
+So here I'm defending a paid of them and creating a new page request and then passing page bill to the
+
+75
+00:05:43,350 --> 00:05:44,870
+passport repository.
+
+76
+00:05:44,910 --> 00:05:49,980
+So what it will do is it will get all the results in its pages of then.
+
+77
+00:05:50,160 --> 00:05:55,920
+So you can get how many pages are present you can get the next page results and all that kind of stuff
+
+78
+00:05:55,930 --> 00:05:59,370
+using the paging and sorting repository.
+
+79
+00:05:59,550 --> 00:06:04,500
+In this way you will get the basics related to spring data what is being data what is the need for it.
+
+80
+00:06:04,500 --> 00:06:11,460
+What is being that AJP What is the repository and what is paging and sorting repository.
+
+81
+00:06:12,420 --> 00:06:13,620
+And building studio by.
+

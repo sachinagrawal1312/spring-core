@@ -1,0 +1,188 @@
+1
+00:00:02,960 --> 00:00:08,700
+Welcome back in this way let's look at how you implement error handling for services services and what
+
+2
+00:00:08,700 --> 00:00:10,140
+is in store for it.
+
+3
+00:00:10,200 --> 00:00:15,540
+One of the most important things with any web service is that when an error happens you do want to give
+
+4
+00:00:15,540 --> 00:00:18,420
+a character respond back to the customer.
+
+5
+00:00:18,730 --> 00:00:20,570
+So who is calling your service.
+
+6
+00:00:20,580 --> 00:00:24,550
+Where is your client you would want to give him the appropriate response.
+
+7
+00:00:24,710 --> 00:00:31,880
+If the service fails and you don't send anything back then the client does not know what to do.
+
+8
+00:00:32,130 --> 00:00:39,720
+So with up any service we need to provide an error response stating exactly what went wrong so that
+
+9
+00:00:39,750 --> 00:00:41,660
+they can take the corrective action.
+
+10
+00:00:41,670 --> 00:00:48,240
+And so pooled is this structure in which contained an error response back.
+
+11
+00:00:48,360 --> 00:00:50,490
+Let's look at examples for that.
+
+12
+00:00:50,500 --> 00:00:56,440
+The great thing about tippling Web services is the fact that it provides a good deal for error handling.
+
+13
+00:00:56,580 --> 00:01:03,540
+So if in the end point here we are trying of course smartphone's exception so from sending in I.T. which
+
+14
+00:01:03,540 --> 00:01:09,510
+is like not existing So let's say I'm sitting in thousand or 10000 for a course which does not exist
+
+15
+00:01:09,540 --> 00:01:11,090
+in our database.
+
+16
+00:01:11,130 --> 00:01:16,260
+What would happen is by default billing services would look at these exceptions so we are trying of
+
+17
+00:01:16,260 --> 00:01:17,910
+course not found exception.
+
+18
+00:01:18,030 --> 00:01:19,570
+So it knows that.
+
+19
+00:01:19,590 --> 00:01:24,670
+So it handles it and it turns this slope faultless bones back.
+
+20
+00:01:24,780 --> 00:01:31,190
+But when we look at the details of this are faultless and it's into a full court of soap and we're in
+
+21
+00:01:31,190 --> 00:01:32,730
+the search word.
+
+22
+00:01:32,940 --> 00:01:36,290
+And it says Invalid court ID thousand.
+
+23
+00:01:36,330 --> 00:01:40,970
+What we are doing is we are trying a new course not funny exception to it saying well good phone with
+
+24
+00:01:41,070 --> 00:01:42,130
+requests or Gidday.
+
+25
+00:01:42,150 --> 00:01:48,900
+So when I send a request for ID towels and the cause does not exist I'm going to go so far this is good.
+
+26
+00:01:48,900 --> 00:01:57,310
+So by default I can see that being webservices is doing a good job at providing a good soap in the fall.
+
+27
+00:01:57,330 --> 00:02:03,330
+But this can be for that improved things here you're saying fault code is so up and up so what.
+
+28
+00:02:03,360 --> 00:02:05,660
+There's not really a server fault right.
+
+29
+00:02:05,700 --> 00:02:09,110
+So the client is actually requesting for invalid code.
+
+30
+00:02:09,120 --> 00:02:10,240
+Whose fault it is.
+
+31
+00:02:10,290 --> 00:02:14,200
+It should be the client who is at fault.
+
+32
+00:02:14,400 --> 00:02:21,360
+What what other things I can do is actually SAY fault code not aligned so I can define an act so poorly.
+
+33
+00:02:21,360 --> 00:02:26,030
+In addition on the course not found exceptions on the court not an exception and defending an edge.
+
+34
+00:02:26,110 --> 00:02:33,460
+So Paula in addition you can say fault code is equal fault code but client then what would happen in
+
+35
+00:02:33,460 --> 00:02:35,850
+default court would appear as if it so.
+
+36
+00:02:35,910 --> 00:02:43,710
+And Will Cain and also spring webservices provides you an option to define a custom filed court as well.
+
+37
+00:02:43,710 --> 00:02:51,090
+So here I am saying follow court is custom for court and I'm defining a namespace space and an ID for
+
+38
+00:02:51,090 --> 00:02:52,450
+a default call.
+
+39
+00:02:52,680 --> 00:02:57,870
+So if you are solid with documentation you can put documentation thing when this is the rule which comes
+
+40
+00:02:57,870 --> 00:02:58,350
+back then.
+
+41
+00:02:58,380 --> 00:02:59,850
+This is what you should do.
+
+42
+00:03:00,000 --> 00:03:07,980
+So you can actually define both custom code and also you can use specific quotes as well if you do this
+
+43
+00:03:08,220 --> 00:03:10,550
+if you use this kind of force structure.
+
+44
+00:03:10,560 --> 00:03:14,090
+Then the response you would get back is Falconis course not fun.
+
+45
+00:03:14,100 --> 00:03:21,160
+So we are seeing specific for the court to we I think Falconis 0 0 1 not phone and the text is invalid.
+
+46
+00:03:21,200 --> 00:03:26,610
+Court ID in the short we do we looked at how to implement data handling for your soap.
+
+47
+00:03:26,610 --> 00:03:32,350
+So he says and what is so important and then the next when you re.
+

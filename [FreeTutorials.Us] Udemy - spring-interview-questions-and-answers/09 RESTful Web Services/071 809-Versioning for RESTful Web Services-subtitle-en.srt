@@ -1,0 +1,392 @@
+1
+00:00:03,320 --> 00:00:06,750
+Come back in the studio let's discuss about the worsening for us.
+
+2
+00:00:06,750 --> 00:00:10,700
+PHILLIPS So he says we'll discuss why do we need the training what are the options that are available
+
+3
+00:00:10,700 --> 00:00:12,850
+and how do we implement them for us for that.
+
+4
+00:00:12,860 --> 00:00:15,340
+So he says let's get started now.
+
+5
+00:00:15,530 --> 00:00:16,920
+Why do we need versioning.
+
+6
+00:00:16,970 --> 00:00:23,510
+Let's say there was a first version of this service person with which was implemented just one field
+
+7
+00:00:23,690 --> 00:00:26,270
+for the entire name.
+
+8
+00:00:26,300 --> 00:00:29,160
+This was good for the initial versions of this.
+
+9
+00:00:29,270 --> 00:00:34,880
+And after a couple of years we realized people would want actually to be able to store first name and
+
+10
+00:00:34,880 --> 00:00:37,070
+last name separately.
+
+11
+00:00:37,070 --> 00:00:44,590
+So we actually needed a second version of this service with the first name and last name upgrade.
+
+12
+00:00:44,630 --> 00:00:49,940
+I cannot have just one version of the service because the users of the first version of the service
+
+13
+00:00:50,120 --> 00:00:56,000
+will not be able to consume the second version because I'm changing the structure of the US bonds earlier
+
+14
+00:00:56,360 --> 00:00:58,240
+name was in a specific location.
+
+15
+00:00:58,250 --> 00:01:01,480
+But now I'm actually splitting it up into two fields.
+
+16
+00:01:01,490 --> 00:01:05,870
+First name and last name and the structure of the response changes.
+
+17
+00:01:05,870 --> 00:01:11,950
+So what is the first question of the server is will not be able to use the second version of the service.
+
+18
+00:01:12,140 --> 00:01:17,670
+So I would need to now definitely have two different and two of these services.
+
+19
+00:01:17,720 --> 00:01:20,210
+Now how do I handle scenarios like that.
+
+20
+00:01:20,210 --> 00:01:25,250
+What are the different versioning options that we have that what we would discuss now the first two
+
+21
+00:01:25,250 --> 00:01:28,730
+options of versioning are more related to you as you are right.
+
+22
+00:01:28,760 --> 00:01:33,140
+So what I can do is I can have Beaven and we do slash person.
+
+23
+00:01:33,140 --> 00:01:36,710
+So here we are using the you are right to separate the two.
+
+24
+00:01:36,710 --> 00:01:44,270
+Bush and the other option is to use request paramita questioning so you can pass devotion as a request
+
+25
+00:01:44,330 --> 00:01:48,340
+paramita question is equal to one and Bush is equal to two.
+
+26
+00:01:48,500 --> 00:01:53,390
+Next option of versioning is called Haydar worsening in the header.
+
+27
+00:01:53,420 --> 00:01:58,380
+You would send a bad in the requested or you would tend to permit nothing except what I would want one
+
+28
+00:01:58,770 --> 00:01:59,910
+a separation.
+
+29
+00:01:59,930 --> 00:02:08,070
+I would want to the fourth option is to use a MIME type or accept header versioning here.
+
+30
+00:02:08,230 --> 00:02:12,880
+What we are doing is we are sending something called an accepte head.
+
+31
+00:02:12,900 --> 00:02:22,310
+So we expect the client to send and accept Hayder of this if they want to use the version 1 V-2 if they
+
+32
+00:02:22,310 --> 00:02:23,640
+want to use the wash.
+
+33
+00:02:23,960 --> 00:02:26,130
+So these are our before washing options.
+
+34
+00:02:26,150 --> 00:02:29,290
+One is by uare the next one is by request paramita.
+
+35
+00:02:29,290 --> 00:02:34,420
+The third one is the a header and the 12:56 is accepted.
+
+36
+00:02:34,430 --> 00:02:36,140
+Now how do we implement this.
+
+37
+00:02:36,140 --> 00:02:37,330
+Its very easy right.
+
+38
+00:02:37,350 --> 00:02:43,520
+So if I want to implement you or I were shining I can just say V-2 slash person and I would be able
+
+39
+00:02:43,520 --> 00:02:45,750
+to implement it here.
+
+40
+00:02:45,770 --> 00:02:48,290
+We want it to be as simple as that.
+
+41
+00:02:48,290 --> 00:02:56,880
+So now in here I am listening V-1 and here I am returning to the service know if I want to use reckless
+
+42
+00:02:56,900 --> 00:03:04,010
+paramita Wishnie then I will need to say Batum So this is how you can do this in spring NBC is a tribute
+
+43
+00:03:04,010 --> 00:03:08,910
+for the Get man thing called bantams you can the first version is equal to 1.
+
+44
+00:03:08,900 --> 00:03:15,070
+So this method is in-wall only if you get a request with paramita version of that you will one.
+
+45
+00:03:15,200 --> 00:03:19,760
+So similarly in your get mapping Batum is equal to wash and is equal to.
+
+46
+00:03:20,090 --> 00:03:24,660
+The other option is to use the header the references with headers interrupt padam.
+
+47
+00:03:24,800 --> 00:03:26,100
+I would want to say that.
+
+48
+00:03:26,110 --> 00:03:29,600
+So I'm saying that is equal to x A B version is equal to do.
+
+49
+00:03:29,910 --> 00:03:30,470
+Hey that's.
+
+50
+00:03:30,510 --> 00:03:31,990
+Except exit question is it.
+
+51
+00:03:32,060 --> 00:03:38,250
+So if you get ahead there is a question with a value to then this response is sent back.
+
+52
+00:03:38,270 --> 00:03:43,520
+There was this response to send back the other option is to use produce.
+
+53
+00:03:43,510 --> 00:03:49,600
+So here we are saying this method produces an output of this type in the request.
+
+54
+00:03:49,600 --> 00:03:51,550
+We put an accepted rule of this type.
+
+55
+00:03:51,590 --> 00:03:52,930
+Then we'll get this response.
+
+56
+00:03:52,970 --> 00:03:55,400
+Otherwise we'll get this response back.
+
+57
+00:03:55,400 --> 00:03:58,970
+This is also called MIME type or accepted a wish.
+
+58
+00:03:59,120 --> 00:04:01,310
+Let's look at invoking this right now.
+
+59
+00:04:01,520 --> 00:04:03,690
+So I'm trying to get requests to be one person.
+
+60
+00:04:03,740 --> 00:04:10,070
+You will see that it's getting Charlie back pop chali name is one and we do.
+
+61
+00:04:10,260 --> 00:04:13,210
+It gives me the split first name and last name.
+
+62
+00:04:13,400 --> 00:04:17,770
+The other option that we talk about is by using a paramita.
+
+63
+00:04:17,840 --> 00:04:20,240
+So here we are using a paramita question is equal to 1.
+
+64
+00:04:20,300 --> 00:04:24,700
+And here Washington is tickled to hear you get devotion to the request.
+
+65
+00:04:24,740 --> 00:04:26,900
+The other option is to use the header.
+
+66
+00:04:27,000 --> 00:04:30,560
+Right so we talked about the header option header.
+
+67
+00:04:30,590 --> 00:04:32,600
+I'm sending a header back header.
+
+68
+00:04:32,640 --> 00:04:36,530
+What's the header that we want to use X API.
+
+69
+00:04:36,730 --> 00:04:38,190
+So I'll copy this here.
+
+70
+00:04:38,630 --> 00:04:43,110
+Except you word shown except the question is one will get the version one.
+
+71
+00:04:43,410 --> 00:04:48,210
+Except the question is to get wash to do so.
+
+72
+00:04:48,560 --> 00:04:56,420
+And the other option which will do that is to use the producers that the mime type produces.
+
+73
+00:04:56,540 --> 00:05:00,770
+I don't need this code but I would need accepted it.
+
+74
+00:05:00,890 --> 00:05:06,070
+I'm saying I would accept a response of type which is present in here.
+
+75
+00:05:06,110 --> 00:05:10,410
+So I'm copying this in executing.
+
+76
+00:05:11,030 --> 00:05:16,760
+So now I'm getting one of the response I'm getting to have the response right now.
+
+77
+00:05:17,090 --> 00:05:19,910
+So what look at is the four different options.
+
+78
+00:05:19,910 --> 00:05:25,790
+These are four of the different options that are present to wash us for the services what you are looking
+
+79
+00:05:25,790 --> 00:05:33,000
+at on the screen is some of the big organizations where each of these versions are being made use of.
+
+80
+00:05:33,200 --> 00:05:38,260
+You can see that immediate I versioning This is the accepted or worst thing is use it.
+
+81
+00:05:38,310 --> 00:05:44,710
+Good Hope washing is use at Microsoft you are wishing is using Twitter experimentor which is used in
+
+82
+00:05:44,730 --> 00:05:53,180
+isn't actually the thing is all these four methods of worshipping all these for IDs of washing your
+
+83
+00:05:53,180 --> 00:05:56,800
+abs have their advantages and disadvantages.
+
+84
+00:05:56,810 --> 00:05:59,540
+So you have to evaluate them for us.
+
+85
+00:05:59,540 --> 00:06:05,000
+We can because there are a lot of factors that you need to consider before deciding your washing approach
+
+86
+00:06:05,240 --> 00:06:11,930
+things like you are a pollution misuse of SATB headers because the options 3 and 4 that we discussed
+
+87
+00:06:11,930 --> 00:06:15,020
+using the HDD behaviors tend to misuse the history.
+
+88
+00:06:15,030 --> 00:06:20,340
+DP It is because the behaviors were not meant to be used to watch when you were a POS.
+
+89
+00:06:20,360 --> 00:06:26,590
+You should also think about caching if you are distinguishing US-Soviet versions based on his UDP headers.
+
+90
+00:06:26,630 --> 00:06:29,660
+It might be difficult to cache them.
+
+91
+00:06:29,690 --> 00:06:34,760
+The other factor which you need to consider is the kind of consumers you would have if you have a lot
+
+92
+00:06:34,760 --> 00:06:40,610
+of non-technical consumers who are executing requests on the browser then probably should go with the
+
+93
+00:06:40,610 --> 00:06:47,060
+simpler option of not using D.H. should be hated and the last important factor you need to consider
+
+94
+00:06:47,060 --> 00:06:49,680
+is also API documentation.
+
+95
+00:06:49,760 --> 00:06:56,500
+So how are you generating the documentation and how do you want to include versioning entire API documentation.
+
+96
+00:06:56,510 --> 00:06:59,000
+The summary is that there is no perfect solution.
+
+97
+00:06:59,000 --> 00:07:05,480
+You have to really evaluate the washing options based on your needs and make the right choice for you
+
+98
+00:07:06,290 --> 00:07:08,010
+until the next real way.
+

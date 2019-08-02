@@ -1,0 +1,364 @@
+1
+00:00:02,430 --> 00:00:03,750
+Well come back in this.
+
+2
+00:00:03,910 --> 00:00:08,270
+Let's discuss about but have you read the book problems that Spring Framework.
+
+3
+00:00:08,290 --> 00:00:13,880
+How do you solve problems such as no unique bean definition exception no such bean definition exception.
+
+4
+00:00:13,930 --> 00:00:20,500
+And also to understand what are the options you have with at primary and if you get started now look
+
+5
+00:00:20,500 --> 00:00:21,980
+at this exam.
+
+6
+00:00:22,260 --> 00:00:28,030
+I have a complex algorithm I am bill which is declared as complaining and sort them out or are wired
+
+7
+00:00:28,030 --> 00:00:34,660
+on here but there is no component on both quicksort and bubbles sorted as well.
+
+8
+00:00:34,900 --> 00:00:39,880
+Quicksort algorithm and bubble totally got them do not have a component on them.
+
+9
+00:00:40,060 --> 00:00:45,010
+When spring searches for some bean which matches this dependency it will not be able to find anything
+
+10
+00:00:45,010 --> 00:00:48,330
+because there is no ET component on these two bins.
+
+11
+00:00:48,430 --> 00:00:53,100
+These are not being been any more because they don't have a component on them.
+
+12
+00:00:53,140 --> 00:00:57,180
+So in these kinds of scenarios what does it throws up.
+
+13
+00:00:57,220 --> 00:01:00,280
+No such bean definition exception.
+
+14
+00:01:00,340 --> 00:01:01,040
+So it is.
+
+15
+00:01:01,330 --> 00:01:03,960
+I want to find implementation of this art.
+
+16
+00:01:03,980 --> 00:01:07,060
+Everybody them but I'm not able to find it.
+
+17
+00:01:07,060 --> 00:01:10,810
+It says I'm satisfied dependency to feel sorry you got it.
+
+18
+00:01:10,810 --> 00:01:14,450
+I'm not qualifying being of this type is every liberal.
+
+19
+00:01:14,450 --> 00:01:19,760
+It is expected at least one being which qualifies that are to wire a candidate.
+
+20
+00:01:19,840 --> 00:01:26,620
+So it says I'm trying to find something to order wire in here but there is nothing found actually in
+
+21
+00:01:26,620 --> 00:01:32,770
+some situations you might really have a component on here so there is a component on quicksort a lot
+
+22
+00:01:32,770 --> 00:01:36,330
+of them but still spring might not be able to find it.
+
+23
+00:01:36,340 --> 00:01:44,470
+If you have not defined the component scan Well this is in package X and this is in package Y and you
+
+24
+00:01:44,470 --> 00:01:47,940
+are scanning only package X for component.
+
+25
+00:01:47,950 --> 00:01:48,940
+What would happen.
+
+26
+00:01:48,940 --> 00:01:54,010
+Spring will not be able to find quicksort algorithm because it's in package white which is a different
+
+27
+00:01:54,010 --> 00:01:55,780
+package from Aix.
+
+28
+00:01:55,810 --> 00:02:03,730
+When you find yourself handling something like no matching component or no such bean definition exception.
+
+29
+00:02:03,860 --> 00:02:08,160
+Or you'd see something of this kind no qualifying being of this type available.
+
+30
+00:02:08,380 --> 00:02:16,240
+Typically the problem would be that I would not put a component on something or you would not put a
+
+31
+00:02:16,240 --> 00:02:18,820
+component or one of those related annotations.
+
+32
+00:02:18,820 --> 00:02:24,490
+You should have either a component repository at ease or a control or one of those annotations should
+
+33
+00:02:24,490 --> 00:02:30,820
+be on your suppling beans and the second problem might be with your component and definition.
+
+34
+00:02:30,940 --> 00:02:37,000
+If a bean is not part of the component and if this is in a package why and why is not being scanned
+
+35
+00:02:37,000 --> 00:02:38,100
+for component.
+
+36
+00:02:38,230 --> 00:02:40,660
+Then spring will not be able to find these beans.
+
+37
+00:02:40,870 --> 00:02:42,240
+So we know you'll find this exception.
+
+38
+00:02:42,250 --> 00:02:45,080
+Those are the two prominent reasons.
+
+39
+00:02:45,100 --> 00:02:49,630
+The reasons are either the component or those related.
+
+40
+00:02:49,630 --> 00:02:56,160
+In addition to missing or component can is not really defined properly either.
+
+41
+00:02:56,200 --> 00:03:01,450
+End of the problem is two matching components that is more than one matching component.
+
+42
+00:03:01,450 --> 00:03:02,870
+So sort them.
+
+43
+00:03:03,000 --> 00:03:06,390
+Now there are two implementations of that sort.
+
+44
+00:03:06,490 --> 00:03:09,820
+And Babel certainly taught them what should sping do in that case.
+
+45
+00:03:09,820 --> 00:03:13,230
+Here you see that there is a wide and there are two component.
+
+46
+00:03:13,240 --> 00:03:19,190
+Let's say all these classes are in the components and they are all being scanned.
+
+47
+00:03:19,330 --> 00:03:24,800
+So spring finds two components for the same thing and it tries to match by name.
+
+48
+00:03:24,800 --> 00:03:25,810
+Sorry to read them.
+
+49
+00:03:25,840 --> 00:03:29,290
+It seems none of the beans are also match by name.
+
+50
+00:03:29,290 --> 00:03:31,100
+So what does spinning do.
+
+51
+00:03:31,120 --> 00:03:32,460
+Throws an exception.
+
+52
+00:03:32,470 --> 00:03:35,010
+It says Feel start and got them in.
+
+53
+00:03:35,020 --> 00:03:41,140
+This requires a single bean but actually two are found it is bubble toward the bottom and quicksort
+
+54
+00:03:41,440 --> 00:03:43,460
+them I'm searching for one.
+
+55
+00:03:43,600 --> 00:03:47,730
+But actually I'm finding too in this kind of situations spring throws.
+
+56
+00:03:47,940 --> 00:03:50,670
+You need bean definition exception to it.
+
+57
+00:03:50,830 --> 00:03:53,350
+I'm not able to find a unique definition.
+
+58
+00:03:53,350 --> 00:03:59,580
+I'm finding two more than one bean definition and I've not been able to match one correctly.
+
+59
+00:03:59,620 --> 00:04:02,440
+So how do you solve these kind of problems.
+
+60
+00:04:02,530 --> 00:04:07,460
+Well the option to which we look at is by naming it properly so here if I want to use Cwiek certainly
+
+61
+00:04:07,450 --> 00:04:08,370
+go read them.
+
+62
+00:04:08,440 --> 00:04:16,120
+I recall the instance name quicksort algorithm or bubbles or tell them that using or dividing by name.
+
+63
+00:04:16,210 --> 00:04:22,420
+The other options which are present are to use something called primary so you can say bubbletop it
+
+64
+00:04:22,510 --> 00:04:24,390
+is my primary algorithm.
+
+65
+00:04:24,440 --> 00:04:32,380
+If there are multiple instances of sordidly goaded them in the component scan then bubbles is the primary
+
+66
+00:04:32,380 --> 00:04:32,770
+one.
+
+67
+00:04:32,770 --> 00:04:34,590
+So now what does.
+
+68
+00:04:34,600 --> 00:04:40,520
+It will start using bubble sort algorithm to execute the complex algorithm I am b.
+
+69
+00:04:40,930 --> 00:04:51,220
+The other option is by using qualifier on the dependency in addition to the auto wide we put something
+
+70
+00:04:51,220 --> 00:04:54,980
+called a qualifier and give it a name.
+
+71
+00:04:55,060 --> 00:04:55,630
+Same thing.
+
+72
+00:04:55,690 --> 00:04:57,390
+The qualifier is main.
+
+73
+00:04:57,400 --> 00:05:01,880
+You gotta eat them so your bean has this qualifier on it.
+
+74
+00:05:02,370 --> 00:05:05,930
+It them no has made them qualifier on it.
+
+75
+00:05:05,930 --> 00:05:08,260
+So it should have been has that qualifier on it.
+
+76
+00:05:08,260 --> 00:05:10,210
+It will be ought the way in.
+
+77
+00:05:10,480 --> 00:05:16,540
+So there are basically three options when you have multiple dependencies on the class that are in the
+
+78
+00:05:16,540 --> 00:05:18,250
+components can actually.
+
+79
+00:05:18,370 --> 00:05:25,240
+So if you have more than one dependency on the components and but then you can either use the name to
+
+80
+00:05:25,240 --> 00:05:29,760
+differentiate them so instead of falling sort them you would call it quicksort or the bubble sort and
+
+81
+00:05:29,760 --> 00:05:32,980
+guarded them so that the matching can happen by name.
+
+82
+00:05:33,070 --> 00:05:39,780
+If you can do it by name you have the option to do it by putting an ad but Amory going to get one of
+
+83
+00:05:39,790 --> 00:05:43,570
+you or anybody it is the primary encoded them for them.
+
+84
+00:05:43,600 --> 00:05:45,480
+That becomes the most important one.
+
+85
+00:05:45,790 --> 00:05:53,560
+And the other option is to use a qualifier just by putting a word with a specific name and also using
+
+86
+00:05:53,560 --> 00:05:57,330
+that qualifier on you are beyond definition.
+
+87
+00:05:57,360 --> 00:06:03,430
+And this we do we looked at some of the problems you might be facing with Spring Framework with respect
+
+88
+00:06:03,490 --> 00:06:07,690
+to component again and finding the beans and by adding them in.
+
+89
+00:06:07,840 --> 00:06:15,460
+And we talked about using primary and qualifier and iterations to solve those problems and then the
+
+90
+00:06:15,460 --> 00:06:16,140
+next with you.
+
+91
+00:06:16,150 --> 00:06:16,640
+All right.
+

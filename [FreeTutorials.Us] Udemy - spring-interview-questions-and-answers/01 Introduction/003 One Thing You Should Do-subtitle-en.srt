@@ -1,0 +1,144 @@
+1
+00:00:00,360 --> 00:00:08,170
+You come to this course from in 20 minutes I can tell you that in 2018 it has 90000 blistered and six
+
+2
+00:00:08,180 --> 00:00:14,410
+doesn't find it place five star reviews on our courses and all 10 hours of content in this course.
+
+3
+00:00:14,760 --> 00:00:20,880
+But these numbers do not make a difference to you and your learning unless you make the best use of
+
+4
+00:00:20,880 --> 00:00:22,070
+discourse.
+
+5
+00:00:22,170 --> 00:00:30,450
+We recommend you to set one goal for yourself and commit at least 28 minutes a day to learn something
+
+6
+00:00:30,450 --> 00:00:31,050
+new.
+
+7
+00:00:31,270 --> 00:00:32,730
+I am of course kidding.
+
+8
+00:00:32,940 --> 00:00:39,030
+I'm a great believer that if you learn something new for at least half an hour every day you'd reach
+
+9
+00:00:39,270 --> 00:00:43,620
+the top five percent of any career that you would choose.
+
+10
+00:00:43,850 --> 00:00:48,260
+And 28 minutes was disclosed this domain name I got.
+
+11
+00:00:48,270 --> 00:00:51,930
+Now the story you set yourself a goal and the reward.
+
+12
+00:00:51,940 --> 00:00:58,140
+Now I will tell you why this call should be what you should be doing for that Haffner you have committed
+
+13
+00:00:58,440 --> 00:01:03,390
+65 percent of the new Java projects use spring and spring.
+
+14
+00:01:03,390 --> 00:01:03,930
+Good.
+
+15
+00:01:04,080 --> 00:01:11,370
+A big chunk of that is Flippy's web services and micro services are being built with spring and our
+
+16
+00:01:11,430 --> 00:01:12,680
+spring springboard.
+
+17
+00:01:12,740 --> 00:01:19,230
+Three hundred percent is the increase in number of micro services that are being built with springboard
+
+18
+00:01:19,380 --> 00:01:21,280
+in the last two years.
+
+19
+00:01:21,570 --> 00:01:29,010
+Seventy percent is the percentage of real world projects using Mavin to manage dependencies and get
+
+20
+00:01:29,100 --> 00:01:31,180
+as Washington control.
+
+21
+00:01:31,230 --> 00:01:37,200
+I would recommend forking the repository of the course and I recommend you like it do to make me happier
+
+22
+00:01:37,880 --> 00:01:39,840
+in the world of my growth.
+
+23
+00:01:39,890 --> 00:01:48,050
+This is where we create a number of small micro services and that's what we do in this course do we
+
+24
+00:01:48,060 --> 00:01:53,730
+create a number of small projects to ensure you have the skills to set up a new project from ground
+
+25
+00:01:53,790 --> 00:01:54,610
+up.
+
+26
+00:01:54,610 --> 00:01:58,710
+Now in this video with a couple of recommendations.
+
+27
+00:01:58,740 --> 00:02:05,810
+A big chunk of the audience for this cause is starting to put in the initial part of the course.
+
+28
+00:02:05,880 --> 00:02:08,720
+We repeat a few important concepts.
+
+29
+00:02:08,760 --> 00:02:14,760
+If you are an experienced programmer have some patience for the first hour or so and we should be good
+
+30
+00:02:14,760 --> 00:02:15,720
+to go.
+
+31
+00:02:15,720 --> 00:02:21,900
+The important thing we would want you to know is that you retain 90 percent of the concepts.
+
+32
+00:02:22,050 --> 00:02:24,890
+If you watch the videos.
+
+33
+00:02:24,990 --> 00:02:29,390
+Do these steps along with me and repeat it again.
+
+34
+00:02:29,470 --> 00:02:35,950
+If you made it here its time to open up your calendar and reserve at least half an hour to learn every
+
+35
+00:02:35,950 --> 00:02:36,480
+day.
+
+36
+00:02:36,480 --> 00:02:38,990
+Good luck and I'll see you in the next week you.
+

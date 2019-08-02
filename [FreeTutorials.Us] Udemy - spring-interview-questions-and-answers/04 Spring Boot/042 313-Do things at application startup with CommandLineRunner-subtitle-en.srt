@@ -1,0 +1,136 @@
+1
+00:00:02,030 --> 00:00:07,200
+The last topic we got good that we would be talking about is what is command line run.
+
+2
+00:00:08,660 --> 00:00:14,690
+So if you look at the documentation it says it's an interface used to indicate that a bean should be
+
+3
+00:00:14,690 --> 00:00:18,080
+run when it is contained within this being application.
+
+4
+00:00:18,080 --> 00:00:21,400
+This is a little cryptic to put it in layman's words.
+
+5
+00:00:21,500 --> 00:00:26,240
+This is something you can implement the command line written it and implement a bean.
+
+6
+00:00:26,330 --> 00:00:31,330
+Then you have to implement something called Amendment that what would happen is the app at the application
+
+7
+00:00:31,350 --> 00:00:37,100
+startup wants the application Quantic sping application context has launched up then the code in this
+
+8
+00:00:37,380 --> 00:00:39,070
+method would run.
+
+9
+00:00:39,110 --> 00:00:41,750
+That's as simple as that to implement a command line.
+
+10
+00:00:41,780 --> 00:00:43,070
+So you have to implement it.
+
+11
+00:00:43,100 --> 00:00:50,930
+You have to implement a call command line runner and implement a method call on the arguments which
+
+12
+00:00:50,960 --> 00:00:55,670
+are passed to this method are the same arguments that are passed to the main method to start running
+
+13
+00:00:55,670 --> 00:00:56,750
+the application.
+
+14
+00:00:56,750 --> 00:01:01,960
+So if you are running good application as a job application and there are a few arguments that are passed
+
+15
+00:01:02,040 --> 00:01:08,270
+the main method to that application those arguments are also passed in to your command line and run
+
+16
+00:01:08,930 --> 00:01:09,590
+the command line.
+
+17
+00:01:09,590 --> 00:01:14,690
+Rene is very useful if you want to do something at the application startup you want to populate some
+
+18
+00:01:14,690 --> 00:01:17,050
+data all you want to configure something.
+
+19
+00:01:17,250 --> 00:01:20,770
+Those kind of stuff can be done in the command line and run them.
+
+20
+00:01:20,840 --> 00:01:25,880
+What you are looking at is an example of a command line and this is called the user repository command
+
+21
+00:01:25,960 --> 00:01:26,600
+line.
+
+22
+00:01:26,870 --> 00:01:30,660
+And yet all the wiring in a user depositary in here.
+
+23
+00:01:30,770 --> 00:01:38,100
+As you can see here it implements the command line interface and it implement the arraignment code.
+
+24
+00:01:38,360 --> 00:01:43,540
+And what we're doing in here is we're saving a few ways users don't so we're creating a few new users
+
+25
+00:01:43,600 --> 00:01:47,500
+retrieving the user by ID and also doing a find all.
+
+26
+00:01:47,510 --> 00:01:51,000
+So we are actually doing some simple logic in here.
+
+27
+00:01:51,320 --> 00:01:55,470
+But the most important thing the fact that all the code.
+
+28
+00:01:55,520 --> 00:02:01,000
+What are you creating here would run one the application context test launched up.
+
+29
+00:02:01,010 --> 00:02:06,860
+So if you implement common labor and implement the method which is present in there and run all the
+
+30
+00:02:06,860 --> 00:02:12,690
+logic which is pleasant and it would be executed at the launch of the spring context within spring but
+
+31
+00:02:13,520 --> 00:02:16,580
+that's basically what command line that is all about.
+
+32
+00:02:16,580 --> 00:02:20,960
+So if you have some logic that needs to be done at application startup this would be one of the best
+
+33
+00:02:20,960 --> 00:02:23,170
+places to implement it.
+
+34
+00:02:23,340 --> 00:02:25,240
+And then the next week you may.
+

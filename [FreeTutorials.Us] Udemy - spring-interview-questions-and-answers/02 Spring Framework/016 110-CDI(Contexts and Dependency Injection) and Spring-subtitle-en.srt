@@ -1,0 +1,180 @@
+1
+00:00:01,940 --> 00:00:06,410
+We'll come back and this we do we would be talking about C D.
+
+2
+00:00:06,970 --> 00:00:14,800
+Contex and dependency injection we all understand what is context and dependency injection and also
+
+3
+00:00:14,800 --> 00:00:20,890
+does sibling support conduct's and dependence injection and also which is that a recommended approach
+
+4
+00:00:20,890 --> 00:00:24,440
+to use TDA or spring annotations.
+
+5
+00:00:24,790 --> 00:00:31,420
+So what is context and dependency injection what a CD it Cydia is basically a dependency injection standard
+
+6
+00:00:31,750 --> 00:00:33,090
+for Jawa.
+
+7
+00:00:33,770 --> 00:00:44,060
+Just like J-P it is standard for defining your Jawa persistence and the patient or JPT find few annotations
+
+8
+00:00:44,260 --> 00:00:50,760
+and a few interfaces which you can use to implement your object relational mapping.
+
+9
+00:00:50,950 --> 00:00:57,640
+Similar to that CDA defines API for dealing with dependency injection bring is one of the most popular
+
+10
+00:00:57,640 --> 00:01:05,580
+Dependency Injection framework and J.Y. eat dependency injection standard Gere's that 3 3 0 creates
+
+11
+00:01:05,620 --> 00:01:13,660
+this new thing called CD contex dependency injection which is kind of the EPA for how spraying should
+
+12
+00:01:13,660 --> 00:01:14,320
+work.
+
+13
+00:01:14,350 --> 00:01:19,520
+However it uses different annotations compared to what spring uses.
+
+14
+00:01:19,780 --> 00:01:26,640
+For example what we call it auto wired in spring is actually inject in.
+
+15
+00:01:27,160 --> 00:01:38,820
+What we call it component is named in CDI and Singleton is what is used to define a scope of thing that
+
+16
+00:01:38,840 --> 00:01:39,510
+is done.
+
+17
+00:01:39,670 --> 00:01:47,320
+So in terms of the meaning it almost does seem so when I say it inject in CDA it means I would want
+
+18
+00:01:47,320 --> 00:01:55,120
+to Arto I have something in here when I say it named it means I'm defining I would want the context
+
+19
+00:01:55,120 --> 00:01:59,190
+dependency injection framework to manage this bean.
+
+20
+00:01:59,200 --> 00:02:01,400
+This is like a component.
+
+21
+00:02:01,660 --> 00:02:06,610
+And when I say something is a tingle then then it means there will be only one instance of that specific
+
+22
+00:02:06,610 --> 00:02:12,820
+thing for application context or instance of the I use the container actually.
+
+23
+00:02:12,880 --> 00:02:18,240
+When you look at spring spring supports most of this stuff that CDA but are white.
+
+24
+00:02:18,310 --> 00:02:24,760
+So in shofer at other word you can easily use at inject and instead of at component you can use Nemed
+
+25
+00:02:24,790 --> 00:02:27,690
+and to define the scope of Singleton it's actually difficult.
+
+26
+00:02:27,760 --> 00:02:32,400
+But if you really want to go ahead and do that you can say at Singleton as well.
+
+27
+00:02:32,440 --> 00:02:33,180
+Bring support.
+
+28
+00:02:33,190 --> 00:02:37,120
+Most of the CDA annotations what is Syria.
+
+29
+00:02:37,150 --> 00:02:41,650
+Syria is just a simple API for doing dependency injection.
+
+30
+00:02:41,650 --> 00:02:46,400
+It kind of tries to standardize dependency injection.
+
+31
+00:02:46,540 --> 00:02:47,950
+Been support CDA.
+
+32
+00:02:48,040 --> 00:02:54,430
+Yes it's been does support most of the annotations which hopeless and NZD and which one do you recommend
+
+33
+00:02:54,430 --> 00:03:00,130
+to use TDA or spring and it isn't actually that really really tough question.
+
+34
+00:03:00,190 --> 00:03:02,230
+If you look at CDA it's a standard.
+
+35
+00:03:02,260 --> 00:03:05,890
+So it's a standard and that's very cool right.
+
+36
+00:03:05,890 --> 00:03:08,750
+You always want to go by the standard.
+
+37
+00:03:08,800 --> 00:03:15,110
+So from that perspective you might want to pick and adapt CDA annotations in your applications.
+
+38
+00:03:15,260 --> 00:03:22,480
+However what I've seen in my experience of last 15 years is spring always stays one step ahead.
+
+39
+00:03:22,600 --> 00:03:28,810
+Whenever there's a new feature the highest probability is that you'd find it inspiring first and then
+
+40
+00:03:29,290 --> 00:03:31,070
+it comes into Java.
+
+41
+00:03:31,480 --> 00:03:37,830
+The choice is between a standard was this an implementation which is a little bit ahead.
+
+42
+00:03:37,930 --> 00:03:40,680
+I don't think there is one very clear choice in here.
+
+43
+00:03:40,780 --> 00:03:49,150
+I think you would not go wrong with either of these choices in this way we look at CDA and also we talk
+
+44
+00:03:49,330 --> 00:03:55,560
+about how is putting support CDA and also how do you make the choice between TDA and suppling until
+
+45
+00:03:55,570 --> 00:03:56,680
+the next review.
+

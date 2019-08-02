@@ -1,0 +1,124 @@
+1
+00:00:02,880 --> 00:00:08,930
+In this way you will look at very important concept with being Web Services which is message dispatcher.
+
+2
+00:00:09,050 --> 00:00:13,070
+What is the message especially servlet and how do we can figure is better service.
+
+3
+00:00:13,460 --> 00:00:18,770
+When we talk about web applications we know about dispatch celebrate the spaceship's tablet acts as
+
+4
+00:00:18,770 --> 00:00:20,870
+the front controller.
+
+5
+00:00:20,870 --> 00:00:26,240
+It makes sure that all the requests first go to the dispatcher so late and then they would be distributed
+
+6
+00:00:26,240 --> 00:00:28,550
+out to the Carrack controllers.
+
+7
+00:00:28,790 --> 00:00:35,060
+When it comes to spring services message dispatch or service that does exactly the same thing.
+
+8
+00:00:35,320 --> 00:00:42,410
+So what it does is the first request goes to message especially servlet and then it looks at the quest
+
+9
+00:00:42,590 --> 00:00:43,840
+it looks at the name space.
+
+10
+00:00:43,850 --> 00:00:51,790
+It looks at the request details and then mapped it to the appropriate and appointment.
+
+11
+00:00:52,880 --> 00:00:57,620
+In the previous example reconfigured and in point M.Tech we said this is the method which should be
+
+12
+00:00:57,620 --> 00:01:02,370
+called when the local part is get called Details request.
+
+13
+00:01:02,540 --> 00:01:06,550
+So dispatcher established knows all this stuff so it knows that the name space.
+
+14
+00:01:06,710 --> 00:01:10,710
+This local by this maps to this method.
+
+15
+00:01:10,850 --> 00:01:18,480
+So when the dispatcher Sublette gets get calls vitis request it would map that request and called.
+
+16
+00:01:18,600 --> 00:01:23,580
+This is if we meant that how do we configure the method special so let it.
+
+17
+00:01:23,630 --> 00:01:24,780
+Very simple.
+
+18
+00:01:25,010 --> 00:01:28,840
+What we are looking at is the java configuration for that.
+
+19
+00:01:28,850 --> 00:01:33,940
+So the most important thing is the message the special service that is actually served.
+
+20
+00:01:33,980 --> 00:01:37,710
+So we need to first configure a serve lead for that.
+
+21
+00:01:37,730 --> 00:01:43,480
+So we need to do something QAL so late registration been inspiring if you would want to configure us
+
+22
+00:01:43,490 --> 00:01:50,990
+of let you would use a service registration been several registration been accepted to input most important
+
+23
+00:01:50,990 --> 00:01:58,490
+inputs that tablet registration been accept is disserve lit and also the you are right this is late
+
+24
+00:01:58,580 --> 00:02:04,960
+and this is the way we are mapping to that place to fix it and to configure the message itself.
+
+25
+00:02:05,150 --> 00:02:10,530
+All we need is an application context so we are taking the application context and we are setting it
+
+26
+00:02:10,580 --> 00:02:13,260
+as the application context or here.
+
+27
+00:02:13,520 --> 00:02:17,940
+And we are defining it as being we are defining this as the spring.
+
+28
+00:02:17,940 --> 00:02:21,930
+I mean this is basically a simple definition for message dispatch.
+
+29
+00:02:21,930 --> 00:02:30,370
+So we are saying all the requests which comes to W-S that need to be processed by the message dispatches.
+
+30
+00:02:30,580 --> 00:02:35,210
+In this video we took a quick look at message especially Sylhet and how you can configure it in a Java
+
+31
+00:02:35,280 --> 00:02:36,080
+configuration.
+

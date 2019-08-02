@@ -1,0 +1,192 @@
+1
+00:00:01,960 --> 00:00:05,720
+This would you would want to look at the different options which are present for spring application
+
+2
+00:00:05,730 --> 00:00:12,020
+context from an NGO and how do you choose between them in a way we have actually discussed this in one
+
+3
+00:00:12,020 --> 00:00:13,670
+of the earlier videos as well.
+
+4
+00:00:13,730 --> 00:00:18,830
+So this might be a little bit of repetition but the important thing we would also want to discuss is
+
+5
+00:00:18,920 --> 00:00:21,960
+how do you choose between similar configurations.
+
+6
+00:00:22,160 --> 00:00:27,140
+Also we think this is an important concept so let's discuss it one more time.
+
+7
+00:00:27,140 --> 00:00:32,100
+Let's look at the example of configuring your application contex right to.
+
+8
+00:00:32,300 --> 00:00:39,350
+As we look earlier to define the ex-American text with all your being and so in here you'll find all
+
+9
+00:00:39,350 --> 00:00:41,200
+your beans between your beans and beans.
+
+10
+00:00:41,210 --> 00:00:47,180
+You define all the beans that you would want to define and you can launch it using class public example
+
+11
+00:00:47,180 --> 00:00:54,350
+application context so in your main method you can do this and it would try and find this business application
+
+12
+00:00:54,350 --> 00:01:00,500
+context direct XML and other A or text in the entire class part of your job application.
+
+13
+00:01:00,500 --> 00:01:03,560
+The job of creating a spin context is also very simple.
+
+14
+00:01:03,590 --> 00:01:09,560
+You just need to put the configuration on your configuration being you can use beans to define all the
+
+15
+00:01:09,560 --> 00:01:15,590
+configuration which is present in here and you can launch it up using an addition configured obligacion
+
+16
+00:01:15,590 --> 00:01:21,200
+context or that you need to do is send the class name that class.
+
+17
+00:01:21,440 --> 00:01:25,930
+So these are the two with a Java and X-amount Which one do you prefer.
+
+18
+00:01:26,090 --> 00:01:33,440
+Actually with things like auto wiring and things like component at what the wide and the prominence
+
+19
+00:01:33,440 --> 00:01:39,500
+of the use of water and it isn't the amount of configuration which we actually put I did not examine
+
+20
+00:01:39,930 --> 00:01:42,450
+our individual is very minimal.
+
+21
+00:01:42,730 --> 00:01:48,170
+And I talk when I talk about a big spring application probably I'm talking about some hundred and fifty
+
+22
+00:01:48,170 --> 00:01:54,040
+lines of x in the configuration or something like hundred lines of Chamba contribution.
+
+23
+00:01:54,230 --> 00:01:59,630
+What are we talking about is quite a minimal thing so it's not really as important decision to make
+
+24
+00:01:59,810 --> 00:02:03,870
+as it was before the use of annotations before the use of annotations.
+
+25
+00:02:03,950 --> 00:02:07,640
+We had to write big big spring application context exemplified.
+
+26
+00:02:07,650 --> 00:02:12,060
+So you have to define the beans define the dependencies.
+
+27
+00:02:12,140 --> 00:02:15,470
+Fire them in all that work you have to do that in the economy.
+
+28
+00:02:15,650 --> 00:02:20,300
+But with all the wild and things like that you don't really need to do that to the amount of population
+
+29
+00:02:20,300 --> 00:02:24,950
+that we do in Africa or our configuration is very very less.
+
+30
+00:02:25,070 --> 00:02:29,570
+Actually there is very little to choose so whether you'd want to do the job configuration or similar
+
+31
+00:02:29,570 --> 00:02:31,040
+configuration you're good to go.
+
+32
+00:02:31,040 --> 00:02:32,700
+You can actually use either of them.
+
+33
+00:02:32,720 --> 00:02:40,160
+I don't really have a preference among them but would springboard and springboard having this awesome
+
+34
+00:02:40,160 --> 00:02:46,120
+annotation at Springwood an allegation and it automatically launching the context up as soon as I put
+
+35
+00:02:46,120 --> 00:02:50,270
+a configuration on something it would be picked up as spring configuration.
+
+36
+00:02:50,270 --> 00:02:55,290
+If I have to use SML with sping boot then I have to do a little bit more configuration.
+
+37
+00:02:55,430 --> 00:03:01,850
+So I prefer not the Jabo configuration especially in spring boot applications because I don't really
+
+38
+00:03:01,850 --> 00:03:06,320
+need to do any configuration at all all that I need to do is put that configuration on a bean.
+
+39
+00:03:06,320 --> 00:03:07,970
+Where did this spring configuration.
+
+40
+00:03:07,970 --> 00:03:10,180
+Then it gets picked up automatically.
+
+41
+00:03:10,230 --> 00:03:11,480
+If you can you're just being good.
+
+42
+00:03:11,660 --> 00:03:12,860
+And this was not clear to you.
+
+43
+00:03:12,860 --> 00:03:14,300
+That's not a problem at all.
+
+44
+00:03:14,300 --> 00:03:19,520
+We'll discuss that a little more when we talk about tippling boot in one of our subsequent sections.
+
+45
+00:03:19,520 --> 00:03:24,740
+For now the important thing is there is hardly anything to choose between assembling our configuration
+
+46
+00:03:25,190 --> 00:03:30,860
+except when it comes to being good applications where Jaba configurations are going to get picked up
+
+47
+00:03:30,980 --> 00:03:34,140
+and I have a preference for using our configuration.
+
+48
+00:03:34,250 --> 00:03:35,390
+And then the next step.
+

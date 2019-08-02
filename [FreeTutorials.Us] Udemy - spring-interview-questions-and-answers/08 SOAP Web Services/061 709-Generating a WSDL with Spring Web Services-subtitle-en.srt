@@ -1,0 +1,104 @@
+1
+00:00:04,020 --> 00:00:09,280
+Welcome back in the previous steps we talked about the fact that when we use screengrab Sousa's we tried
+
+2
+00:00:09,270 --> 00:00:12,500
+the Xs and generator ideas deal out of it.
+
+3
+00:00:12,510 --> 00:00:17,520
+So how do we configure generation of AWOS DL when we are using spring but services that's what we are
+
+4
+00:00:17,610 --> 00:00:19,120
+going to look at right now.
+
+5
+00:00:19,140 --> 00:00:24,930
+One of the important things that we need to know is the fact that what is the input so the input generated
+
+6
+00:00:25,320 --> 00:00:30,790
+here is the schema right to disclose details that exist the schema.
+
+7
+00:00:30,840 --> 00:00:34,740
+So the access to which we wrote and look that in the earlier examples.
+
+8
+00:00:34,980 --> 00:00:41,540
+So this is the starting point for generating the BSD Doubler's deal will be generated using the access.
+
+9
+00:00:41,540 --> 00:00:46,130
+DS So what we're defining is Access does Kema.
+
+10
+00:00:46,350 --> 00:00:51,130
+This is an buy into this is a spring been using a glass bottle of sorts.
+
+11
+00:00:51,160 --> 00:00:56,190
+We are actually trying to look at because details are as they are not class but and using a simple Access
+
+12
+00:00:56,310 --> 00:00:59,590
+schema to define this specific things.
+
+13
+00:00:59,630 --> 00:01:08,380
+Now what we have this define we would want to now define the WC we'd be using the SDL 1.1.
+
+14
+00:01:08,430 --> 00:01:13,930
+So we're using default as the one one definition that the class which we are making use of.
+
+15
+00:01:14,040 --> 00:01:17,490
+You can see that one of the arguments which I posit is this is this.
+
+16
+00:01:17,610 --> 00:01:21,250
+That's basically what I would access the schema which we are defining in here.
+
+17
+00:01:22,140 --> 00:01:28,980
+And to be able to define a dabblings DL You need to define a pool type in the earlier video we looked
+
+18
+00:01:28,980 --> 00:01:32,250
+at what is a pool type put papers like an interface.
+
+19
+00:01:32,250 --> 00:01:39,990
+So we are defending code for sport as the pool type for it and also the name space is what we already
+
+20
+00:01:39,990 --> 00:01:41,070
+discussed.
+
+21
+00:01:41,070 --> 00:01:47,800
+Other than that we need to set v w d ill will be available so be warned of the WMD.
+
+22
+00:01:47,910 --> 00:01:52,220
+So we are saying this Doubler's deal should be available at slash W-S.
+
+23
+00:01:52,290 --> 00:01:59,220
+So what happens is when you launch up a sporting context the spring framework would look at this configuration
+
+24
+00:01:59,640 --> 00:02:02,970
+looks at the code schema and define a WS deal.
+
+25
+00:02:03,030 --> 00:02:09,160
+And you can see the damages exposed as we saw in the previous step in this quick review.
+
+26
+00:02:09,260 --> 00:02:13,080
+We looked at how to generate that GSD using webservices.
+

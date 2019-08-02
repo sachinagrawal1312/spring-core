@@ -1,0 +1,212 @@
+1
+00:00:02,370 --> 00:00:03,370
+Welcome back.
+
+2
+00:00:03,400 --> 00:00:09,010
+In this video we'll talk about profiles how you can define beyond for a specific profile and also how
+
+3
+00:00:09,010 --> 00:00:12,660
+you can create application configuration for a specific profile.
+
+4
+00:00:12,670 --> 00:00:17,230
+Typically when we develop applications we deployed them in different kinds of environments.
+
+5
+00:00:17,230 --> 00:00:23,860
+Right dev Kuei stage production your local environment as well so you have multiple environments in
+
+6
+00:00:23,860 --> 00:00:29,170
+which you applications can be deployed and the application configuration in each of these environments
+
+7
+00:00:29,170 --> 00:00:31,660
+will definitely be different.
+
+8
+00:00:31,660 --> 00:00:38,380
+So how do you handle those changes the way we would handle them is by something called a profile.
+
+9
+00:00:38,380 --> 00:00:44,800
+Springboard has this concept called profile built in profile is the way we can answer the question how
+
+10
+00:00:44,800 --> 00:00:48,280
+do you have different configuration for different environments.
+
+11
+00:00:48,400 --> 00:00:54,220
+The way we can have different configuration for different environment is by defining individual property
+
+12
+00:00:54,220 --> 00:00:55,720
+files for each one of them.
+
+13
+00:00:55,720 --> 00:01:01,780
+So all the common properties you can define in application are properties if you want to override any
+
+14
+00:01:01,780 --> 00:01:05,070
+of the properties in a basic neuron.
+
+15
+00:01:05,230 --> 00:01:12,580
+So let's say I want to override the properties in Dev and I can create application and properties in
+
+16
+00:01:12,580 --> 00:01:15,300
+Q8 application and create the properties.
+
+17
+00:01:15,310 --> 00:01:22,000
+So once I define this property the only thing I would Naden need to be doing is to set that profile
+
+18
+00:01:22,210 --> 00:01:28,210
+for that environment run into if in the queue when we don't mind I would want to make use of application
+
+19
+00:01:28,690 --> 00:01:31,500
+and Quader properties whatever it is defined in there.
+
+20
+00:01:31,690 --> 00:01:36,610
+Then I would need to set a profile of Q8 for that application.
+
+21
+00:01:36,620 --> 00:01:43,690
+How do I said this profile of you where I can set the profile of keyway by either when you're launching
+
+22
+00:01:43,690 --> 00:01:49,000
+up the job application Springwood application as a job application you can passing an argument saying
+
+23
+00:01:49,340 --> 00:01:57,010
+hey the spin that provides active is equal to you can say if it's cute or in application properties
+
+24
+00:01:57,010 --> 00:02:02,130
+application that properties file itself you can just print out profiles or the active cycle queue.
+
+25
+00:02:02,800 --> 00:02:08,860
+These are the two ways which are present where you can set a profile and based on the profile which
+
+26
+00:02:08,860 --> 00:02:16,540
+is present in their appropriate file from the application properties is pick up.
+
+27
+00:02:16,540 --> 00:02:22,450
+This allows us to configure different values in different environments or do you need to do is change
+
+28
+00:02:22,450 --> 00:02:23,230
+the profile.
+
+29
+00:02:23,230 --> 00:02:31,540
+So if I'm in production outside a profile of Prod. if I mean Q8 had the profile of Q8 as simple as that.
+
+30
+00:02:32,020 --> 00:02:38,040
+As we discussed earlier based on the active profile appropriate configuration is beat up whichever thing
+
+31
+00:02:38,050 --> 00:02:44,050
+you said that the active profile it will be used to pick up the appropriate configuration and profiles
+
+32
+00:02:44,050 --> 00:02:46,900
+can be used to configure different kinds of resources.
+
+33
+00:02:46,900 --> 00:02:47,160
+Right.
+
+34
+00:02:47,200 --> 00:02:52,240
+I what I talk about an application you'd have application related configuration as well as the resources
+
+35
+00:02:52,240 --> 00:02:54,600
+that the application Cemex do.
+
+36
+00:02:54,790 --> 00:03:02,320
+So things like databases queues external web services that you might be using all that might be different
+
+37
+00:03:02,410 --> 00:03:02,910
+from one.
+
+38
+00:03:02,920 --> 00:03:08,200
+And we don't mentor another and you don't mind all those kind of things can be configured in these different
+
+39
+00:03:08,200 --> 00:03:09,060
+files.
+
+40
+00:03:09,160 --> 00:03:15,820
+And as long as you can figure out that specific profile for that specific environment you are done.
+
+41
+00:03:15,960 --> 00:03:21,130
+Good what is a profile look at how to create application configuration for a specific profile right
+
+42
+00:03:21,150 --> 00:03:26,190
+to education configuration for specific profile is created by creating a property for it.
+
+43
+00:03:26,200 --> 00:03:32,950
+One important thing that you can do with your profile is use your profiles in code to define your beans.
+
+44
+00:03:33,100 --> 00:03:37,670
+So this dev being here has an ET profile annotation with the value div.
+
+45
+00:03:37,720 --> 00:03:42,540
+So this being will be only available in the profile div here.
+
+46
+00:03:42,580 --> 00:03:48,740
+This particular bean will only be available in a profile of Prod. so you can customize.
+
+47
+00:03:48,750 --> 00:03:54,220
+Even Java Beans will be available based on the specific profile.
+
+48
+00:03:54,250 --> 00:03:59,440
+While this might be looking like an interesting feature I would actually recommend against using it
+
+49
+00:03:59,470 --> 00:04:06,010
+because this might if you have been like this defined between different environments that are radically
+
+50
+00:04:06,010 --> 00:04:11,350
+in your code then your code is becoming specific to a specific and you don't mind.
+
+51
+00:04:11,440 --> 00:04:15,570
+I don't really like that unless it's absolutely mandatory.
+
+52
+00:04:15,580 --> 00:04:19,300
+Find a word using this kind of stuff in your code.
+
+53
+00:04:19,390 --> 00:04:22,880
+In this video we talked about profiles and do the next video.
+

@@ -1,0 +1,256 @@
+1
+00:00:01,830 --> 00:00:07,440
+Really come back in this area you will focus on the questions which are related to component.
+
+2
+00:00:07,710 --> 00:00:12,880
+So we'll talk about questions like How does spring know where to search for components or beyond what
+
+3
+00:00:12,880 --> 00:00:19,110
+these components can and how can you define components and similar angelic configurations as well as
+
+4
+00:00:19,410 --> 00:00:23,420
+how these components can work with springboard actually components.
+
+5
+00:00:23,460 --> 00:00:27,430
+And it's one of the most important features which is present in spring.
+
+6
+00:00:27,440 --> 00:00:33,450
+You the applications we define all the beans that we would want to bring to really great I would say
+
+7
+00:00:33,930 --> 00:00:40,110
+better than my MP and put in a component on it which certainly read them and put an ad component on
+
+8
+00:00:40,110 --> 00:00:47,220
+it to say this is something which needs to manage more than might be in multiple packages and multiple
+
+9
+00:00:47,220 --> 00:00:51,600
+places where these components might be defined.
+
+10
+00:00:51,720 --> 00:00:57,930
+If sprinklers to search every package which is there for component and that will be a big performance
+
+11
+00:00:57,990 --> 00:00:58,880
+impact.
+
+12
+00:00:58,890 --> 00:01:04,730
+We need to help spring find where our components are really.
+
+13
+00:01:04,740 --> 00:01:06,710
+We define our beans.
+
+14
+00:01:06,720 --> 00:01:14,820
+We would need to help spring identified that what we do is we'll specify Okay spring go in look in business
+
+15
+00:01:15,260 --> 00:01:19,770
+back gauge going look in data we stub back gate.
+
+16
+00:01:19,860 --> 00:01:28,090
+These are the packages where beans are defined and that is what is called a component gain competence
+
+17
+00:01:28,150 --> 00:01:36,720
+can is basically a search Springers for component input for that search packages.
+
+18
+00:01:36,820 --> 00:01:45,600
+So you would say I'm looking for Package A B C D E F and would go there and search for the components.
+
+19
+00:01:45,870 --> 00:01:51,220
+So actually spring does not know we have to search for components or beans you need to delicto you need
+
+20
+00:01:51,220 --> 00:01:51,560
+to.
+
+21
+00:01:51,600 --> 00:01:51,910
+Okay.
+
+22
+00:01:51,930 --> 00:01:58,170
+This is the package where I have my components in and what is components can scan is basically the process
+
+23
+00:01:58,170 --> 00:02:03,810
+where spring looks for these beans and how do you define competence in the molecular configurations.
+
+24
+00:02:03,840 --> 00:02:06,510
+This is how you do that in a Java configuration.
+
+25
+00:02:06,510 --> 00:02:11,430
+So in a Jallow configuration you can have an iteration called component again.
+
+26
+00:02:11,610 --> 00:02:18,000
+So you can to add components and space for all the packages that you want to scan for here and bring
+
+27
+00:02:18,020 --> 00:02:19,050
+two packages.
+
+28
+00:02:19,130 --> 00:02:22,910
+Business service and data service you can pay if they come in.
+
+29
+00:02:22,920 --> 00:02:27,020
+When did mid-stroke bring and scanned the entire thing as well.
+
+30
+00:02:27,180 --> 00:02:31,510
+You need to decide whether you want to speak or you would want to be generic with your components again.
+
+31
+00:02:31,650 --> 00:02:36,450
+The other way to define your competence is in an exam or here we're actually using something called
+
+32
+00:02:36,540 --> 00:02:38,850
+context components.
+
+33
+00:02:39,030 --> 00:02:42,400
+And we are spacewalking one package and here's what we're saying.
+
+34
+00:02:42,430 --> 00:02:47,030
+I want a search coming queen Eden example for all the components.
+
+35
+00:02:47,070 --> 00:02:50,800
+This is an experimental configuration for component.
+
+36
+00:02:51,240 --> 00:02:54,480
+The last question we want to talk about is how is it done with springboard.
+
+37
+00:02:54,480 --> 00:03:00,210
+We talk a lot about being a little bit as well if this is a little difficult for you to understand that's
+
+38
+00:03:00,210 --> 00:03:01,380
+not a problem at all.
+
+39
+00:03:01,720 --> 00:03:06,660
+We'll discuss a lot more about Buddha a little later but all here we just wanted to talk a little bit
+
+40
+00:03:06,660 --> 00:03:10,940
+about components can springboard so into being both.
+
+41
+00:03:10,980 --> 00:03:14,800
+We use an animation called a spring board application.
+
+42
+00:03:15,100 --> 00:03:20,850
+I think you'd be using an analytical at Springwood application to create your job application or you
+
+43
+00:03:20,850 --> 00:03:22,870
+would use and in addition call it spring board.
+
+44
+00:03:22,900 --> 00:03:27,310
+Best to say that this is a unit test related to spring board.
+
+45
+00:03:27,640 --> 00:03:34,720
+What both these allegations do is they would automatically initiate a component scan on the package
+
+46
+00:03:34,820 --> 00:03:41,610
+where they are in so at being good application if you put this in addition in any class then which package
+
+47
+00:03:41,700 --> 00:03:42,720
+it is in.
+
+48
+00:03:42,720 --> 00:03:45,430
+So he had it in the package being in five steps.
+
+49
+00:03:45,600 --> 00:03:49,580
+So this package is automatically scanned for component.
+
+50
+00:03:49,770 --> 00:03:56,850
+And similarly here the test is sping good test emendation is used on this particular test which is in
+
+51
+00:03:56,850 --> 00:03:57,760
+package common.
+
+52
+00:03:57,750 --> 00:04:00,530
+We did manage to bring Bates expiring in payslips.
+
+53
+00:04:00,840 --> 00:04:04,860
+So this package is also scanned for component.
+
+54
+00:04:05,040 --> 00:04:10,660
+So we springboard when we use this and a patient there's an automatic component and triggered on that
+
+55
+00:04:10,840 --> 00:04:14,800
+base package where the application class or the application.
+
+56
+00:04:14,810 --> 00:04:16,280
+Yes I'd be fine.
+
+57
+00:04:16,500 --> 00:04:20,940
+That's the reason why you would see that most of this spring would applications don't even need to declare
+
+58
+00:04:20,940 --> 00:04:22,010
+the components again.
+
+59
+00:04:22,140 --> 00:04:26,270
+As long as you are using this package and it's some package yes.
+
+60
+00:04:26,430 --> 00:04:31,710
+So if you are putting all your components in this are packages of dispersive package then you don't
+
+61
+00:04:31,710 --> 00:04:37,980
+have a problem at all that kind of stuff would be automatically scanned and recognized as components
+
+62
+00:04:38,360 --> 00:04:43,760
+in this way be focused on components we like to understand how spring searches we read how we can space
+
+63
+00:04:43,760 --> 00:04:48,740
+where components can index Milingo up on figuration and how companies can can be done with spring.
+
+64
+00:04:48,740 --> 00:04:50,970
+But until we do we're way.
+

@@ -1,0 +1,228 @@
+1
+00:00:01,900 --> 00:00:06,330
+This would you let's focus on the major features in different Bush of spring.
+
+2
+00:00:06,330 --> 00:00:09,560
+So we'll look at from the first few versions of spring.
+
+3
+00:00:09,560 --> 00:00:14,460
+What are the features in each of those versions and also what are the new features in spring for and
+
+4
+00:00:14,560 --> 00:00:15,310
+spring.
+
+5
+00:00:15,520 --> 00:00:16,660
+Let's get started now.
+
+6
+00:00:16,900 --> 00:00:23,000
+So if you look at the version of Spring Framework where there was some very big change for me being
+
+7
+00:00:23,060 --> 00:00:30,840
+2.5 was the first one because before 2.5 there was no support for annotations there was no at waterwise
+
+8
+00:00:30,940 --> 00:00:36,770
+there was no ET component or there was no ad controller or any of that kind of stuff.
+
+9
+00:00:36,940 --> 00:00:43,630
+So there were no annotations which were present in the earlier versions of spring and all the wiring
+
+10
+00:00:43,750 --> 00:00:46,900
+had to be done by hand.
+
+11
+00:00:46,900 --> 00:00:50,940
+So if I have to define a been in the X-Men I have to defend that bean.
+
+12
+00:00:50,970 --> 00:00:58,370
+I have to define the dependencies and Bleier them in and it was a really tough world to program in.
+
+13
+00:00:58,390 --> 00:01:04,010
+You need that idea of code and parallel to that you would have a thousand lines big.
+
+14
+00:01:04,240 --> 00:01:05,870
+And that was very difficult to maintain.
+
+15
+00:01:05,890 --> 00:01:13,600
+And for me 2.5 was a major spring revision because it brought in and the patient and it brought in the
+
+16
+00:01:13,600 --> 00:01:20,410
+support for that component at auto wide and things like that spring 3.0 was the first question of spring
+
+17
+00:01:20,680 --> 00:01:25,150
+which made use of the Java five improvements in the language.
+
+18
+00:01:25,330 --> 00:01:30,570
+I brought in a lot of improvements right along with an additions for loops and things like that.
+
+19
+00:01:30,730 --> 00:01:37,450
+So I think that he made use of those annotations Swink for was the first week of spring to support tower
+
+20
+00:01:37,540 --> 00:01:40,990
+8 Java 5 and Java 8.
+
+21
+00:01:41,050 --> 00:01:48,040
+The major reasons for our right are Java 5 brought in an additional support in Java 8 brought in things
+
+22
+00:01:48,040 --> 00:01:50,960
+like functional programming and other stuff.
+
+23
+00:01:50,980 --> 00:01:57,280
+So those are two important releases of Jawa and splintery was the first one to support our five.
+
+24
+00:01:57,460 --> 00:02:05,740
+First one to use jabber 5 in its implementation and spring Well the first one to support Java 8 features
+
+25
+00:02:05,950 --> 00:02:13,150
+we had to wait until the fight before Jawa 8 features were used in this spring framework itself because
+
+26
+00:02:13,480 --> 00:02:16,670
+it had to still support C6.
+
+27
+00:02:16,750 --> 00:02:24,970
+So if springform book what was using Java 8 features tend to not be able to support Java 6 or 7 and
+
+28
+00:02:24,970 --> 00:02:25,670
+other stuff.
+
+29
+00:02:25,780 --> 00:02:33,610
+So spring itself was not really using the Java 8 features but applications which were built in spring
+
+30
+00:02:33,910 --> 00:02:39,980
+could have used the Java 8 feature so without being 4:0 you could build up applications which used Java.
+
+31
+00:02:40,040 --> 00:02:45,180
+A major change in Springfield was the support for aircraft controller.
+
+32
+00:02:45,180 --> 00:02:51,940
+This was the time when their services started picking up very well and started moving towards address
+
+33
+00:02:51,950 --> 00:02:52,750
+full services.
+
+34
+00:02:52,780 --> 00:02:55,520
+And now we are moving to a micro 76.
+
+35
+00:02:55,650 --> 00:03:01,080
+So for was the first one to introduce the address controller to support the implementation of full so
+
+36
+00:03:01,090 --> 00:03:09,840
+users and also support for geocache the Java API for caching was introduced as part of 4.1.
+
+37
+00:03:09,870 --> 00:03:11,930
+Fight is the first question of spring.
+
+38
+00:03:12,050 --> 00:03:18,880
+Well there is a functional framework so you can use the concepts of functional programming to even develop
+
+39
+00:03:18,880 --> 00:03:21,450
+your application control.
+
+40
+00:03:21,850 --> 00:03:26,670
+One of the important things that I was working on is this thing called tweaks.
+
+41
+00:03:26,730 --> 00:03:34,990
+It's related to Java modularity the size of the Java installation has went up almost ten times since
+
+42
+00:03:34,990 --> 00:03:37,540
+July 1 to Java 8.
+
+43
+00:03:37,570 --> 00:03:44,470
+So if I have to install a JVM for Java 8 I would need more than 150 B and that's a lot of memory when
+
+44
+00:03:44,470 --> 00:03:49,110
+it comes to your DD races and for jobs to support such kind of devices.
+
+45
+00:03:49,120 --> 00:03:53,100
+We should be able to live with much less memory today.
+
+46
+00:03:53,140 --> 00:04:00,280
+The way Java is is if I want to double up any job application I would need the that JVM to be present.
+
+47
+00:04:00,280 --> 00:04:08,680
+I cannot say I want this part of JVM only and that's what jawab modularity with GSA aims to bring in
+
+48
+00:04:08,890 --> 00:04:17,080
+and spring five aims to support the DXO approach to Java modularity Screen-Free also has good support
+
+49
+00:04:17,260 --> 00:04:20,700
+for re-active programming in re-active programming.
+
+50
+00:04:20,770 --> 00:04:28,560
+A lot of emphasis is on building applications around event so when something happens we generate that
+
+51
+00:04:28,560 --> 00:04:34,940
+event and the rest of the application reacts to that spring five through spring.
+
+52
+00:04:35,020 --> 00:04:41,710
+Flex brings in support for the active programming Catrine is one of the evolving languages.
+
+53
+00:04:41,980 --> 00:04:49,940
+As far as the JVM languages are concerned and what Goatley you can write job applications in much less
+
+54
+00:04:49,950 --> 00:04:55,930
+a number of lines and typing fight has good support for Scotland and it's what you would discuss at
+
+55
+00:04:55,930 --> 00:04:56,690
+high level.
+
+56
+00:04:56,740 --> 00:05:00,270
+What is different important features in different versions of spring.
+
+57
+00:05:00,310 --> 00:05:03,650
+And what would the features in being five and then the next really Obery.
+

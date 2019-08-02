@@ -1,0 +1,420 @@
+1
+00:00:01,800 --> 00:00:07,550
+In the class we do believe the basic concepts of spring and this we will look at something called Music
+
+2
+00:00:07,580 --> 00:00:08,110
+second data.
+
+3
+00:00:08,130 --> 00:00:13,470
+We'll talk about different don't like being in fact the application context and look at how we can create
+
+4
+00:00:13,470 --> 00:00:15,210
+application context.
+
+5
+00:00:15,330 --> 00:00:16,620
+So let's get started.
+
+6
+00:00:16,710 --> 00:00:23,140
+What are the important roles of and I will and then the most important tools of the container are to
+
+7
+00:00:23,150 --> 00:00:30,030
+find the beams to be able to wire the dependencies find the means identify their dependencies and find
+
+8
+00:00:30,030 --> 00:00:33,780
+the dependencies in and also to manage the lifecycle of the bean.
+
+9
+00:00:33,780 --> 00:00:39,420
+That is basically creating the instances of the bean and all the processing the lifecycle event and
+
+10
+00:00:39,540 --> 00:00:43,190
+making sure that the bean is destroyed after complete.
+
+11
+00:00:43,320 --> 00:00:44,650
+Those are the important ones.
+
+12
+00:00:44,730 --> 00:00:51,540
+Let's take an example for example over here we're actually seeing a component on the complex and got
+
+13
+00:00:51,720 --> 00:00:55,010
+my MP and we are seeing it all the wired on this go at them.
+
+14
+00:00:55,170 --> 00:01:02,100
+And also at component on the we've certainly got them what the container needs to do is it needs to
+
+15
+00:01:02,100 --> 00:01:05,970
+identify that there is at component on these two things it says.
+
+16
+00:01:06,540 --> 00:01:11,130
+So a lot of them and complex a lot of them my unpeel are the components I would want to manage.
+
+17
+00:01:11,130 --> 00:01:13,650
+These are the beings I need to create.
+
+18
+00:01:13,770 --> 00:01:14,670
+That's number one.
+
+19
+00:01:14,730 --> 00:01:19,320
+I didn't think what are the important components identifying the beans.
+
+20
+00:01:19,560 --> 00:01:21,030
+So that's the step one.
+
+21
+00:01:21,030 --> 00:01:23,620
+The second step is to wire dependencies.
+
+22
+00:01:23,760 --> 00:01:29,030
+So I would need to also identify the dependencies so it need to understand complexity about them I need
+
+23
+00:01:29,030 --> 00:01:30,300
+to sort out you got it them.
+
+24
+00:01:30,300 --> 00:01:33,350
+So I would need to create an instant only to create a bean.
+
+25
+00:01:33,440 --> 00:01:36,340
+I would need to find a be in for the start algorithm.
+
+26
+00:01:36,600 --> 00:01:38,780
+What does the IOC contain it.
+
+27
+00:01:38,850 --> 00:01:46,050
+It will then go and search for that particular in to it first identify the bins and create instances
+
+28
+00:01:46,050 --> 00:01:50,340
+of those things which do not have any dependencies or quicksort them does not have any dependencies
+
+29
+00:01:50,340 --> 00:01:52,020
+so it creates an instance of it.
+
+30
+00:01:52,200 --> 00:01:54,370
+And then comes here and sees that OK.
+
+31
+00:01:54,390 --> 00:01:58,510
+This one needs the start and go get them to order why is it in here.
+
+32
+00:01:58,670 --> 00:02:04,470
+So it will make the Tarlton go to them I will able to decompress then go to my MP and create a bean
+
+33
+00:02:04,500 --> 00:02:06,200
+or feed as well.
+
+34
+00:02:06,210 --> 00:02:13,140
+The important role of an I was to contain it are to find the means to find its dependencies and make
+
+35
+00:02:13,140 --> 00:02:20,010
+sure that the beans are wired in and also to make sure that all the lights actually went off or been
+
+36
+00:02:20,010 --> 00:02:23,300
+of them creation life cycle you end and destroy.
+
+37
+00:02:23,400 --> 00:02:29,880
+We typically use two terms when it comes to IOC containers in putting the two terms which are related
+
+38
+00:02:29,880 --> 00:02:32,600
+to music and in our application context.
+
+39
+00:02:32,790 --> 00:02:40,950
+And in fact the Bean Factory is the most basic question of the U.S. container that putting pro-white
+
+40
+00:02:41,330 --> 00:02:44,390
+being factory the basic things off NORC container.
+
+41
+00:02:44,400 --> 00:02:46,020
+It will be able to do that too.
+
+42
+00:02:46,080 --> 00:02:50,820
+It will be able to find the beans it will be able to do the dependencies it will be able to manage the
+
+43
+00:02:50,820 --> 00:02:56,820
+lifecycle movements of the mean that basically what in fact is good it been factory does the basic things
+
+44
+00:02:56,820 --> 00:02:59,920
+that any AOC container should be able to do that's it.
+
+45
+00:02:59,970 --> 00:03:01,910
+Nothing more nothing less.
+
+46
+00:03:01,920 --> 00:03:06,590
+So what is application context application context is under the IOC container.
+
+47
+00:03:06,780 --> 00:03:10,900
+Howard The thing is this is much more advanced kind of I use the container.
+
+48
+00:03:11,040 --> 00:03:12,910
+It is almost something you can call us.
+
+49
+00:03:12,950 --> 00:03:17,920
+In fact we place Spillers to what you have been factory has pro-white all these features.
+
+50
+00:03:18,000 --> 00:03:23,550
+And in addition what it does is provide things like AOP like as petroleum.
+
+51
+00:03:23,590 --> 00:03:26,100
+Programming is one of the important things we discuss later.
+
+52
+00:03:26,100 --> 00:03:31,320
+So it provides all the features that we would discuss in the aspect oriented programming part and it
+
+53
+00:03:31,320 --> 00:03:36,390
+provides internationalization capabilities as well to things like misstates sources and things like
+
+54
+00:03:36,390 --> 00:03:37,110
+that.
+
+55
+00:03:37,140 --> 00:03:39,650
+We'll talk about internationalization a little later as well.
+
+56
+00:03:39,750 --> 00:03:44,580
+And the other thing which it provides is the web application context feature when we talk about web
+
+57
+00:03:44,580 --> 00:03:50,730
+applications that things like request session and there is a request scope in scope and other scopes
+
+58
+00:03:50,730 --> 00:03:57,930
+which come into picture so support for all of them is what is provided by application contex been factory
+
+59
+00:03:57,930 --> 00:04:03,600
+provides the basic features application context is being replaced plus and it provides all the features
+
+60
+00:04:03,750 --> 00:04:09,430
+like features internationalization web application context features on top of being fact will be the
+
+61
+00:04:09,450 --> 00:04:13,690
+important role of an eye with the container will be in fact application context.
+
+62
+00:04:13,950 --> 00:04:17,510
+And we compared been fatly with the application context as well.
+
+63
+00:04:17,590 --> 00:04:23,940
+And most importantly you need to remember is in most of the circumstances putting recommends you to
+
+64
+00:04:23,940 --> 00:04:25,660
+use an application.
+
+65
+00:04:25,790 --> 00:04:30,660
+So in most of the applications youll always go with application context because you would need features
+
+66
+00:04:30,660 --> 00:04:32,490
+like internationalization.
+
+67
+00:04:32,490 --> 00:04:35,920
+You need to be able to create a web application context and things like that.
+
+68
+00:04:36,160 --> 00:04:42,840
+However you would want to go with the Bean Factory only when you are in severe memory constrained.
+
+69
+00:04:43,020 --> 00:04:47,520
+You don't want to use a lot of memory in your application in those kind of situations so you would go
+
+70
+00:04:47,520 --> 00:04:49,650
+with something called a Bean Factory.
+
+71
+00:04:49,770 --> 00:04:55,130
+Most of the applications I really work with all of them use an application context.
+
+72
+00:04:55,140 --> 00:05:00,390
+Next we would want to discuss how to create an application context with spring creating an application
+
+73
+00:05:00,390 --> 00:05:05,830
+context with really really simple you can actually define the context in two ways.
+
+74
+00:05:05,840 --> 00:05:12,800
+Either you can define it using an example or you can define it using annotation called a configuration
+
+75
+00:05:12,800 --> 00:05:19,040
+to instead being there isn't an addition call at configuration but you can use to define an application
+
+76
+00:05:19,040 --> 00:05:21,440
+context configuration as well.
+
+77
+00:05:21,500 --> 00:05:26,360
+So the configuration for the application context you can actually define using XML or you can define
+
+78
+00:05:26,360 --> 00:05:27,410
+using Java.
+
+79
+00:05:27,620 --> 00:05:29,660
+So these are the two options which are reliable.
+
+80
+00:05:29,660 --> 00:05:32,580
+We look at them in detail a little later as well.
+
+81
+00:05:32,870 --> 00:05:39,210
+So once you have that configuration you can create the application context using something like classpath
+
+82
+00:05:39,460 --> 00:05:46,190
+example application context what this does is it looks for all these ex-inmate So it looks for these
+
+83
+00:05:46,190 --> 00:05:46,950
+examiners.
+
+84
+00:05:47,090 --> 00:05:52,970
+Where does it look for in the class but just by the simple application context is one of the ways of
+
+85
+00:05:52,970 --> 00:05:56,550
+creating an application context using XM.
+
+86
+00:05:56,630 --> 00:06:06,470
+Here we are providing an area of application context file that as the input to the construct of this
+
+87
+00:06:06,470 --> 00:06:12,500
+particular piece the other way is to use the Java configuration.
+
+88
+00:06:12,500 --> 00:06:18,230
+So the spin context of the Java configuration and we can create an application context for that using
+
+89
+00:06:18,230 --> 00:06:21,400
+an end iteration config application context.
+
+90
+00:06:21,410 --> 00:06:26,150
+You can also create an application context in your uniters writer in your unit that you would want to
+
+91
+00:06:26,150 --> 00:06:28,510
+launch an application context quickly.
+
+92
+00:06:28,560 --> 00:06:34,920
+And this kind of situations we can use something called a spring you need for class runner to alter
+
+93
+00:06:34,960 --> 00:06:36,250
+another called Spring runner.
+
+94
+00:06:36,260 --> 00:06:41,930
+So he's been in it for class run is the same as being crammed like enough so you can actually add run
+
+95
+00:06:41,930 --> 00:06:48,570
+with a station in your unit test on the green run a class and you can specify either your job or configuration.
+
+96
+00:06:48,610 --> 00:06:50,640
+This is our test context configuration.
+
+97
+00:06:50,640 --> 00:06:54,180
+So this is a job configuration that you would want to run as part of this disk.
+
+98
+00:06:54,260 --> 00:06:58,130
+Or you can specify your exim configuration.
+
+99
+00:06:58,130 --> 00:07:03,140
+So whether you're using a similar configuration or you're using a Java configuration you'll be able
+
+100
+00:07:03,140 --> 00:07:08,160
+to easily use them in your typical Java code as well as in your unit.
+
+101
+00:07:08,200 --> 00:07:09,000
+Yes.
+
+102
+00:07:09,170 --> 00:07:14,330
+In this way you would clearly view the concepts of files contain or will it be in fact an application
+
+103
+00:07:14,340 --> 00:07:18,320
+context and we understood how to create an application context.
+
+104
+00:07:18,340 --> 00:07:19,460
+It's spring.
+
+105
+00:07:19,640 --> 00:07:20,850
+I didn't think it would away.
+

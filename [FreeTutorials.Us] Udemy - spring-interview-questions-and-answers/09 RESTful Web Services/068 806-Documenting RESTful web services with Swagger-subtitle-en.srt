@@ -1,0 +1,744 @@
+1
+00:00:02,300 --> 00:00:02,820
+This would you.
+
+2
+00:00:02,950 --> 00:00:04,660
+Let's shift our attention to what.
+
+3
+00:00:04,660 --> 00:00:06,870
+Documenting this for Web services.
+
+4
+00:00:06,940 --> 00:00:08,280
+How do we document that.
+
+5
+00:00:08,280 --> 00:00:10,360
+So is this what is the Raguel.
+
+6
+00:00:10,360 --> 00:00:17,110
+How can we generate back up for restfully web services and also how to add custom information using
+
+7
+00:00:17,110 --> 00:00:18,870
+swagga documentation.
+
+8
+00:00:18,910 --> 00:00:20,600
+We like to look at what is dragged away.
+
+9
+00:00:20,640 --> 00:00:21,860
+Let's get started now.
+
+10
+00:00:21,880 --> 00:00:25,440
+There are multiple ways you can document your restful Web services.
+
+11
+00:00:25,480 --> 00:00:32,670
+There is Rabil there is open talks and the one which is popular right now is what is called Swagger.
+
+12
+00:00:32,760 --> 00:00:36,120
+Swagger is now called the open API specification.
+
+13
+00:00:36,130 --> 00:00:41,750
+The specification helps us to define the contract for rest for Web services.
+
+14
+00:00:41,830 --> 00:00:44,710
+You can define what are the.
+
+15
+00:00:44,800 --> 00:00:50,770
+What are the operations that can be performed before we look at the details of this swaggerer documentation
+
+16
+00:00:50,830 --> 00:00:53,530
+and the specific format of it.
+
+17
+00:00:53,530 --> 00:00:57,090
+What we do is we look at how degenerated from our code.
+
+18
+00:00:57,130 --> 00:01:03,100
+So if you have a restful web service which is built using springboard then you need to do is to add
+
+19
+00:01:03,100 --> 00:01:05,010
+these two dependencies in.
+
+20
+00:01:05,020 --> 00:01:10,780
+So you need to add a dependency calls bring Fox ragged to and spring Fox back to you.
+
+21
+00:01:10,780 --> 00:01:13,280
+I will look at the way first but I get a little later.
+
+22
+00:01:13,290 --> 00:01:19,510
+These are the things that you need to be able to generate documentation for your full web services.
+
+23
+00:01:19,600 --> 00:01:23,680
+Once you add in the dependency you can configure a simple swagga config.
+
+24
+00:01:23,680 --> 00:01:29,260
+Here we are actually enabling this documentation for this project and we think this is a spin configuration.
+
+25
+00:01:29,270 --> 00:01:33,600
+And other than that we need to create a simple been called a docket.
+
+26
+00:01:33,640 --> 00:01:37,470
+And we're using Swagel to wash in of the specification.
+
+27
+00:01:37,510 --> 00:01:44,470
+So you're saying we would want to expose Swagel was not the specification for all of this yes and once
+
+28
+00:01:44,470 --> 00:01:50,860
+you do this you'd be able to see swaggerer documentation for us so users in this format will understand
+
+29
+00:01:50,860 --> 00:01:53,180
+what in artist go through.
+
+30
+00:01:53,260 --> 00:01:59,680
+When we look at the high level these are the important elements which represent in as good documentation.
+
+31
+00:01:59,700 --> 00:02:02,070
+You think you're using swagga 2.0.
+
+32
+00:02:02,110 --> 00:02:07,660
+That's the question of the specification we're using the input bag contains the high level information
+
+33
+00:02:07,720 --> 00:02:12,430
+about our EPA what kind of EPA up your footing and that kind of stuff.
+
+34
+00:02:12,430 --> 00:02:19,090
+And the host is where we are hosting the service or we are hosting the EPA.
+
+35
+00:02:19,260 --> 00:02:20,430
+The best part is the base.
+
+36
+00:02:20,450 --> 00:02:27,360
+But if the base part is slash EPA then to call the services you need to use close the ADT slash.
+
+37
+00:02:28,070 --> 00:02:35,030
+And that's something which you can use to group your resources so for each of your resources and resource
+
+38
+00:02:35,110 --> 00:02:43,390
+methods you can same bags and bags can be used to group your resources into multiple categories or things
+
+39
+00:02:43,390 --> 00:02:51,040
+like that but include the details of all the resources that we are exposing and the different operations
+
+40
+00:02:51,040 --> 00:02:59,740
+that can be performed on each of these thought this definitions include the different elements that
+
+41
+00:02:59,780 --> 00:03:03,280
+are used in our EPA for example.
+
+42
+00:03:03,280 --> 00:03:08,070
+What does the user contain what are the different elements inside the user.
+
+43
+00:03:08,170 --> 00:03:10,990
+What are the different elements inside the hello world.
+
+44
+00:03:11,110 --> 00:03:14,230
+That's what is provided by the definition.
+
+45
+00:03:14,230 --> 00:03:20,650
+It's very important that we need to dig in for parts and definitions.
+
+46
+00:03:20,860 --> 00:03:21,880
+Let's do that right now.
+
+47
+00:03:21,880 --> 00:03:26,480
+So what is info contained in detail it contains a description of your API.
+
+48
+00:03:26,620 --> 00:03:33,530
+So here I can see this is my awesome EPA and a high level overview of what kind of things that we are
+
+49
+00:03:33,530 --> 00:03:39,730
+doing probably here we can say something like we are exposing the EPA for a social media application
+
+50
+00:03:39,880 --> 00:03:41,370
+and high level information.
+
+51
+00:03:41,410 --> 00:03:44,150
+And that wasn't the situation of the EPA.
+
+52
+00:03:44,160 --> 00:03:46,700
+You're exposing in here you can do it title.
+
+53
+00:03:46,900 --> 00:03:53,590
+And if there are any terms of services that you have you can put it in here and you can have a contact
+
+54
+00:03:53,590 --> 00:03:57,560
+person you can put the details in here as well as the license.
+
+55
+00:03:57,580 --> 00:04:03,150
+So the default license which is present in here is Apache 2.0 that you're in for attack.
+
+56
+00:04:03,280 --> 00:04:10,230
+The most important ones are inside the box contain all the resources that we are exposing.
+
+57
+00:04:10,240 --> 00:04:12,590
+We created a lot of hello world resources.
+
+58
+00:04:12,730 --> 00:04:19,780
+Those are here other than that the most important ones are the user resources so we have resort to exposing
+
+59
+00:04:19,810 --> 00:04:20,630
+all the users.
+
+60
+00:04:20,770 --> 00:04:25,410
+And also we have a specific user to do so as well.
+
+61
+00:04:25,420 --> 00:04:28,510
+So this one the user flash IDs a specific user.
+
+62
+00:04:28,510 --> 00:04:32,960
+So you were trying to get the details or delete a specific user.
+
+63
+00:04:33,070 --> 00:04:38,710
+And here this is group of users this really sort of exposes a group of users for a specific user.
+
+64
+00:04:38,800 --> 00:04:40,640
+Let's begin the users folder.
+
+65
+00:04:40,660 --> 00:04:46,160
+When I go inside you would see that there are two operations which can be performed what are the options
+
+66
+00:04:46,330 --> 00:04:53,650
+get and post so you can get the details of all users or you can use the post-operation to create a new
+
+67
+00:04:53,650 --> 00:04:54,410
+user.
+
+68
+00:04:54,550 --> 00:04:57,790
+What should we doing to get the operation into get operation.
+
+69
+00:04:57,790 --> 00:05:04,470
+You can see there's a summary and operation Id We think we can do an application design and produce
+
+70
+00:05:04,570 --> 00:05:06,480
+our daughter in the next step.
+
+71
+00:05:06,510 --> 00:05:11,630
+We look at how to customize this actually we can consume both applications as well as application X-Men
+
+72
+00:05:12,000 --> 00:05:13,360
+and we can produce applications.
+
+73
+00:05:13,380 --> 00:05:20,130
+So nice to see priggishness sentiment and also what are the different responses that we can give so
+
+74
+00:05:20,130 --> 00:05:26,070
+you can see that we can provide a responsive 200 when it's success when we would say 3:56 when it's
+
+75
+00:05:26,070 --> 00:05:31,990
+not found when there is a user ID password or when authentication details are not really provided.
+
+76
+00:05:32,070 --> 00:05:32,970
+What do you do.
+
+77
+00:05:33,120 --> 00:05:33,840
+Send a photo.
+
+78
+00:05:33,840 --> 00:05:41,370
+One thing you are an interface to access this is when we look at the success so the 200 there is a schema
+
+79
+00:05:41,370 --> 00:05:48,570
+definition which is pleasant in here we think we will find in every area of what area of use.
+
+80
+00:05:48,600 --> 00:05:53,430
+Thats the thing which is returning back what we are defending in here is the Spawn's would contain an
+
+81
+00:05:53,670 --> 00:05:55,370
+array of users.
+
+82
+00:05:55,520 --> 00:05:59,670
+Where is the user present the user is present in definitions.
+
+83
+00:05:59,760 --> 00:06:05,760
+I can go to the definitions here and click that and you'd see that user is defined in here I can click
+
+84
+00:06:05,760 --> 00:06:10,780
+user for folder and see the complete definition for user id seen.
+
+85
+00:06:10,830 --> 00:06:20,710
+But the date string date then Id integer and a name so user content these properties at a high level.
+
+86
+00:06:20,750 --> 00:06:26,340
+But define what are the two sources that are exposed for each of the resources you see.
+
+87
+00:06:26,340 --> 00:06:34,080
+What are the different operations that are allowed and for each operation we would see what it consumes
+
+88
+00:06:34,200 --> 00:06:35,280
+what it produces.
+
+89
+00:06:35,370 --> 00:06:39,000
+And what are the different responses that are present.
+
+90
+00:06:39,060 --> 00:06:43,920
+In addition for possed requests you will also have Bajrami.
+
+91
+00:06:44,310 --> 00:06:44,890
+We have.
+
+92
+00:06:45,030 --> 00:06:51,360
+I mean how was it sent it sent as part of the board to your daily quest for the post request for Flash
+
+93
+00:06:51,520 --> 00:06:57,830
+users accept the input of pipe users inside the body of the request.
+
+94
+00:06:57,840 --> 00:07:01,730
+And also we are saying it's required because without that there is no use to send a request.
+
+95
+00:07:01,740 --> 00:07:03,090
+If you don't send the user the data.
+
+96
+00:07:03,090 --> 00:07:06,100
+What is the use of signing up for request.
+
+97
+00:07:06,150 --> 00:07:09,920
+The other resource which is X-post is best if you use it right.
+
+98
+00:07:09,930 --> 00:07:12,490
+Let's use that slash ID on this.
+
+99
+00:07:12,600 --> 00:07:14,200
+What are the operations that we are following.
+
+100
+00:07:14,340 --> 00:07:18,360
+We are having as of now or get an A.
+
+101
+00:07:18,660 --> 00:07:23,800
+Let's look at delete you'd see that the country owns produces almost the same.
+
+102
+00:07:23,940 --> 00:07:27,280
+What we are saying there is a bad meter.
+
+103
+00:07:27,430 --> 00:07:28,830
+There is one parameter.
+
+104
+00:07:29,010 --> 00:07:33,230
+Its called ID of type integer but its sent in the bar.
+
+105
+00:07:33,570 --> 00:07:35,110
+We are differentiating it here.
+
+106
+00:07:35,120 --> 00:07:37,860
+So here we are accepting it in the pot.
+
+107
+00:07:37,920 --> 00:07:46,140
+However in the fourth request How should the details be sent inside the board in Sabbat ammeters in
+
+108
+00:07:46,470 --> 00:07:49,050
+body imports requests what do we do.
+
+109
+00:07:49,050 --> 00:07:55,660
+We put the content as part of the body of the request and in the delete and to get the space recusant
+
+110
+00:07:55,680 --> 00:07:57,100
+where do we put the ID.
+
+111
+00:07:57,180 --> 00:07:59,370
+ID is inside the box.
+
+112
+00:07:59,460 --> 00:08:06,960
+So parts of Defense resources the different operations and the details of each operation and definitions
+
+113
+00:08:06,990 --> 00:08:11,960
+define what are the different kinds of objects that are being used.
+
+114
+00:08:12,000 --> 00:08:17,870
+These definitions are used in the different operations exposed by each of the sort.
+
+115
+00:08:17,940 --> 00:08:24,980
+When we are doing a great operation on this last year we would return back a list of to this resource
+
+116
+00:08:24,980 --> 00:08:32,970
+of users is what we are sending back on the Get operation on a specific user or here.
+
+117
+00:08:33,010 --> 00:08:35,200
+You're saying it's sort of you use it.
+
+118
+00:08:35,310 --> 00:08:37,800
+What is the difference between user and resource user.
+
+119
+00:08:37,920 --> 00:08:45,630
+The resource that contains additional links to be defined hit earthlings to Haiti or Serling's.
+
+120
+00:08:45,630 --> 00:08:45,930
+Right.
+
+121
+00:08:45,930 --> 00:08:51,420
+So those links are added in in the resource of the user type.
+
+122
+00:08:51,540 --> 00:08:56,210
+So it contains link and definition of the link is also present in here.
+
+123
+00:08:56,550 --> 00:08:59,890
+As we discussed earlier Ligon campaigns are real and hedged.
+
+124
+00:08:59,890 --> 00:09:07,390
+If so Drell is all hype and users and hitched up is the actual link to that particular resource.
+
+125
+00:09:07,470 --> 00:09:13,560
+When you want to expose the swaggerer documentation to your client there are two ways you can actually
+
+126
+00:09:13,710 --> 00:09:18,060
+download this as a surrogate or just on and send it out to your client.
+
+127
+00:09:18,210 --> 00:09:20,940
+Or you can use something called swagga.
+
+128
+00:09:20,970 --> 00:09:28,740
+Q So I'm going to do you at a local host Aidy this baggage you've got the mail and press enter and then
+
+129
+00:09:29,270 --> 00:09:36,420
+this is why for all the operations that are being exposed so I can click use a resource here to expand
+
+130
+00:09:36,420 --> 00:09:37,630
+operations in here.
+
+131
+00:09:37,770 --> 00:09:43,160
+You can see the different resources and operations that are present so we can see that the user return
+
+132
+00:09:43,190 --> 00:09:49,390
+is exposing get less users less users delete a specific user and get a specific user.
+
+133
+00:09:49,590 --> 00:09:55,200
+And if you do want to see the details of those you can click it and you can see what is the response
+
+134
+00:09:56,100 --> 00:09:58,830
+and what is the schema for the response.
+
+135
+00:09:59,040 --> 00:10:06,520
+And you can also see what the different response code that you can expect taking a step back.
+
+136
+00:10:06,660 --> 00:10:13,980
+So I would want to share my documentation my documentation my documentation with my consumer so I can
+
+137
+00:10:13,980 --> 00:10:22,480
+go and save this Jason or I can see and share this with my customers or I can share the link to my swag.
+
+138
+00:10:23,800 --> 00:10:26,570
+To either of these will not be a bad idea.
+
+139
+00:10:26,580 --> 00:10:31,500
+One of the things which we can also do is we can consolidate the details of all the resources which
+
+140
+00:10:31,500 --> 00:10:37,950
+are split into multiple locations which are exposing resources we can actually have one place where
+
+141
+00:10:38,010 --> 00:10:44,550
+all the documentation is consolidated and exposed to using the swagga way the documentation that we
+
+142
+00:10:44,550 --> 00:10:46,620
+can read for those sources.
+
+143
+00:10:46,800 --> 00:10:51,240
+Very important because this is what our consumers will look at.
+
+144
+00:10:51,330 --> 00:10:55,320
+If you look at the documentation right now it's not really perfect.
+
+145
+00:10:55,380 --> 00:11:01,260
+We'll try and improve it a little more so that the customers all the consumers of this of these would
+
+146
+00:11:01,260 --> 00:11:04,460
+be able to understand the service much better.
+
+147
+00:11:04,590 --> 00:11:10,050
+So let's say I would want to say the default contact is so and so so the contact information for the
+
+148
+00:11:10,050 --> 00:11:11,010
+API is to enter.
+
+149
+00:11:11,010 --> 00:11:19,320
+So I can define a default on taxing them in 28 minutes and my email ID and also I can say the default
+
+150
+00:11:19,390 --> 00:11:20,820
+EPA in four as well.
+
+151
+00:11:20,830 --> 00:11:23,880
+I can't say how I would want to actually use AP.
+
+152
+00:11:23,920 --> 00:11:30,810
+Awesome EPA title awesome EPA description and I can define what is the license which needs to be used
+
+153
+00:11:30,810 --> 00:11:31,940
+for these abs.
+
+154
+00:11:32,040 --> 00:11:37,860
+And also I would want to configure the default producers and consumers producers and consumers a little
+
+155
+00:11:37,860 --> 00:11:39,300
+later as well.
+
+156
+00:11:39,480 --> 00:11:45,030
+So for now it were going to produce an bazooms to application just on application examine what we can
+
+157
+00:11:45,030 --> 00:11:51,180
+do is we can use this in the dark to earlier we just defined a simple Dockett But now we are extending
+
+158
+00:11:51,180 --> 00:11:54,300
+it we are saying OK I would want to use this API in full.
+
+159
+00:11:54,780 --> 00:11:56,430
+I'd want to use this.
+
+160
+00:11:56,430 --> 00:12:04,470
+Producers were just present in here and I would want to use the consumes altar as the default producers
+
+161
+00:12:04,470 --> 00:12:05,580
+and consumers from here.
+
+162
+00:12:05,580 --> 00:12:12,420
+So we are extending the docket both customizing the information which we would want to show if you refresh
+
+163
+00:12:12,420 --> 00:12:17,760
+the paradox now you would see whatever customisation we have done sure will show up in the description
+
+164
+00:12:17,870 --> 00:12:24,480
+to May a description or so maybe it did the contact details and the license as well.
+
+165
+00:12:24,480 --> 00:12:29,370
+If you go a little below you would be able to see consumers and producers in the formats that we have
+
+166
+00:12:29,370 --> 00:12:31,370
+specified in a cord.
+
+167
+00:12:31,620 --> 00:12:33,730
+So anti-law will be a couple of things right.
+
+168
+00:12:33,750 --> 00:12:39,180
+We just needed to add it added dependency couple of dependencies and then we need to configure swagga
+
+169
+00:12:39,180 --> 00:12:40,140
+config.
+
+170
+00:12:40,140 --> 00:12:46,800
+This would give us the basic documentation and if you wanted to customize it to our needs to our specific
+
+171
+00:12:46,800 --> 00:12:51,400
+needs then we can use things like this to customize the docket.
+
+172
+00:12:51,750 --> 00:12:57,560
+Swagger also offers a lot of annotations to add details about your model.
+
+173
+00:12:57,630 --> 00:13:05,160
+But if you want things like validations to appear in the documentation then you can customize the messages
+
+174
+00:13:05,160 --> 00:13:06,120
+for that.
+
+175
+00:13:06,120 --> 00:13:11,920
+Here we are adding a moral property saying name should have at least two characters.
+
+176
+00:13:12,090 --> 00:13:17,480
+So what we have in here would also appear in this record documentation.
+
+177
+00:13:17,640 --> 00:13:24,720
+You see here that for user there is a description saying name should at least name should have at least
+
+178
+00:13:24,780 --> 00:13:27,000
+2 characters for the rest of the stuff.
+
+179
+00:13:27,000 --> 00:13:29,490
+There is no documentation and search for name.
+
+180
+00:13:29,500 --> 00:13:34,590
+There is a description the name should have at least two characters one of the important things that
+
+181
+00:13:34,590 --> 00:13:37,320
+we would need to think about when you are talking about this.
+
+182
+00:13:37,400 --> 00:13:41,850
+So have your consumers would be thinking about your documentation.
+
+183
+00:13:42,100 --> 00:13:46,700
+So if you just put name they don't know what is the validation message on the name.
+
+184
+00:13:46,740 --> 00:13:51,940
+They should know what is it they should have details of the different relation which is which represent
+
+185
+00:13:52,470 --> 00:13:53,400
+those kind of stuff.
+
+186
+00:13:53,390 --> 00:13:57,690
+You can add in using your at API model property in addition.
+

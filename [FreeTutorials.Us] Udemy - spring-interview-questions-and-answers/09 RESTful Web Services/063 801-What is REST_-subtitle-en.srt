@@ -1,0 +1,248 @@
+1
+00:00:01,800 --> 00:00:06,510
+Welcome to the section Andreas Phillips series we'll talk about what is a restful web series What are
+
+2
+00:00:06,510 --> 00:00:09,010
+the good practices in designing services.
+
+3
+00:00:09,030 --> 00:00:13,940
+And we'll also talk about some of the most important implementation things surrounding this lip services
+
+4
+00:00:14,050 --> 00:00:16,390
+spring rest of spring.
+
+5
+00:00:16,630 --> 00:00:17,810
+Let's get started.
+
+6
+00:00:17,820 --> 00:00:21,390
+The question is which we would be discussing in this specific video.
+
+7
+00:00:21,600 --> 00:00:24,720
+What is the rest and what are the best practices for us for that.
+
+8
+00:00:24,790 --> 00:00:32,700
+So we says rest stands for representational state grants for when we talk about topup services.
+
+9
+00:00:32,700 --> 00:00:35,060
+We are focused on the format.
+
+10
+00:00:35,370 --> 00:00:39,990
+We are focused on using soap and we love to paper and so forth.
+
+11
+00:00:40,200 --> 00:00:48,430
+But rest is a little different it kind of set a few architectural guidelines and that's it.
+
+12
+00:00:48,470 --> 00:00:53,080
+It does not worry about what format of request you are sending and things like that.
+
+13
+00:00:53,340 --> 00:00:58,540
+What the rest wants to do is to make the best use of his TTP.
+
+14
+00:00:58,610 --> 00:01:04,960
+But my feeling was the head of the team which was working on HTP and he came up with this approach called
+
+15
+00:01:04,970 --> 00:01:11,970
+The rest where he said OK why do we really need to implement another way of doing things for Web services.
+
+16
+00:01:12,060 --> 00:01:15,360
+Why don't we make use of what we already did.
+
+17
+00:01:15,600 --> 00:01:20,190
+History put away pro-white all the necessary things to be able to develop good web services.
+
+18
+00:01:20,190 --> 00:01:26,390
+Why don't we develop an approach where we develop Web services using Hastey.
+
+19
+00:01:26,670 --> 00:01:33,840
+So when we talk about rest what we're talking about is making the best use of DTP.
+
+20
+00:01:33,930 --> 00:01:34,830
+The people are white.
+
+21
+00:01:34,830 --> 00:01:38,800
+Things like HDP equipment third and bit his lip response.
+
+22
+00:01:38,820 --> 00:01:45,260
+We contained different kinds of state court when we make use of the best possible way.
+
+23
+00:01:45,330 --> 00:01:51,690
+We make use of all the HTP request methods that are available in the appropriate way and also send the
+
+24
+00:01:51,690 --> 00:01:58,010
+appropriate hastily peer response status based on the situation with the reserves.
+
+25
+00:01:58,060 --> 00:02:05,450
+The rest focuses on this important concept call at least source as far as the rest is concerned.
+
+26
+00:02:05,520 --> 00:02:07,790
+Anything and everything is a sword.
+
+27
+00:02:07,950 --> 00:02:17,760
+A user is a resource to do is resort a list of users is a sword and you can both form actions on these
+
+28
+00:02:17,760 --> 00:02:18,900
+resources.
+
+29
+00:02:18,930 --> 00:02:26,870
+Each resource has something called identifier you a Uniform Resource identifier.
+
+30
+00:02:27,090 --> 00:02:35,040
+So if I want my first to do the YOU ARE A is users slash longer slash to tools for flash one if I want
+
+31
+00:02:35,660 --> 00:02:42,330
+to lose the OR for that resources you will slash Runga slash traduce if you want the details of Rangar
+
+32
+00:02:42,540 --> 00:02:45,430
+then the various users as Runga.
+
+33
+00:02:45,600 --> 00:02:48,070
+So these are really different resources.
+
+34
+00:02:48,220 --> 00:02:52,680
+And there you raise the focus for rest is on resources.
+
+35
+00:02:52,680 --> 00:02:59,550
+So each of these tools has a huge array and also you can pull form actions on these resources.
+
+36
+00:02:59,550 --> 00:03:05,420
+How do you perform actions on the resources by using the appropriate request method.
+
+37
+00:03:05,730 --> 00:03:11,410
+If you look at the request method are some of the requests met that there was delete get pulled.
+
+38
+00:03:11,430 --> 00:03:17,310
+There are others as well like head and stuff but the things which we typically use in restful services
+
+39
+00:03:17,370 --> 00:03:21,690
+are post delete get and put.
+
+40
+00:03:21,720 --> 00:03:28,440
+For example if I want to create a user I would say to this uare I would send a post request if I wanted
+
+41
+00:03:28,440 --> 00:03:29,300
+to delete a user.
+
+42
+00:03:29,340 --> 00:03:32,010
+I wanted to be specific about which user to delete.
+
+43
+00:03:32,010 --> 00:03:37,710
+So as a user slash one I want to delete the first user and I'll send the delete if I want to get the
+
+44
+00:03:37,710 --> 00:03:43,320
+details of all the users get and slash users get the details of a specific user.
+
+45
+00:03:43,440 --> 00:03:48,280
+Which user are you on to get sort of slashy this slash one and I send a get request to it.
+
+46
+00:03:48,300 --> 00:03:53,930
+The most important thing about breast is it does not worry about data exchange format.
+
+47
+00:03:54,150 --> 00:04:00,120
+While design is the most popular one example is also an option to use when we talk about trust.
+
+48
+00:04:00,190 --> 00:04:08,190
+Actually does not care about which exchange format you use text x images on whichever one you are convenient
+
+49
+00:04:08,190 --> 00:04:09,140
+with use it.
+
+50
+00:04:09,160 --> 00:04:12,840
+However the rest is very focused on which three and four.
+
+51
+00:04:13,110 --> 00:04:19,610
+You have to use HDP as the transport press wants to make use of the best things which happened initially
+
+52
+00:04:20,070 --> 00:04:27,270
+and therefore the only transport which is allowed is his TTP as far as his definition is concerned first.
+
+53
+00:04:27,330 --> 00:04:34,740
+There is no standard at all that application definition language Babel is used a little bit over the
+
+54
+00:04:34,740 --> 00:04:36,040
+last couple of years.
+
+55
+00:04:36,060 --> 00:04:39,030
+I see that it's losing ground to Swaggart.
+
+56
+00:04:39,050 --> 00:04:42,210
+Swaggart is not the most popular format.
+
+57
+00:04:42,210 --> 00:04:45,160
+It's now called open API documentation as well.
+
+58
+00:04:45,370 --> 00:04:48,070
+So it's picking up pace in the last couple of years.
+
+59
+00:04:48,090 --> 00:04:52,660
+For now it's kind of the format which is used typically when we're talking about race.
+
+60
+00:04:52,680 --> 00:04:55,800
+So is this article open API documentation.
+
+61
+00:04:55,980 --> 00:04:59,560
+In this would you regard a quick introduction to rest next will you.
+
+62
+00:04:59,640 --> 00:05:02,080
+Let's look at best practice related to rest.
+

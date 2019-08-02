@@ -1,0 +1,204 @@
+1
+00:00:01,570 --> 00:00:09,610
+Welcome to the section on NBC the model view controller in this section we will talk about the applications
+
+2
+00:00:09,900 --> 00:00:15,510
+and how do you roll up their applications with spring MVC or spelling web NBC in particular.
+
+3
+00:00:15,730 --> 00:00:19,810
+Let's start with questions related to architectures of that application.
+
+4
+00:00:19,810 --> 00:00:25,230
+We'll talk about model one architecture model to architecture and model to front Controller pattern.
+
+5
+00:00:25,450 --> 00:00:27,790
+So what is model one architecture.
+
+6
+00:00:27,800 --> 00:00:31,760
+What you one is the most basic of the application architecture.
+
+7
+00:00:31,780 --> 00:00:37,900
+What happens in more than one architecture is in your browser request which comes from your browser
+
+8
+00:00:38,380 --> 00:00:39,190
+directly.
+
+9
+00:00:39,190 --> 00:00:40,960
+Code word is speed.
+
+10
+00:00:41,170 --> 00:00:49,250
+So when would the action bit you put forth your form in the browser would be a JS page.
+
+11
+00:00:49,390 --> 00:00:55,720
+So the request from the browser would directly go to the GSP all the logic would be in the GSB to handle
+
+12
+00:00:55,720 --> 00:00:56,830
+that.
+
+13
+00:00:56,890 --> 00:01:01,250
+I mean you'd be directly calling the database you'd be populating the model.
+
+14
+00:01:01,480 --> 00:01:03,270
+You'll be able to create the view.
+
+15
+00:01:03,310 --> 00:01:06,150
+Everything happens inside the GSP.
+
+16
+00:01:06,180 --> 00:01:11,740
+The thing about the model one architecture is the fact that there are no services which were present
+
+17
+00:01:11,740 --> 00:01:13,450
+at that point in time.
+
+18
+00:01:13,540 --> 00:01:20,780
+All that was used was just so at the outset were pages was the only thing which was handling all the
+
+19
+00:01:20,800 --> 00:01:29,650
+logic and therefore this architecture resulted in very complex JS pieces which were very difficult to
+
+20
+00:01:29,650 --> 00:01:35,650
+maintain because GSB had all the logic for managing the entire application.
+
+21
+00:01:35,650 --> 00:01:42,490
+These kinds of applications were very complex to maintain and we quickly migrated to something called
+
+22
+00:01:42,490 --> 00:01:48,120
+a model do architecture where the request first goes to us of late.
+
+23
+00:01:48,130 --> 00:01:55,180
+So what happens is from the browser the request goes to a server late and the server let make sure that
+
+24
+00:01:55,270 --> 00:02:01,570
+it gets the right data and the database gets the moral ready and then redirect it to The View and The
+
+25
+00:02:01,570 --> 00:02:06,820
+View makes use of all the data from the model and shows it on the screen.
+
+26
+00:02:06,820 --> 00:02:14,980
+So this was one of the first really clear separation in terms of m v c model view controller so we had
+
+27
+00:02:14,980 --> 00:02:23,110
+a model which represents the data from the application and we have a view which is like the GSB or the
+
+28
+00:02:23,350 --> 00:02:30,100
+free market template which I used to show the content from the modem and we had a seed which is the
+
+29
+00:02:30,100 --> 00:02:34,760
+controller the servlet AG as the controller so they use to.
+
+30
+00:02:34,810 --> 00:02:39,860
+So if there is a request coming to a service that it would make sure that all gets all the data and
+
+31
+00:02:39,860 --> 00:02:44,380
+the requests make sure that it's stored to the database it retrieves the data that is needed for the
+
+32
+00:02:44,380 --> 00:02:51,670
+next page gets the more ready for that and then sends it to the next view so that the view can be rendered
+
+33
+00:02:52,210 --> 00:02:59,800
+further enhancement of the MVC pattern is the model to for and control look bad and indifferent control
+
+34
+00:02:59,830 --> 00:03:07,110
+pattern instead of the serviette getting the first request all the requests would first go to the front
+
+35
+00:03:07,180 --> 00:03:14,140
+controller the front controller is the one which gets all the requests it makes sure that the response
+
+36
+00:03:14,140 --> 00:03:20,530
+is ready and it would send it back to the browser different controller pattern is very important because
+
+37
+00:03:20,530 --> 00:03:25,860
+now I have one place to control everything that comes from the outside world.
+
+38
+00:03:25,900 --> 00:03:31,690
+So let's say if I want to make this application secure I can implement security at different controller
+
+39
+00:03:31,690 --> 00:03:32,270
+level.
+
+40
+00:03:32,380 --> 00:03:39,710
+So if I make sure that different controller is secure then my bad application below it is also secured.
+
+41
+00:03:39,910 --> 00:03:44,320
+That's the flexibility that different controller Papen brings in.
+
+42
+00:03:44,320 --> 00:03:49,240
+For example the pattern we see that the request goes to different controller controller based on the
+
+43
+00:03:49,240 --> 00:03:57,400
+request will identify the right of left to execute and also then get the data back from the server let
+
+44
+00:03:57,490 --> 00:04:03,580
+it decide which view to render and once that was rendered it would send that information back to the
+
+45
+00:04:03,730 --> 00:04:04,720
+browser.
+
+46
+00:04:05,050 --> 00:04:10,090
+In this video we got a quick overview of the different web MBC architectures.
+
+47
+00:04:10,270 --> 00:04:16,250
+We started with model one architecture where there were only EJB just piece model to architecture at
+
+48
+00:04:16,600 --> 00:04:19,850
+the request from the browser goes to the server directly.
+
+49
+00:04:20,260 --> 00:04:25,840
+And we talked about the model girlfriend controller architecture where there is something called a French
+
+50
+00:04:25,840 --> 00:04:26,720
+controller.
+
+51
+00:04:26,910 --> 00:04:28,050
+And in the next video we're.
+

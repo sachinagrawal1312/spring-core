@@ -1,0 +1,236 @@
+1
+00:00:02,430 --> 00:00:10,800
+Well come back in that you will talk about soap is what does this open up to is what is soup or is this
+
+2
+00:00:10,840 --> 00:00:13,310
+open loop header and body.
+
+3
+00:00:13,700 --> 00:00:15,240
+Let's get started now.
+
+4
+00:00:15,300 --> 00:00:17,700
+So what is a sole purpose service.
+
+5
+00:00:17,870 --> 00:00:19,270
+Let's look at an example.
+
+6
+00:00:19,270 --> 00:00:25,880
+So we have a two application which is offering services and they are accepting simple request and sending
+
+7
+00:00:25,880 --> 00:00:29,070
+back a simple example spawns.
+
+8
+00:00:29,240 --> 00:00:30,820
+Is this a superb service.
+
+9
+00:00:30,980 --> 00:00:32,020
+Does it become a soap.
+
+10
+00:00:32,080 --> 00:00:41,780
+So it's actually not for something to be Earth soap so we examine because support it should be called
+
+11
+00:00:41,870 --> 00:00:44,600
+SOAP XML request and soap.
+
+12
+00:00:44,600 --> 00:00:46,090
+Excellent response.
+
+13
+00:00:46,190 --> 00:00:50,230
+So it should be in a specific format called soap.
+
+14
+00:00:50,360 --> 00:00:57,200
+When we talk about superbe services the most important thing is the format of the exchange.
+
+15
+00:00:57,240 --> 00:01:01,910
+So how is the request question then how is the response and then what is the format what is the format
+
+16
+00:01:01,940 --> 00:01:03,560
+that is most important thing.
+
+17
+00:01:03,620 --> 00:01:05,550
+The format is soap.
+
+18
+00:01:05,570 --> 00:01:12,470
+Earlier soap used to stand for a simple object access protocol but it's no longer a simple object access
+
+19
+00:01:12,470 --> 00:01:13,230
+protocol.
+
+20
+00:01:13,490 --> 00:01:15,530
+So it's no longer an acronym.
+
+21
+00:01:15,530 --> 00:01:24,140
+It's kind of a simple name which represents this format so substantial for a format where you have soap
+
+22
+00:01:24,200 --> 00:01:31,070
+and when up when we talk about the soap request or a soap response it should meet these standard.
+
+23
+00:01:31,430 --> 00:01:38,850
+So you would have a soap and well up inside which there is an optional header and there is a board.
+
+24
+00:01:39,050 --> 00:01:44,630
+So this is kind of at the high level the structure of your request and the response so that you are
+
+25
+00:01:44,630 --> 00:01:46,990
+looking at a request or respond.
+
+26
+00:01:47,000 --> 00:01:51,520
+They allow us open all up inside that you would have a soap header and so bored.
+
+27
+00:01:51,860 --> 00:01:57,710
+They had that typically contains information meta information like authentication or things like that
+
+28
+00:01:57,920 --> 00:02:04,380
+authentication authorization things like that and body would contain the real content of the request.
+
+29
+00:02:04,430 --> 00:02:09,320
+So let's say I want to get this place with court details then probably the body might contain get court
+
+30
+00:02:09,350 --> 00:02:10,080
+details.
+
+31
+00:02:10,130 --> 00:02:16,070
+But the court's idea is one if I'm getting to details probably the body would contain get to do the
+
+32
+00:02:16,070 --> 00:02:24,220
+deed and the idea of the to do I would want to retrieve the detail would most important thing is when
+
+33
+00:02:24,430 --> 00:02:30,460
+you call something a top but so is it should exchange the request and response in this specific format
+
+34
+00:02:30,970 --> 00:02:31,720
+as we discussed.
+
+35
+00:02:31,720 --> 00:02:35,980
+The format is Topix M-L request and supect similar response.
+
+36
+00:02:35,980 --> 00:02:40,330
+The thing about top is its transport independent.
+
+37
+00:02:40,660 --> 00:02:44,250
+Have you send the request so does not get about.
+
+38
+00:02:44,380 --> 00:02:50,860
+So when I call something superb services the transport can either be over the web that is Hashd DP or
+
+39
+00:02:50,860 --> 00:02:53,980
+it can be or were the MQ so it can.
+
+40
+00:02:54,010 --> 00:02:58,830
+The message might be even sent across using a queue.
+
+41
+00:02:58,900 --> 00:03:04,180
+So the way it might be is you might have two applications listening on the queue.
+
+42
+00:03:04,180 --> 00:03:05,380
+One is the producer.
+
+43
+00:03:05,380 --> 00:03:10,420
+The other is the consumer and the producer application would be listening on the queue for messages
+
+44
+00:03:10,600 --> 00:03:12,730
+when theres a new message in the queue.
+
+45
+00:03:12,730 --> 00:03:16,130
+It looks at it and consider to respond back on the queue.
+
+46
+00:03:16,300 --> 00:03:19,440
+That basically thought or what and where we are using it.
+
+47
+00:03:19,460 --> 00:03:26,980
+Q As the transport the other format is top overhead should it be when we are using web as a format when
+
+48
+00:03:26,980 --> 00:03:32,920
+we are offering soap services on the Internet on the web on the Internet whether we would want to offer
+
+49
+00:03:32,920 --> 00:03:33,590
+them.
+
+50
+00:03:34,000 --> 00:03:41,030
+The other thing about top is the service definition has a strict format its called with Dell or do as
+
+51
+00:03:41,030 --> 00:03:45,190
+deal with Dell web service definition language.
+
+52
+00:03:45,280 --> 00:03:52,650
+We'll look at it in detail in the subsequent video in this we look at the following question So what
+
+53
+00:03:52,650 --> 00:03:53,250
+is this soap.
+
+54
+00:03:53,270 --> 00:03:59,560
+So is anything that added to the soap format and wollop header and body or is soap soap is no longer
+
+55
+00:03:59,560 --> 00:04:00,140
+an acronym.
+
+56
+00:04:00,160 --> 00:04:04,400
+It's just something which presents these kind of Apso.
+
+57
+00:04:04,570 --> 00:04:10,220
+And what is a soap and really it's kind of the encompassing thing for the Scoppetta.
+
+58
+00:04:10,240 --> 00:04:13,810
+And so what is so peda typically contains the authentication information.
+
+59
+00:04:14,050 --> 00:04:20,230
+And so a body contains the actual details of the request and the spot and then the next video by.
+

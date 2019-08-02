@@ -1,0 +1,244 @@
+1
+00:00:01,560 --> 00:00:05,070
+Come to this we do we would be talking about a couple of questions.
+
+2
+00:00:05,070 --> 00:00:07,080
+Let's start with the first question.
+
+3
+00:00:07,080 --> 00:00:13,410
+What is the simplest way of ensuring that we are using singular mission of all spring related dependencies.
+
+4
+00:00:13,590 --> 00:00:18,190
+The problems you would have typically in your application is you don't want to specify.
+
+5
+00:00:18,200 --> 00:00:22,120
+This seems to bring question multiple times right.
+
+6
+00:00:22,440 --> 00:00:28,290
+If you have sprinklered Spring been spring AOP and different modules from spring you're making use of
+
+7
+00:00:28,740 --> 00:00:35,200
+you want to make the same version you want to use the same version of spring for all of the spring modules.
+
+8
+00:00:35,220 --> 00:00:43,590
+The easiest way of ensuring to do that is by using something called a bill of materials the paint seat.
+
+9
+00:00:43,770 --> 00:00:53,650
+So this bill of materials being dependency declaims the dependency versions for all these putting modules.
+
+10
+00:00:54,180 --> 00:00:57,860
+Once you put this in in your dependency management.
+
+11
+00:00:57,950 --> 00:01:04,480
+So there's a section called dependency management or into dependency management section.
+
+12
+00:01:04,560 --> 00:01:12,280
+If we add a dependency on the spring frame we're born for five point zero point zero Ridleys for example.
+
+13
+00:01:12,570 --> 00:01:18,000
+Then in your dependencies you don't need to specify diversion at all.
+
+14
+00:01:18,100 --> 00:01:26,280
+Diversion for the spin context will be picked up from the spring frame but so here the release version
+
+15
+00:01:26,280 --> 00:01:29,040
+ofspring from Obama's 5 0 0 release.
+
+16
+00:01:29,130 --> 00:01:35,820
+So the version of spin context which will be used will also be 5 0 0 Togolese and same is the case for
+
+17
+00:01:35,910 --> 00:01:38,700
+all those dependencies as well.
+
+18
+00:01:38,700 --> 00:01:46,690
+For example you talking about Springhaven web which is the dependency to your web applications it's
+
+19
+00:01:46,730 --> 00:01:54,530
+spring NBC or if you're talking about spring or green beans you don't need to specify the version from
+
+20
+00:01:54,530 --> 00:01:55,130
+now on.
+
+21
+00:01:55,130 --> 00:02:01,430
+So a lot you need to do is include dependency management indeed include the bomb in the dependency management
+
+22
+00:02:01,520 --> 00:02:02,210
+and that's it.
+
+23
+00:02:02,270 --> 00:02:07,200
+You don't need to specify a question for any of your sping dependencies and so forth.
+
+24
+00:02:07,610 --> 00:02:13,580
+The next question would be talking about is what some of the design patents which I used in Spring Framework
+
+25
+00:02:14,180 --> 00:02:18,880
+there are quite a few design patterns which I use in putting framework right.
+
+26
+00:02:19,100 --> 00:02:23,510
+When we talk about being MVC which we'll be talking about later you'd see that there is something called
+
+27
+00:02:23,510 --> 00:02:29,720
+Dispatches so late any request from the browser would first go to the dispatcher server left and only
+
+28
+00:02:29,720 --> 00:02:32,480
+then will it go to any of the other controllers.
+
+29
+00:02:32,480 --> 00:02:35,110
+This pattern is called for and control that.
+
+30
+00:02:35,120 --> 00:02:40,070
+And so all the quotes from the browser would first go to the dispatcher servlet DISPATCHER So that would
+
+31
+00:02:40,070 --> 00:02:44,320
+identify the right controller and distribute the thing to the controllers.
+
+32
+00:02:44,360 --> 00:02:48,820
+So that's one good example the front controller pattern dispatcher service.
+
+33
+00:02:49,100 --> 00:02:57,260
+The other important thing which brings us is managing the beans and the dependency injection.
+
+34
+00:02:57,260 --> 00:03:01,470
+So these are two other patents which spring uses.
+
+35
+00:03:01,480 --> 00:03:07,580
+So when we develop a spring application we are using a prototype so we are creating one instance of
+
+36
+00:03:07,580 --> 00:03:13,070
+the bean that's the prototype pattern and also we are using the dependency injection pattern because
+
+37
+00:03:13,100 --> 00:03:18,920
+all that we would be doing is doing component and at our door Wired The Bean Factory and the application
+
+38
+00:03:18,930 --> 00:03:25,740
+contex implementation of the factory patents because those are the factories which manage the beans.
+
+39
+00:03:25,910 --> 00:03:30,780
+One of the other design pattern which is frequently used in spring is Template Method.
+
+40
+00:03:30,860 --> 00:03:38,480
+If you look at abstract controller or if you look at JVC template or dimiss template all these are examples
+
+41
+00:03:38,480 --> 00:03:40,820
+of Template Method patterns.
+
+42
+00:03:41,210 --> 00:03:44,110
+If you look at the abstract controller it's an abstract class.
+
+43
+00:03:44,240 --> 00:03:51,590
+It defines an abstract method called handle request internal and what it does is it defines all the
+
+44
+00:03:51,590 --> 00:04:01,460
+logic around the handling requests internal in this handle request method to kind of create a put around
+
+45
+00:04:01,820 --> 00:04:03,490
+the handle requests internal.
+
+46
+00:04:03,680 --> 00:04:04,760
+I can go ahead.
+
+47
+00:04:04,770 --> 00:04:05,310
+All right.
+
+48
+00:04:05,310 --> 00:04:08,820
+They handle requests internal and implement a version of it myself.
+
+49
+00:04:08,900 --> 00:04:13,330
+But the basic wrap around it is provided by abstract control.
+
+50
+00:04:13,430 --> 00:04:16,340
+This is basically what is called a template method.
+
+51
+00:04:16,340 --> 00:04:21,440
+But then the next question we would want to talk about is what are some of the important swing and additions
+
+52
+00:04:21,440 --> 00:04:22,080
+you have used.
+
+53
+00:04:22,130 --> 00:04:27,590
+Actually during the last year with us we discussed about quite a few in addition so you can actually
+
+54
+00:04:27,590 --> 00:04:36,170
+quote any of them to at complainant's at depositary control at a wired primary qualifier and configuration
+
+55
+00:04:36,550 --> 00:04:43,070
+and configuration if you remember it was used to define a spring on its configuration.
+
+56
+00:04:43,070 --> 00:04:47,510
+So if we want to define the configuration for us being convicted of spying application context to be
+
+57
+00:04:47,510 --> 00:04:51,530
+used at configuration we can define beans in there in this video.
+
+58
+00:04:51,560 --> 00:04:55,850
+We took a quick look at some of the basic questions related to spring.
+
+59
+00:04:55,850 --> 00:05:01,250
+How do we ensure that one version of being dependencies bomb some of the design patterns used in speaking
+
+60
+00:05:01,260 --> 00:05:07,650
+framework we talked about prototype factory dependency injection and controller and template method.
+
+61
+00:05:07,710 --> 00:05:13,010
+And we look at this important being and additions under Linux we do boy.
+

@@ -1,0 +1,228 @@
+1
+00:00:02,820 --> 00:00:07,860
+Before we get much further into spring boot you'd want to understand how it compares to spring.
+
+2
+00:00:07,860 --> 00:00:15,570
+Spring is actually spring spring spring and we have clear well separated responsibilities and each of
+
+3
+00:00:15,570 --> 00:00:17,960
+them are independent to us.
+
+4
+00:00:18,030 --> 00:00:24,730
+So with application we would use Spring spring NBC and spring but all of them together and we would
+
+5
+00:00:24,780 --> 00:00:29,550
+use spring board to configure spring and spring and see if that's confusing.
+
+6
+00:00:29,550 --> 00:00:31,490
+Let's make that clear in this video.
+
+7
+00:00:31,500 --> 00:00:32,630
+Let's talk about spring.
+
+8
+00:00:32,640 --> 00:00:33,560
+What is spring.
+
+9
+00:00:33,570 --> 00:00:37,970
+Spring as we talked earlier the most important feature is dependency injection.
+
+10
+00:00:37,970 --> 00:00:44,260
+Right so all that is at the core of everything related to spring is this concept of dependency injection
+
+11
+00:00:44,670 --> 00:00:47,940
+and you'll see in mission control application context.
+
+12
+00:00:47,940 --> 00:00:51,840
+In fact that these are really the fundamental concepts in spring.
+
+13
+00:00:51,840 --> 00:00:55,490
+So what does being aimed to do if you have a class like this.
+
+14
+00:00:55,590 --> 00:01:01,560
+Well this is tight coupling because this is of tightly coupled to this welcome service.
+
+15
+00:01:01,590 --> 00:01:02,820
+I cannot have that.
+
+16
+00:01:02,820 --> 00:01:11,070
+So what I would do is I would actually have to ride on there and thereby would be able to unit test
+
+17
+00:01:11,400 --> 00:01:14,360
+the specific controller much more easily.
+
+18
+00:01:14,520 --> 00:01:20,730
+So mid-spring would be able to introduce dependency injection and would be able to do unit testing very
+
+19
+00:01:20,730 --> 00:01:21,990
+easily as well.
+
+20
+00:01:21,990 --> 00:01:25,530
+The first thing that being helps us do is to write loosley couple accord.
+
+21
+00:01:25,620 --> 00:01:29,400
+The other problem that's being solved is the duplication of code.
+
+22
+00:01:29,430 --> 00:01:34,750
+So if you look at being JVC it reduces the amount of code that you would need to write by almost certain
+
+23
+00:01:34,750 --> 00:01:41,730
+papers and because it reduces all the noise that the exception an exception handling code and also all
+
+24
+00:01:41,730 --> 00:01:45,970
+the code to set the parameters in all the code to dig details out of the results.
+
+25
+00:01:46,140 --> 00:01:51,140
+All of that it removes and it only leaves the crux of the business logic in there.
+
+26
+00:01:51,170 --> 00:01:58,650
+Eliminate all the plumbing code and duplication code and also the problems being solved is good integration
+
+27
+00:01:58,650 --> 00:02:03,420
+with other frameworks so if I want to use cloud to know my web application or if I want to connect to
+
+28
+00:02:03,420 --> 00:02:09,860
+hibernate in my web application spring provide very easy integration with all of them if I want to connect
+
+29
+00:02:09,870 --> 00:02:16,180
+to James or if I want to do transaction management has really good support to all that kind of stuff.
+
+30
+00:02:16,230 --> 00:02:21,210
+Basic problems being solved is dependency injection by bringing in loose coupling and also make the
+
+31
+00:02:21,210 --> 00:02:22,400
+application testable.
+
+32
+00:02:22,500 --> 00:02:27,510
+It tries to remove the problem of duplication and plumbing code and it has really good integration with
+
+33
+00:02:27,510 --> 00:02:29,240
+other frameworks.
+
+34
+00:02:29,320 --> 00:02:31,620
+Now what does being SBC do to bring him in.
+
+35
+00:02:31,630 --> 00:02:35,970
+He actually provides a great way of helping you were web applications.
+
+36
+00:02:35,970 --> 00:02:41,840
+So it provides a decoupled way but simple concepts like dispatcher so late model and users.
+
+37
+00:02:42,000 --> 00:02:44,860
+It makes it very easy to develop web applications.
+
+38
+00:02:45,090 --> 00:02:51,450
+All there's a clear separation of concerns with spring NBC makes it very easy to develop their applications
+
+39
+00:02:51,480 --> 00:02:57,090
+and also it helps us let's say if I want to switch from JCP to some other thing for a view it's being
+
+40
+00:02:57,100 --> 00:02:59,590
+MVC it's a very easy thing to do.
+
+41
+00:02:59,820 --> 00:03:05,790
+Now where the spring would fit in spring boot or let it tries to do is all the configuration that is
+
+42
+00:03:05,790 --> 00:03:09,720
+needed based bring into being NBC it will try to eliminate that.
+
+43
+00:03:09,780 --> 00:03:13,190
+It will be limited by this feature called auto configuration.
+
+44
+00:03:13,200 --> 00:03:18,060
+So what does it do say is there is no need to configure a dispatcher said with an auto configured for
+
+45
+00:03:18,060 --> 00:03:21,640
+you there is no need to configure data are not allowed to configure it for you.
+
+46
+00:03:21,690 --> 00:03:26,400
+There is no need to configure entity manager or factory or transaction manager as well to configure
+
+47
+00:03:26,400 --> 00:03:32,010
+it for you and it will also define a default component can as well.
+
+48
+00:03:32,120 --> 00:03:38,990
+Thereby it makes it very very simple to drill up spring and spring and easy applications spring boot
+
+49
+00:03:39,090 --> 00:03:43,640
+aims to make it very easy to develop spring and spring and VC applications.
+
+50
+00:03:43,650 --> 00:03:46,260
+How does being good do that things in this way.
+
+51
+00:03:46,260 --> 00:03:52,420
+So when somebody adds in a spring and besieger can bring some intelligence into it.
+
+52
+00:03:52,590 --> 00:03:56,880
+When somebody add a hibernate What can I do something more automatically.
+
+53
+00:03:56,880 --> 00:04:02,340
+So what does it look said defraying books which had available at declasse but so it looks at different
+
+54
+00:04:02,340 --> 00:04:07,110
+books in the class but and also existing configuration which is provided as part of the spring context.
+
+55
+00:04:07,320 --> 00:04:11,860
+And based on this springboard provide something called auto configuration.
+
+56
+00:04:12,000 --> 00:04:15,000
+In this video we looked at what is the role of spring.
+
+57
+00:04:15,000 --> 00:04:19,950
+What is the role of sping NBC and what is the role of spring board until the next video.
+

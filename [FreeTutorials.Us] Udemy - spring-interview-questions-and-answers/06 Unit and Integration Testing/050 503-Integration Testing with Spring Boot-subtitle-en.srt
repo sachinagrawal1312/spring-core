@@ -1,0 +1,300 @@
+1
+00:00:02,810 --> 00:00:06,300
+This you will write integration tests.
+
+2
+00:00:06,780 --> 00:00:13,050
+When we write an integration test we would want to launch the application as it does and we would want
+
+3
+00:00:13,050 --> 00:00:15,340
+to check what response is coming back.
+
+4
+00:00:15,360 --> 00:00:19,130
+So what we do is we'll make use of and in addition call at test.
+
+5
+00:00:19,210 --> 00:00:21,370
+We would want to relaunch up the real Third-World.
+
+6
+00:00:21,570 --> 00:00:28,320
+So the local school board will help me to get the port where the server is running and we'll use distressed
+
+7
+00:00:28,330 --> 00:00:31,780
+template to execute the request.
+
+8
+00:00:31,800 --> 00:00:38,800
+So we would want to exude a request and get the response back and so on that.
+
+9
+00:00:38,800 --> 00:00:45,210
+So this first template is a very useful thing to use in unit tests so that we can create web services
+
+10
+00:00:45,270 --> 00:00:49,730
+and as well as look at what the response contains.
+
+11
+00:00:50,040 --> 00:00:51,180
+Let's get started now.
+
+12
+00:00:51,960 --> 00:00:54,120
+So writing an integration test it's being built.
+
+13
+00:00:54,130 --> 00:00:55,240
+Is very easy.
+
+14
+00:00:55,280 --> 00:01:01,850
+All that you need to do is use an invitation call at spring board test and I'm specifying the springboard
+
+15
+00:01:01,900 --> 00:01:03,390
+Application class in here.
+
+16
+00:01:03,400 --> 00:01:09,520
+So whichever class has the good application in addition that is the class which we need to put in here
+
+17
+00:01:09,690 --> 00:01:10,890
+application or class.
+
+18
+00:01:11,320 --> 00:01:14,220
+And I'm saying I would want to use a random board.
+
+19
+00:01:14,290 --> 00:01:18,970
+One of the things I can do is specify the part where this just has to be run.
+
+20
+00:01:19,150 --> 00:01:24,670
+But imagine a scenario where this test is running on a continuous integration.
+
+21
+00:01:24,670 --> 00:01:25,290
+So.
+
+22
+00:01:25,390 --> 00:01:31,620
+So if you had code had code up for number and if that part number is used on the continuation and dig
+
+23
+00:01:31,870 --> 00:01:37,140
+us on the on your integration server then US test would start failing.
+
+24
+00:01:37,300 --> 00:01:38,440
+I don't want that to happen.
+
+25
+00:01:38,440 --> 00:01:43,510
+That's the reason why you would say in a random poll we are saying use a board which is available I
+
+26
+00:01:43,510 --> 00:01:45,510
+don't care which party you are using.
+
+27
+00:01:45,670 --> 00:01:47,600
+Use any port which is available.
+
+28
+00:01:47,740 --> 00:01:54,490
+And because we are planning a spring context we use at run with spring loaded for us when we run the
+
+29
+00:01:54,680 --> 00:01:55,940
+springboard test.
+
+30
+00:01:56,020 --> 00:01:59,630
+What would happen is it would or the way our Bleacher Report.
+
+31
+00:01:59,630 --> 00:02:05,890
+So we're asking you to nonrandom great or whatever it runs on when I put an at local to port.
+
+32
+00:02:05,890 --> 00:02:09,890
+In addition it will auto wired that port in here.
+
+33
+00:02:10,120 --> 00:02:16,760
+So I'll be able to see which port the application is able to run by putting in at local.
+
+34
+00:02:16,930 --> 00:02:19,180
+So we'll put annotation on it.
+
+35
+00:02:19,210 --> 00:02:26,130
+So this will are to wire the port number into the port where you will I can use this to file the request
+
+36
+00:02:26,180 --> 00:02:30,100
+at a later point in doing so this is the basic configuration.
+
+37
+00:02:30,100 --> 00:02:33,200
+Let's look at the unit just enough to renovate the unit.
+
+38
+00:02:33,220 --> 00:02:39,070
+I would want to fire a request to what do local host Colin we show up for the application is running
+
+39
+00:02:39,070 --> 00:02:42,280
+on the local Lieut.-Col and faultless service last week.
+
+40
+00:02:42,350 --> 00:02:43,500
+One last question.
+
+41
+00:02:43,500 --> 00:02:44,460
+Last question.
+
+42
+00:02:44,770 --> 00:02:50,760
+What I want to send is for this request I want to get decent response back.
+
+43
+00:02:50,800 --> 00:02:53,420
+So I would want to say that accepte header.
+
+44
+00:02:53,440 --> 00:02:58,170
+So I'm taking a accepte header in here as application so on.
+
+45
+00:02:58,220 --> 00:03:04,410
+So am setting the accepte head as application Jason and I'm creating an entity.
+
+46
+00:03:04,630 --> 00:03:10,150
+When you just want to send a request you don't need to hit be entity but when you want to send a request
+
+47
+00:03:10,230 --> 00:03:19,390
+with accept headers then you would need chitti be entity HDP entity loves us to create the request with
+
+48
+00:03:19,600 --> 00:03:20,580
+headers.
+
+49
+00:03:20,590 --> 00:03:24,680
+So what we're doing in here is we are creating an entity with these headers.
+
+50
+00:03:24,790 --> 00:03:30,800
+We're using a best dressed template so we're calling this template exchange.
+
+51
+00:03:30,810 --> 00:03:35,840
+This is the method which we are using to what we want to do is we would want to invoke this you are
+
+52
+00:03:36,670 --> 00:03:38,630
+using these headers.
+
+53
+00:03:38,740 --> 00:03:45,690
+So which headers headers are in the entity so we want to use the header call accepte type application
+
+54
+00:03:45,700 --> 00:03:51,710
+just don't we want to send a get method and B would want the response as a string.
+
+55
+00:03:51,760 --> 00:03:55,260
+So whatever response comes back it will be converted into a string.
+
+56
+00:03:55,450 --> 00:03:58,790
+And we would get it as part of our response.
+
+57
+00:03:58,990 --> 00:04:05,380
+And what we do in the next thing is we'll do the responses or get body to get the content of the response
+
+58
+00:04:05,740 --> 00:04:10,640
+and we will check if it matches the value which we have in here.
+
+59
+00:04:10,900 --> 00:04:15,360
+So this is how you do a integration test writer in integration with Carla Allen.
+
+60
+00:04:15,670 --> 00:04:22,640
+We said they heard about this and we checked whether the values that are coming back are as expected.
+
+61
+00:04:22,660 --> 00:04:24,720
+So we're using this on a set here.
+
+62
+00:04:24,810 --> 00:04:31,120
+So we just said it is a very good framework to do so and so it will only the values that we would want
+
+63
+00:04:31,120 --> 00:04:34,890
+to answer to whatever it will you specify in this expected string.
+
+64
+00:04:34,960 --> 00:04:40,810
+They will be as we did one of the important documents that we are passing in is false.
+
+65
+00:04:40,810 --> 00:04:43,760
+We want to be not very strict.
+
+66
+00:04:43,900 --> 00:04:48,580
+So that when we are seeing fall so we are asking just don't be very strict.
+
+67
+00:04:48,580 --> 00:04:52,540
+Even if there are links to spaces and things like that don't worry about them.
+
+68
+00:04:52,630 --> 00:04:56,480
+Just go ahead and match them as well as you can.
+
+69
+00:04:56,500 --> 00:05:04,060
+So in this small we will get how I would write integration test which spring would be used as a springboard
+
+70
+00:05:04,110 --> 00:05:10,980
+test and addition to launchpad being good application and be used at local port so that we can order
+
+71
+00:05:10,990 --> 00:05:17,830
+where the food where the application is launched up so that we can find that request on that report
+
+72
+00:05:17,860 --> 00:05:23,470
+and be used de-stressed template to fire the request so we use a distressed template to file the request
+
+73
+00:05:23,470 --> 00:05:31,270
+to the Springwood application and we use just on Isold to check whether the response is expected until
+
+74
+00:05:31,270 --> 00:05:31,920
+the next redo.
+
+75
+00:05:31,950 --> 00:05:32,380
+But by.
+

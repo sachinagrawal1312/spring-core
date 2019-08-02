@@ -1,0 +1,108 @@
+1
+00:00:03,060 --> 00:00:09,620
+Welcome in this we do we would start discussing implementations of Atlas for their services with spring
+
+2
+00:00:09,620 --> 00:00:14,940
+rest and spring and ribbon we see in this video will focus on the GET request.
+
+3
+00:00:15,000 --> 00:00:19,030
+So we would want to get the details of a specific sort using spring.
+
+4
+00:00:19,020 --> 00:00:20,750
+Just how do we do that.
+
+5
+00:00:20,910 --> 00:00:27,150
+What happens when we do or don't have been adequate mapping method and what is good mapping and related
+
+6
+00:00:27,160 --> 00:00:27,870
+material.
+
+7
+00:00:27,900 --> 00:00:30,680
+But in spring at least let's get started now.
+
+8
+00:00:30,930 --> 00:00:36,660
+So what you are looking at on your screen is a simple gate mapping for Flash users.
+
+9
+00:00:36,810 --> 00:00:42,610
+In the previous videos which were related to NBC we were talking about request mapping and we specified
+
+10
+00:00:42,670 --> 00:00:48,420
+Demetriades equal to the equipment that don't get good mapping is a shortcut to that to get mapping.
+
+11
+00:00:48,420 --> 00:00:53,730
+And that in addition where I'm saying OK I didn't want to say that eques mapping and then say the request
+
+12
+00:00:53,730 --> 00:01:00,150
+method is equal to this I would rather have a shortcut and say get mapping so good mapping is kind of
+
+13
+00:01:00,150 --> 00:01:03,540
+a shortcut to the quest Mapping Center to get mapping.
+
+14
+00:01:03,540 --> 00:01:08,810
+There are other things like force mapping mapping mapping and things like that.
+
+15
+00:01:08,850 --> 00:01:15,900
+This specific method handles a GET request to slash users and what is it doing it is talking to a service
+
+16
+00:01:16,230 --> 00:01:20,320
+retrieving all the details of the users and returning it back.
+
+17
+00:01:20,610 --> 00:01:28,740
+So this is a simple method for a gate is how does this get converted to J-Zone or whatever format of
+
+18
+00:01:28,740 --> 00:01:35,620
+your response that happens because of something call message converters video using springboard to Delap
+
+19
+00:01:35,640 --> 00:01:35,970
+here.
+
+20
+00:01:35,970 --> 00:01:43,140
+As for the services what happens is spinning boot registers message and where it is by default the default
+
+21
+00:01:43,140 --> 00:01:47,280
+message converter for J-Zone format is Jackson.
+
+22
+00:01:47,280 --> 00:01:54,930
+So what happens when I return a list of users is it will be converted to Jason and the J-Zone response
+
+23
+00:01:54,960 --> 00:01:56,480
+goes back in the shot.
+
+24
+00:01:56,490 --> 00:02:01,310
+We do we look that code for an example you get two thoughts with Pingris.
+
+25
+00:02:01,620 --> 00:02:07,200
+We looked at what happened when a business returned from a mapping method and we talked about good mapping
+
+26
+00:02:07,200 --> 00:02:12,260
+ports mapping and mapping and things like that until the next video.
+
+27
+00:02:12,290 --> 00:02:12,620
+Well Ray.
+

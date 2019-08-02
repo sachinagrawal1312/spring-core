@@ -1,0 +1,320 @@
+1
+00:00:02,780 --> 00:00:08,850
+Welcome back in this we do really focus on the Coventry creation behind g.p before we start.
+
+2
+00:00:08,900 --> 00:00:12,600
+JP application and we get it running.
+
+3
+00:00:13,660 --> 00:00:15,860
+There's a lot of configuration that you would need to do.
+
+4
+00:00:15,910 --> 00:00:19,970
+So we'll look at some of the important configuration that you would need to do as part of it.
+
+5
+00:00:19,970 --> 00:00:25,120
+JP It is those configuration positions or similar configuration configuration you are indeed into the
+
+6
+00:00:25,120 --> 00:00:30,110
+Manage your factory and transaction manager and also confiscating transaction management.
+
+7
+00:00:30,160 --> 00:00:34,480
+One of the most important things that you need to understand is we're using spring boot and you're using
+
+8
+00:00:34,480 --> 00:00:39,540
+spring would be a standard you don't need to do any of the stuff that you'd be talking about in this
+
+9
+00:00:39,540 --> 00:00:39,820
+piece.
+
+10
+00:00:39,830 --> 00:00:40,550
+We can we do.
+
+11
+00:00:40,620 --> 00:00:44,340
+You'll be able to easily do that without configuring all this stuff.
+
+12
+00:00:44,470 --> 00:00:49,660
+But typically when you're using it with spinning and without using spring boot you'll need to configure
+
+13
+00:00:49,720 --> 00:00:50,600
+all this stuff.
+
+14
+00:00:50,680 --> 00:00:52,410
+So let's look at it right now.
+
+15
+00:00:52,630 --> 00:00:56,740
+One of the important things that you would typically do is define your data source right so you'd need
+
+16
+00:00:56,740 --> 00:01:01,590
+to define a data source so that you'd be able to connect to the database.
+
+17
+00:01:01,600 --> 00:01:02,890
+So how do you define the data.
+
+18
+00:01:02,890 --> 00:01:10,810
+So it is by defining a bean data source and defining the class of Debien that you are using then defining
+
+19
+00:01:10,810 --> 00:01:16,570
+the driver class you would want to make use of DJT BCU you want to make use of and the user id and password
+
+20
+00:01:17,020 --> 00:01:20,710
+if you're using JND you don't need to specify the user id and password.
+
+21
+00:01:20,710 --> 00:01:28,810
+Then we would pick up the JDA you RF and dig the connection details and make use of the connection details
+
+22
+00:01:28,830 --> 00:01:31,170
+that are configured already on the data.
+
+23
+00:01:31,180 --> 00:01:35,390
+So what we have here is the values from the property files.
+
+24
+00:01:35,400 --> 00:01:38,350
+For this specific thing we are connecting to a in-memory database in here.
+
+25
+00:01:38,350 --> 00:01:46,210
+So we're using a database driver or just google D.B and DUHL is because it's in memory it's Memphis
+
+26
+00:01:46,240 --> 00:01:49,090
+D.B and the user name and the password for it.
+
+27
+00:01:49,090 --> 00:01:51,080
+So this is how you create a data set.
+
+28
+00:01:51,190 --> 00:01:55,700
+If it's Escurial at my school then he had the JTB said right what would be defended.
+
+29
+00:01:55,770 --> 00:01:58,460
+And you are also a little different.
+
+30
+00:01:58,660 --> 00:02:02,420
+But other than that the configuration would remain exactly the same.
+
+31
+00:02:02,440 --> 00:02:07,870
+So the data is what you'd use to connect to a database and how to configure hibernate.
+
+32
+00:02:07,930 --> 00:02:11,780
+There are a lot of things that you can configure about hibernate so you can just create the hibernate
+
+33
+00:02:11,980 --> 00:02:17,080
+properties and put it in the resources config for it.
+
+34
+00:02:17,410 --> 00:02:23,400
+You can configure things like US duelists files which Dallek to use here we are connecting to your screen
+
+35
+00:02:23,400 --> 00:02:25,350
+so using his disk.
+
+36
+00:02:25,960 --> 00:02:32,380
+And if you want to format this q as well then you can actually save format skilless Drew and put a Asgill
+
+37
+00:02:32,380 --> 00:02:33,100
+comment.
+
+38
+00:02:33,130 --> 00:02:37,900
+So all this kind of stuff you can configure as part of your hibernate properties does how you configure
+
+39
+00:02:37,900 --> 00:02:45,140
+your hibernate and persistent excitement is used to figure you up assistance you need.
+
+40
+00:02:45,340 --> 00:02:51,400
+So here we are defining what is the persistence provided that we want to make use of what are the different
+
+41
+00:02:51,550 --> 00:02:56,680
+dialects and the other stuff that you would want to make use of all those kind of stuff is typically
+
+42
+00:02:56,680 --> 00:02:59,350
+configured in your position to access it.
+
+43
+00:02:59,350 --> 00:03:04,110
+The thing is GPL mandates that you would need a persistent criticsm.
+
+44
+00:03:04,270 --> 00:03:07,620
+And that's the reason why we are creating a persistence or example in here.
+
+45
+00:03:07,720 --> 00:03:13,540
+So here we are defining a persistence unit got school hype and B how do we configured up and manage
+
+46
+00:03:13,540 --> 00:03:18,010
+a factory and a transaction manager to configure an entity manage a factory.
+
+47
+00:03:18,020 --> 00:03:23,250
+You would need a persistence context persistence you need that we have defined it and that's what we
+
+48
+00:03:23,250 --> 00:03:24,090
+are using in here.
+
+49
+00:03:24,100 --> 00:03:25,370
+And that data source.
+
+50
+00:03:25,600 --> 00:03:31,510
+So we're making use of a persistence unit and a data source to create in the main idea factory.
+
+51
+00:03:31,690 --> 00:03:37,360
+So the entity manager factory is the one which would create the NTD managers for us so if we want to
+
+52
+00:03:37,360 --> 00:03:39,840
+manage the entities I need entity manager.
+
+53
+00:03:40,000 --> 00:03:44,930
+How do I get an entity manager the entity managers provided to us by the entity manager.
+
+54
+00:03:44,930 --> 00:03:50,290
+Actually that's what we are getting in here and what we want to do something we would want to do that
+
+55
+00:03:50,380 --> 00:03:52,540
+within the boundaries of a transaction.
+
+56
+00:03:52,540 --> 00:03:58,100
+Right so if I have three steps and if the second step failed I would want to roll back the first step.
+
+57
+00:03:58,120 --> 00:04:00,220
+That is what transaction management is all about.
+
+58
+00:04:00,220 --> 00:04:06,040
+So if I am making changes to three tables and the second table change failed then I would want to roll
+
+59
+00:04:06,040 --> 00:04:10,750
+back everything that is what transaction management is all about and to be able to do this we would
+
+60
+00:04:10,750 --> 00:04:14,620
+need a transaction main ajor and de-conflict the transaction manager.
+
+61
+00:04:14,630 --> 00:04:18,460
+We would need an entity manager factory as well as a data source as well.
+
+62
+00:04:18,610 --> 00:04:24,360
+So this is how we create a bean for a transaction manager in this specific example we're making use
+
+63
+00:04:24,360 --> 00:04:31,960
+of the JPA transaction manager and we're also using And in addition we want to activate the transaction
+
+64
+00:04:31,960 --> 00:04:33,410
+management.
+
+65
+00:04:33,460 --> 00:04:38,620
+Once you've defined the transaction management if you want to make a service transactional or that you
+
+66
+00:04:38,620 --> 00:04:46,660
+need to do is put an ad transaction or the method which you would want transaction management to be
+
+67
+00:04:46,660 --> 00:04:47,660
+implemented at.
+
+68
+00:04:47,660 --> 00:04:54,160
+And so if you do three things in this method then if any of them fail all the earlier ones are also
+
+69
+00:04:54,170 --> 00:05:00,490
+rolled back and the other way you can use it is by putting an ad transaction on declasse.
+
+70
+00:05:00,490 --> 00:05:01,900
+Here we are putting it on the method.
+
+71
+00:05:01,900 --> 00:05:07,720
+You can also put that transactional on demit on the class as well then all the methods in this specific
+
+72
+00:05:07,720 --> 00:05:09,390
+class would be transactional.
+
+73
+00:05:09,390 --> 00:05:15,520
+So before you used the method there would be a transaction that is created after all these steps are
+
+74
+00:05:15,520 --> 00:05:21,040
+successful then done then it would commit the changes if any of these steps failed then it would roll
+
+75
+00:05:21,040 --> 00:05:24,570
+back all the changes that are done as part of that commit that.
+
+76
+00:05:24,610 --> 00:05:29,840
+So this is how people can figure out a lot of things related to JBU in this step.
+
+77
+00:05:29,860 --> 00:05:35,070
+We look at how to define a data source why we use positions that XML how to configure an entity manage
+
+78
+00:05:35,070 --> 00:05:37,420
+a factory and the transaction manager.
+
+79
+00:05:37,420 --> 00:05:42,910
+We also look at how to do transaction management for simple spring hibernate integration and build the
+
+80
+00:05:42,910 --> 00:05:44,030
+next read your way.
+
